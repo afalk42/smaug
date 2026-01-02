@@ -1,5 +1,67 @@
 # Friday, January 2, 2026
 
+## @0xUrvish - uselayouts: Animated React Components Library
+
+> *Replying to @0xUrvish:* Hi developers
+I just launched my animated UI components library
+>
+> 100% open source and free to use
+it's live now do check it out and would appreciate your feedback https://t.co/DOUxe8w4oy
+>
+> Try it out: https://t.co/73RgRfaHwk
+
+- **Tweet:** https://x.com/0xUrvish/status/2006608646730559629
+- **Parent:** https://x.com/0xUrvish/status/2006600544220230083
+- **Link:** https://uselayouts.com/
+- **Filed:** [uselayouts](./knowledge/tools/uselayouts.md)
+- **What:** Open-source library of premium animated React components built with Framer Motion and Tailwind CSS. Includes modern micro-interactions and ready-to-use motion components.
+
+---
+
+## @Suupercharged - Static Navbars Can Be Cool Too
+
+> Static navbars can be cool too 👀 https://t.co/CkRIvlXUrr
+
+- **Tweet:** https://x.com/Suupercharged/status/2006787096955203911
+- **Media:** Video demonstration
+- **What:** Short video showcasing static navbar design approaches. Flagged for transcript capture.
+
+---
+
+## @bentossell - Article Share
+
+> https://t.co/Ref8GgkIR5
+
+- **Tweet:** https://x.com/bentossell/status/2006352820140749073
+- **Link:** https://x.com/i/article/2006346812785868800
+- **What:** Shared article link (content not yet extracted). Bookmark captures the reference for later review.
+
+---
+
+## @GithubProjects - Stop Guessing Why a Process is Running
+
+> Stop guessing why a process is running on your system. https://t.co/F4edRFxOuH
+
+- **Tweet:** https://x.com/GithubProjects/status/2006747292510925092
+- **Media:** Image with tool/tip
+- **What:** Shared resource or tool for process investigation and system debugging. Flagged for media capture.
+
+---
+
+## @adamkillam - Content Operating System Vision
+
+> *Replying to @alexhillman:* Feed them to the content operating system I'm building, sort them, save them, and from there create all manner of content from the insights in each post. Ideally automatically.
+>
+> Also want to track trends, have ideas automatically researched and saved.
+>
+> The list goes on.
+
+- **Tweet:** https://x.com/adamkillam/status/2006894238446002261
+- **Parent:** https://x.com/alexhillman/status/2006881998456164772
+- **What:** Adam shares his vision for a content operating system that aggregates, sorts, and automatically generates content insights from bookmarked posts while tracking trends.
+
+---
+
 ## @jarrodwatts - Claude HUD Plugin
 
 > Started working on "Claude HUD"
