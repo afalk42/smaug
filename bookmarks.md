@@ -1,3 +1,1208 @@
+# Friday, January 2, 2026
+
+## @alexhillman - Smaug: Twitter Bookmark Archiver Dragon
+> its late so i'll probably regret posting this but...
+>
+> enter the dragon 🔥🐲
+>
+> say hi to Smaug, the helpful hoarding dragon that roams your Twitter bookmarks and helps you organize them into your personal knowledge system of choice.
+>
+> special thanks to @steipete, this would be a lot messier without his work!
+
+- **Tweet:** https://x.com/alexhillman/status/2006968571268661423
+- **Link:** https://github.com/alexknowshtml/smaug/
+- **Tags:** [[AI]]
+- **Filed:** [smaug](./knowledge/tools/smaug.md)
+- **What:** Introduction of Smaug, a Twitter bookmark archiver that automatically archives bookmarks to markdown and organizes them into a personal knowledge system. Created by the bookmark collector themselves.
+
+## @alxfazio - Claude Task Subagents for Parallel Execution
+> you can just ask claude to execute plans using as many task subagents as you need, with clear separation of concerns. tested it with up to 10 subagents and it literally 10x's the execution speed
+
+- **Tweet:** https://x.com/alxfazio/status/2007151926614593739
+- **Tags:** [[Coding]]
+- **What:** Tips on using Claude with multiple task subagents for parallel execution with clear separation of concerns, achieving significant speed improvements (10x) with up to 10 subagents.
+
+## @skooookum - AI-Driven Development Workflow Changes
+> I barely write code anymore. I catch when Claude makes an architectural mistake or tiny inefficiency here and there.
+>
+> I barely type anymore. I mostly just use my voice.
+>
+> I barely download apps anymore. If I want an app I have Claude make it.
+>
+> Big changes coming.
+
+- **Tweet:** https://x.com/skooookum/status/2007159615415525432
+- **Tags:** [[AI]]
+- **What:** Observation about shifting development patterns with AI assistance - moving from coding to oversight, voice-based interaction, and on-demand app generation using Claude.
+
+## @bcherny - Claude Code Creator Shares Setup
+> I'm Boris and I created Claude Code. Lots of people have asked how I use Claude Code, so I wanted to show off my setup a bit.
+>
+> My setup might be surprisingly vanilla! Claude Code works great out of the box, so I personally don't customize it much. There is no one correct way to use Claude Code: we intentionally build it in a way that you can use it, customize it, and hack it however you like. Each person on the Claude Code team uses it very differently.
+>
+> So, here goes.
+
+- **Tweet:** https://x.com/bcherny/status/2007179832300581177
+- **Tags:** [[Coding]]
+- **What:** Creator of Claude Code discusses their personal setup and usage philosophy, emphasizing that Claude Code works well out of the box and can be customized flexibly to individual preferences.
+
+---
+DATE: Friday, January 2, 2026
+## @rakyll - Claude Code Generated Distributed Agent Orchestrator Solution
+> I'm not joking and this isn't funny. We have been trying to build distributed agent orchestrators at Google since last year. There are various options, not everyone is aligned... I gave Claude Code a description of the problem, it generated what we built last year in an hour.
+
+- **Tweet:** https://x.com/rakyll/status/2007239758158975130
+- **Tags:** [[Coding]]
+- **What:** Jaana Dogan highlights how Claude Code rapidly generated a solution for distributed agent orchestration that Google's team had been developing over the past year, demonstrating the tool's capability to produce production-quality infrastructure code from problem descriptions.
+
+---
+
+# Wednesday, December 31, 2025
+
+## @dejavucoder - Two types of Claude Code users
+
+> there are two types of people in this world -
+> 1. who started using claude code before karpathy sensei
+> 2. who started using claude code after karpathy sensei
+
+- **Tweet:** https://x.com/dejavucoder/status/2006289006758350924
+- **Tags:** [[Coding]]
+- **What:** Humorous observation about the timing of adopting Claude Code in relation to Andrej Karpathy's endorsement or involvement.
+
+## @bentossell - How I code with agents, without being 'technical'
+
+> How I code with agents, without being 'technical'
+
+- **Tweet:** https://x.com/bentossell/status/2006352820140749073
+- **Tags:** [[Coding]]
+- **What:** Ben Tossell discussing how to use coding agents effectively without requiring strong technical skills.
+
+## @niccruzpatane - Tesla's Unsupervised FSD Robotaxi capability
+
+> With just a software update, Unsupervised FSD comes alive. You'll be able to work, sleep, watch movies, or simply send your car to pick up someone.
+>
+> Tesla vehicles don't need any additional sensors—the vehicles rolling off the line are already Robotaxi-capable. Good luck to everyone else.
+
+- **Tweet:** https://x.com/niccruzpatane/status/2006421638946992573
+- **Tags:** [[Tesla]]
+- **What:** Update on Tesla's Unsupervised Full Self-Driving capability becoming available through a software update to existing vehicles.
+
+## @dabit3 - OpenForm: 100x cheaper Typeform clone built with Claude Opus 4.5
+
+> Something I wanted to see if Claude Opus 4.5 could do: clone a fully functional Billion $ SAAS product and make it at least 100x cheaper.
+>
+> The first product that came to mind was TypeForm because it's very popular, very expensive, and in theory, very simple.
+>
+> The result is OpenForm: a polished + functional and Open Source Typeform clone at ~100x less cost, that can be setup and deployed in ~15 minutes. The agent building this ran for ~35 minutes.
+>
+> Here are the details, technique, and the code:
+
+- **Tweet:** https://x.com/dabit3/status/2006489676924989860
+- **Tags:** [[Coding]]
+- **What:** Nader Dabit demonstrates Claude Opus 4.5's capability to build OpenForm, an open-source Typeform alternative that's 100x cheaper and deployable in minutes.
+
+---
+DATE: Wednesday, December 31, 2025
+## @jarrodwatts - Claude Code Frontend Design Skill Recommendation
+> @dabit3 So sick - one thing I'd recommend to try is their frontend design skill to avoid the blue/purple gradient that ai tends to go for in frontends
+> *Replying to @dabit3:* Something I wanted to see if Claude Opus 4.5 could do: clone a fully functional Billion $ SAAS product and make it at least 100x cheaper.
+
+- **Tweet:** https://x.com/jarrodwatts/status/2006553891513803049
+- **Link:** https://github.com/anthropics/claude-code/blob/main/plugins/frontend-design/skills/frontend-design/SKILL.md
+- **Tags:** [[Coding]]
+- **Filed:** [claude-code](./knowledge/tools/claude-code.md)
+- **What:** Recommendation to use Claude Code's frontend design skill to avoid generic AI aesthetic gradients in interface design. References the anthropics/claude-code repository.
+
+---
+
+# Tuesday, December 30, 2025
+
+## @Schwarzenegger - Mental diet for mind clarity
+> I shared this in my newsletter yesterday, but today, I want to share it right here in the belly of the beast. I'm asking all of you to go on an extreme crash diet.
+>
+> This is not a crash diet for your nutrition…those don't work. This is a diet for your mind. It will work.
+
+- **Tweet:** https://x.com/Schwarzenegger/status/2006004282152346097
+- **Tags:** [[Society]]
+- **What:** Arnold Schwarzenegger advocates for a mental "crash diet" focusing on information consumption and mental discipline rather than physical nutrition.
+
+## @khoomeik - Jensen's upcoming 2027 announcements
+> none of you are ready for what jensen is dropping in 2027.
+>
+> we are so early. https://t.co/fdyGAvTbaM
+> *Quoting @Midnight_Captl:* $NVDA - Kyber NVL576
+>
+> Rubin Ultra NVL 576 racks will require ~5x more power than Blackwell NVL 72 racks (which required 3x more power than H100 racks) 🤯.
+>
+> 'Sidecars', designed in partnership with Schneider Electric, will be added as power conversion + delivery so power density can keep climbing without damaging the racks.
+>
+> We can expect the sidecar system to be loaded with specialized software that helps balance and manage the overall system. Another opportunity for NV to differentiate itself and sink its hooks deeper into the data center.
+>
+> From 2022 to 2028, NV will have 20X'd the power density of its system on a footprint adjusted basis.
+>
+> Sidecar-adjusted (same footprint: 1,000 cabinet slots, IT load only):
+> • 2022 - A100: ~25 MW
+> • 2023 - H100: ~40 MW
+> • 2024/25 - GB200 NVL72 (Blackwell): ~120 MW
+> • 2026 - Rubin (power not yet disclosed): ~150–300 MW
+> • 2027 - Kyber NVL576 (Rubin Ultra): ~300 MW (600 kW/rack, 2 slots/rack)
+> • 2028 - Feynman (directional): ~500 MW (~1,000 kW/rack, 2 slots/rack)
+
+- **Tweet:** https://x.com/khoomeik/status/2006073125172351154
+- **Tags:** [[AI]]
+- **What:** Khoomeik expresses anticipation for Jensen Huang's 2027 announcements, implying significant upcoming NVIDIA developments that will surprise the industry.
+
+---
+DATE: Tuesday, December 30, 2025
+## @venturetwins - Incredible things happening in Claude subreddit
+
+> Incredible things happening in the Claude subreddit. https://t.co/3lxFfVXalE
+
+- **Tweet:** https://x.com/venturetwins/status/2006178752544530441
+- **Tags:** [[Coding]]
+- **What:** Justine Moore highlighting interesting discussions and developments happening in the Claude subreddit community.
+
+---
+
+# Sunday, December 28, 2025
+
+---
+DATE: Sunday, December 28, 2025
+## @DavidMoss - Tesla FSD V14 Coast-to-Coast Autonomous Drive Attempt
+
+> I've now officially started my coast to coast fully autonomous attempt (using Tesla FSD V14) of going from the Tesla Diner in Los Angeles to the Atlantic Ocean In Jacksonville, FL
+>
+> I will post as many updates as possible as I do the 2,500mi drive
+>
+> What's also exciting is the fact I could also cross during this journey 10,000 miles in a row of intervention free driving
+
+- **Tweet:** https://x.com/DavidMoss/status/2005260879827480946
+- **Tags:** [[Tesla]]
+- **What:** David Moss has started a 2,500-mile coast-to-coast autonomous drive using Tesla FSD V14 from Los Angeles to Jacksonville, Florida, with potential to achieve 10,000 miles of intervention-free driving.
+
+## @trq212 - Spec-Based Feature Development with Claude Code
+
+> my favorite way to use Claude Code to build large features is spec based
+>
+> start with a minimal spec or prompt and ask Claude to interview you using the AskUserQuestionTool
+>
+> then make a new session to execute the spec https://t.co/Lwejskje4a
+
+- **Tweet:** https://x.com/trq212/status/2005315275026260309
+- **Link:** https://x.com/trq212/status/2005315275026260309/photo/1
+- **Tags:** [[Coding]]
+- **What:** Thariq shares a workflow for using Claude Code to build features by starting with a minimal spec and having Claude interview you with the AskUserQuestionTool before execution.
+
+## @demishassabis - The Thinking Game Documentary Recognition
+
+> Amazing work from the incredibly talented Director Greg Kohs, Producers Gary Kreig & Jonathan Fildes, and a wonderful score from the maestro Dan Deacon - enjoy! https://t.co/fagdivZ9qN
+
+> *Replying to @demishassabis:* 'The Thinking Game' documentary has just passed 200M views on YouTube in just 4 weeks! 🤯Perfect holiday viewing if you're interested in a behind-the-scenes look at how an AGI lab works, or what goes into making a Nobel Prize winning project like AlphaFold happen.🧬🚀 https://t.co/gPm4sKriJy
+
+- **Tweet:** https://x.com/demishassabis/status/2005358760047562802
+- **Link:** https://www.youtube.com/watch?v=d95J8yzvjbQ&feature=youtu.be
+- **Tags:** [[AI]]
+- **What:** Demis Hassabis celebrates the creators of The Thinking Game documentary, sharing additional thoughts about the 200M+ YouTube views and behind-the-scenes look at DeepMind's AGI work and AlphaFold.
+
+## @demishassabis - The Thinking Game Documentary Passes 200M Views
+
+> 'The Thinking Game' documentary has just passed 200M views on YouTube in just 4 weeks! 🤯Perfect holiday viewing if you're interested in a behind-the-scenes look at how an AGI lab works, or what goes into making a Nobel Prize winning project like AlphaFold happen.🧬🚀 https://t.co/gPm4sKriJy
+
+- **Tweet:** https://x.com/demishassabis/status/2005358757203845592
+- **Tags:** [[AI]]
+- **What:** The Thinking Game documentary has surpassed 200 million views on YouTube in just 4 weeks, offering an exclusive behind-the-scenes look at DeepMind's AGI lab and the development of AlphaFold.
+
+## @Yuchenj_UW - Side Projects as Drivers of Innovation
+
+> Claude Code was a side project at Anthropic.
+> ChatGPT was a side project at OpenAI.
+> PyTorch was a side project at Meta.
+> Gmail was a side project at Google.
+>
+> Side projects are the only place where taste, curiosity, and agency fully compound.
+
+- **Tweet:** https://x.com/Yuchenj_UW/status/2005361471224746368
+- **Tags:** [[Coding]]
+- **What:** Yuchen Jin reflects on how major innovations (Claude Code, ChatGPT, PyTorch, Gmail) originated as side projects where creativity and autonomy compound most effectively.
+
+---
+DATE: Sunday, December 28, 2025
+## @Scobleizer - AI breakthroughs accelerating future
+> Translation: we are about to accelerate because of AI breakthroughs like world models.
+> *Quoting @benitoz:* The Memory Wars: Why the Future Karpathy, Musk, and Jim Fan See Requires 16-Hi HBM
+
+- **Tweet:** https://x.com/Scobleizer/status/2005424249134264427
+- **Tags:** [[AI]]
+- **What:** Scoble comments on AI acceleration driven by breakthroughs like world models, quoting a discussion about the importance of HBM memory capacity for future systems.
+
+## @Midnight_Captl - NVIDIA Kyber power density roadmap analysis
+> $NVDA - Kyber NVL576
+>
+> Rubin Ultra NVL 576 racks will require ~5x more power than Blackwell NVL 72 racks (which required 3x more power than H100 racks) 🤯.
+>
+> 'Sidecars', designed in partnership with Schneider Electric, will be added as power conversion + delivery so power density can keep climbing without damaging the racks.
+>
+> We can expect the sidecar system to be loaded with specialized software that helps balance and manage the overall system. Another opportunity for NV to differentiate itself and sink its hooks deeper into the data center.
+>
+> From 2022 to 2028, NV will have 20X'd the power density of its system on a footprint adjusted basis.
+>
+> Sidecar-adjusted (same footprint: 1,000 cabinet slots, IT load only):
+> • 2022 - A100: ~25 MW
+> • 2023 - H100: ~40 MW
+> • 2024/25 - GB200 NVL72 (Blackwell): ~120 MW
+> • 2026 - Rubin (power not yet disclosed): ~150–300 MW
+> • 2027 - Kyber NVL576 (Rubin Ultra): ~300 MW (600 kW/rack, 2 slots/rack)
+> • 2028 - Feynman (directional): ~500 MW (~1,000 kW/rack, 2 slots/rack)
+> *Quoting @Midnight_Captl:* NVIDIA next gen Kyber rack Switch & Compute Blades 🤤 $NVDA
+
+- **Tweet:** https://x.com/Midnight_Captl/status/2005431398254145993
+- **Tags:** [[AI]]
+- **What:** Detailed analysis of NVIDIA's power density roadmap showing 20x improvement from 2022-2028, with Kyber requiring innovative sidecars for power management in next-generation data center accelerators.
+
+## @stockthoughts81 - Situational Awareness document insights
+> Impossible to read the first 3 pages and not want to read the other 162 https://t.co/tsL4q2Z81Q
+>
+> "Before long, the world will wake up. But right now, there are perhaps a few hundred people, most of them in San Francisco and the AI labs, that have situational awareness."
+>
+> SO GOOD
+> *Quoting @stockthoughts81:* @IndraStocks @beniaminoblanco it is making what @leopoldasch is doing at Situational Awareness LP start to seem really interesting
+
+- **Tweet:** https://x.com/stockthoughts81/status/2005446963970343399
+- **Link:** https://situational-awareness.ai/wp-content/uploads/2024/06/situationalawareness.pdf
+- **Tags:** [[AI]]
+- **What:** Stockthoughts highlights the compelling nature of the Situational Awareness document, emphasizing the insight about the limited number of people currently understanding AI's trajectory, particularly in San Francisco and AI research labs.
+
+---
+
+# Saturday, December 27, 2025
+
+---
+DATE: Saturday, December 27, 2025
+## @esrtweet - 50 Years of Programming Progress: From Punched Cards to AI
+> I was writing some code the new-school way yesterday, prompting gpt-4.1 through aider, and for whatever reason my mind flashed back 50 years and the utter freaking enormity of it all crashed in on me like a tidal wave.
+>
+> And now I want to make you feel that, too.
+>
+> In 1975 I ran programs by feeding punched cards into a programmable calculator. Actual computers were still giant creatures that lived in glass-walled rooms, though there were rumors from afar of a thing called an Altair.
+>
+> Unix and C had not yet broken containment from Bell Lab; DOS and the first IBM PC were six years away. The aggregated digital computing capacity of the entire planet was roughly equivalent to a single modern smartphone.
+>
+> We still used Teletypes as production gear because even video character terminals barely existed yet; pixel-addressable color displays on computers were a science-fiction dream.
+>
+> We didn't have version control. Public forge sites wouldn't be a thing for 25 years yet. The number of computer games that existed in the world could probably be counted on the fingers of two hands.
+>
+> Because of all this, I learned to program over the next ten years with tools so primitive that when I talk about them today it sounds like uphill-both-ways sketch comedy.
+>
+> You may not even be able to imagine what a slow and laborious process programming was then, and how tiny the volume of code we could produce per month was; I have to work to remember it, myself.
+>
+> Today I call spirits from the vasty deep, conversing with unhuman intelligences and belting out finished programs I would once have considered prohibitively complex to attempt within a single working day.
+>
+> Fifty years, many generations of hardware technology, from punched cards to AIs that can pass the Turing test...and I'm still here, still coding, still on top of what a software engineer needs to know to get useful work done in the current day. Gotta admit I feel some pride in that!
+>
+> This meditation isn't supposed to be about me, though. It's about the dizzying, almost unbelievable progress I've lived through and been a part of. If you had told me to predict when I would have a device in my pocket that would give me instant real-time access to most of the world's knowledge, with my own pet homunculi to sift through it for me, I would have been one of the few that wouldn't have said "never" (because I was already a science-fiction fan), but I wouldn't have predicted a date fewer than multiple centuries in the future either.
+>
+> We've come a hell of a long way, baby. And the fastest part of the ride is only beginning. The Singularity is upon us. Everything I've lived through and learned was just prologue.
+
+- **Tweet:** https://x.com/esrtweet/status/2004829013068444050
+- **Tags:** [[Coding]]
+- **What:** Eric S. Raymond reflects on 50 years of programming progress, contrasting primitive tools of 1975 (punched cards, no version control) with today's AI-assisted development and the exponential acceleration of technological change.
+
+## @bcherny - Claude Code's Impact: 259 PRs and the Future of Software Engineering
+> When I created Claude Code as a side project back in September 2024, I had no idea it would grow to be what it is today. It is humbling to see how Claude Code has become a core dev tool for so many engineers, how enthusiastic the community is, and how people are using it for all sorts of things from coding, to devops, to research, to non-technical use cases. This technology is alien and magical, and it makes it so much easier for people to build and create. Increasingly, code is no longer the bottleneck.
+>
+> A year ago, Claude struggled to generate bash commands without escaping issues. It worked for seconds or minutes at a time. We saw early signs that it may become broadly useful for coding one day.
+>
+> Fast forward to today. In the last thirty days, I landed 259 PRs -- 497 commits, 40k lines added, 38k lines removed. Every single line was written by Claude Code + Opus 4.5. Claude consistently runs for minutes, hours, and days at a time (using Stop hooks). Software engineering is changing, and we are entering a new period in coding history. And we're still just getting started..
+
+- **Tweet:** https://x.com/bcherny/status/2004887829252317325
+- **Tags:** [[Coding]]
+- **What:** Boris Cherny discusses Claude Code's evolution from a side project to a transformative development tool, highlighting the shift from code as a bottleneck to AI-assisted continuous productivity and the transformation of software engineering.
+
+## @systematicls - The Prison Of Financial Mediocrity
+> The Prison Of Financial Mediocrity
+
+- **Tweet:** https://x.com/systematicls/status/2004900241745883205
+- **Tags:** [[Investing]]
+- **What:** A short tweet title addressing the concept of financial mediocrity as a self-imposed constraint on wealth building.
+
+## @adocomplete - Advent of Claude Day 27: Sandbox Mode and Secure AI Boundaries
+> Advent of Claude Day 27 - Sandbox Mode
+>
+> "Can I run npm install?" [Allow]
+> "Can I run npm test?" [Allow]
+> "Can I cat this file?" [Allow]
+> ×100
+>
+> /sandbox → boundaries set → Claude gets to work.
+>
+> Define boundaries once. Claude works freely inside them.
+>
+> YOLO speed. Actual security.
+
+- **Tweet:** https://x.com/adocomplete/status/2004977723429847380
+- **Tags:** [[Coding]]
+- **What:** Part of "Advent of Claude" series describing sandbox mode, a framework for setting security boundaries once and allowing AI assistants to work productively within defined constraints.
+
+## @karpathy - Claude Code Home Automation: Lutron System Integration
+> I was inspired by this so I wanted to see if Claude Code can get into my Lutron home automation system.
+>
+> - it found my Lutron controllers on the local wifi network
+> - checked for open ports, connected, got some metadata and identified the devices and their firmware
+> - searched the internet, found the pdf for my system
+> - instructed me on what button to press to pair and get the certificates
+> - it connected to the system and found all the home devices (lights, shades, HVAC temperature control, motion sensors etc.)
+> - it turned on and off my kitchen lights to check that things are working (lol!)
+>
+> I am now vibe coding the home automation master command center, the potential is 🔥.And I'm throwing away the crappy, janky, slow Lutron iOS app I've been using so far. Insanely fun :D :D
+> *Quoting @cyp_ll:* claude figured out how to control my oven https://t.co/ckRlCvGIHB
+
+- **Tweet:** https://x.com/karpathy/status/2005067301511630926
+- **Tags:** [[Coding]]
+- **What:** Andrej Karpathy demonstrates Claude Code's capability to reverse-engineer and control complex home automation systems (Lutron), autonomously discovering network devices, firmware details, and successfully controlling lights and climate systems.
+
+---
+
+# Friday, December 26, 2025
+
+## @srishticodes - Stanford AI Curriculum Now Free on YouTube
+
+> Stanford just made a $200,000 AI degree free.
+>
+> No application.
+> No tuition.
+> No "elite access".
+>
+> Stanford released its actual AI/ML curriculum on YouTube.
+> Not a PR-friendly intro.
+> Not "AI for the public".
+>
+> This is the real thing.
+> The same lectures shaping people working on frontier models.
+>
+> What just became public:
+>
+> Deep Learning (CS230)
+> → https://t.co/DUtL9MO6Y7
+>
+> Transformers & LLMs (CME295)
+> → https://t.co/gN57biwLsE
+>
+> Language Models from Scratch (CS336)
+> → https://t.co/GnH11pPBdW
+>
+> ML from Human Feedback (CS329H)
+> → https://t.co/X9nxEX6PNg
+>
+> Computer Vision (CS231N)
+> → https://t.co/oBxKKWZP22
+>
+> LLM Evaluation & Scaling
+> → https://t.co/1tDpw9ArTq
+>
+> The uncomfortable truth:
+>
+> The degree isn't the scarce asset anymore.
+> Execution speed is.
+>
+> Top schools know this.
+> That's why they're publishing the playbook.
+>
+> 👉 Bookmark this.
+> Comment the first lecture you'll actually watch.
+
+- **Tweet:** https://x.com/srishticodes/status/2004583963952865389
+- **Link:** https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X&si=H3R8bDhWd1h8yaw7
+- **Link:** https://www.youtube.com/playlist?list=PLoROMvodv4rPZxxeUFvQHCkZJsaEBdDZj&si=5iQjZJNl-YvJ6EaS
+- **Link:** https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_&si=ABog2scp9v9a73Pk
+- **Link:** https://www.youtube.com/playlist?list=PLoROMvodv4rNm525zyAObP4al43WAifZz&si=2ZwNABa-KjG5w_hz
+- **Link:** https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16&si=tw-3BAW5HdXOoYgn
+- **Link:** https://www.youtube.com/playlist?list=PLoROMvodv4rObv1FMizXqumgVVdzX4_05&si=r6eOC9Hq2Wilz1yA
+- **Tags:** [[AI]]
+- **What:** Stanford has released its complete AI/ML curriculum for free on YouTube, including courses on deep learning, transformers, language models, and computer vision that are used for training frontier AI developers.
+
+## @karpathy - The Paradigm Shift in Modern Programming with AI
+
+> I've never felt this much behind as a programmer. The profession is being dramatically refactored as the bits contributed by the programmer are increasingly sparse and between. I have a sense that I could be 10X more powerful if I just properly string together what has become available over the last ~year and a failure to claim the boost feels decidedly like skill issue. There's a new programmable layer of abstraction to master (in addition to the usual layers below) involving agents, subagents, their prompts, contexts, memory, modes, permissions, tools, plugins, skills, hooks, MCP, LSP, slash commands, workflows, IDE integrations, and a need to build an all-encompassing mental model for strengths and pitfalls of fundamentally stochastic, fallible, unintelligible and changing entities suddenly intermingled with what used to be good old fashioned engineering. Clearly some powerful alien tool was handed around except it comes with no manual and everyone has to figure out how to hold it and operate it, while the resulting magnitude 9 earthquake is rocking the profession. Roll up your sleeves to not fall behind.
+
+- **Tweet:** https://x.com/karpathy/status/2004607146781278521
+- **Tags:** [[AI]]
+- **What:** Andrej Karpathy reflects on the fundamental shift in programming caused by AI, describing the need to master new abstractions like agents, MCP, and AI-powered development tools to remain competitive.
+
+---
+
+# Thursday, December 25, 2025
+
+## @CryptoNagato - Analysis: Why Crypto Is Not Dead Despite Current Market Sentiment
+> Yesterday I was in a taxi, on my way to Christmas dinner, casually scrolling X.
+>
+> I wasn't even looking for content.
+> And then I saw this guy.
+>
+> Absolutely convinced he cracked the code.
+>
+> His thesis?
+>
+> "Nobody wants crypto anymore.
+> The old crypto crowd moved to prediction markets and stocks.
+> Crypto is dead.
+> Nobody will ever come back."
+>
+> And I'm reading this thinking:
+>
+> You have to be completely sleepwalking through life to believe this, but the real comedy is thinking it's an intelligent take.
+>
+> Let me ask you something.
+>
+> In 2021, during the biggest crypto bull run ever (in terms of global adoption)… why do you think everyone suddenly loved crypto?
+>
+> Was it the tech?
+> The philosophy?
+> The decentralized utopia?
+>
+> Or was it simply because everything was going up like crazy and people dreamed of becoming millionaire instantly?
+>
+> Be honest.
+>
+> Do you think people were buying NFTs because they believed in the "future of digital art"?
+>
+> Or because you could buy any random JPEG and 10x your net worth in two days?
+>
+> Exactly.
+>
+> It's always the same story:
+>
+> Greed.
+> Speculation.
+> Easy money.
+>
+> Nothing else.
+>
+> Now fast-forward to today.
+>
+> Crypto PA has been nuked for 2–3 years.
+>
+> 95% of the magic internet coins look completely dead.
+>
+> No easy money.
+>
+> No cheap dopamine.
+>
+> So what happens?
+>
+> People get bored.
+> People get tired.
+> People leave.
+>
+> They chase stocks at all-time highs.
+> They chase prediction markets.
+> They chase metals.
+> They chase whatever just pumped.
+>
+> Which is… normal behavior for (allow me the technicism) retards.
+>
+> Because when money isn't easy anymore, the majority can't think beyond the next candle.
+>
+> Meanwhile, behind the scenes:
+>
+> Adoption keeps growing.
+> Infrastructure keeps improving.
+> Institutions keep positioning.
+>
+> But retail doesn't care about that.
+> Retail only cares after the chart goes vertical.
+>
+> Same with stocks.
+> Same with gold.
+>
+> Gold was "boring" when you could buy it for a third of today's price.
+>
+> Now it's at highs and suddenly it's:
+>
+> "Financial freedom.
+> Safe haven.
+> Smart money."
+>
+> No, you're just late to the party.
+>
+> You're not investing.
+> You're chasing pumps.
+>
+> And guess where you can still position before real liquidity comes and the upside actually happens?
+>
+> Yes.
+> Magic internet money industry.
+>
+> So all these people screaming "crypto is dead" at the bottom?
+>
+> They have zero understanding of capital rotation.
+>
+> Zero understanding of macro & liquidity cycles.
+>
+> Zero understanding of how money actually moves.
+>
+> To conclude this quick Xmas rent:
+>
+> If you want to sell your crypto here to chase stocks or precious metals after the monstrous uptrends they already had, it's your call.
+>
+> But, in a few months from now, there is a high chance you will regret this decision.
+>
+> So, before letting idiots on X convince you to abandon the most undervalued industry in this time in history, maybe (just maybe) do some research on what crypto can become in the next 5/10 years.
+>
+> Look at the mega-trend behind it.
+>
+> That's all.
+>
+> Wish you all a wonderful Christmas.
+
+- **Tweet:** https://x.com/CryptoNagato/status/2004179085254115674
+- **Tags:** [[Bitcoin]]
+- **What:** A contrarian perspective arguing that crypto adoption and infrastructure continue growing despite bearish sentiment, attributing current disinterest to lack of easy profits rather than fundamental problems, and suggesting the industry is undervalued.
+
+---
+DATE: Thursday, December 25, 2025
+## @kinetic_finance - Bitcoin Sale at $87k After 9 Years
+
+> After 9 years in Bitcoin, I sold all my BTC over the last 3 days at $87,000 and here's why.
+
+- **Tweet:** https://x.com/kinetic_finance/status/2004196623443021936
+- **Tags:** [[Bitcoin]]
+- **What:** A long-term Bitcoin holder explains the rationale behind liquidating their entire BTC position at $87,000 after holding for 9 years.
+
+## @BeLikeBumblebee - GitHub CLI Dashboard Tool Recommendation
+
+> *Replying to @steipete:* built myself a little cli to see how many PRs per repo are open, since GitHub's website is kinda useless for that.
+
+> I think have you tried dash it is gh cli plugin but super intuitive
+
+- **Tweet:** https://x.com/BeLikeBumblebee/status/2004215481948045561
+- **Link:** https://github.com/dlvhdr/gh-dash
+- **Tags:** [[Coding]]
+- **Filed:** [gh-dash](./knowledge/tools/gh-dash.md)
+- **What:** Reply recommending gh-dash, a rich terminal UI for GitHub that provides an intuitive interface for viewing PRs and issues across repositories, built as a gh CLI plugin.
+
+## @vkhosla - Agreement with Karpathy on AI Paradigm Shift
+
+> So true
+
+> *Quoting @DBVolkov:* Andrej Karpathy literally dropped the mindset shift every AI founder needs to hear
+
+- **Tweet:** https://x.com/vkhosla/status/2004321834645528889
+- **Tags:** [[AI]]
+- **What:** Vinod Khosla's affirmation of Andrej Karpathy's perspective on the fundamental mindset changes required for AI founders.
+
+---
+
+# Wednesday, December 24, 2025
+
+---
+DATE: Wednesday, December 24, 2025
+## @tom_doerr - Personal Knowledge Management System with AI Agents and Hooks
+> Personal knowledge management system with AI agents and hooks
+> https://t.co/dCOIZDhhXr https://t.co/WaFsofrXeh
+
+- **Tweet:** https://x.com/tom_doerr/status/2003739364082303441
+- **Link:** https://github.com/ballred/obsidian-claude-pkm/
+- **Tags:** [[AI]]
+- **Filed:** [obsidian-claude-pkm](./knowledge/tools/obsidian-claude-pkm.md)
+- **What:** A complete personal knowledge management system combining Obsidian with Claude Code, featuring hooks, custom agents, skills, and modular rules for goal-aligned productivity.
+
+## @pepicrft - Mole: macOS Deep Clean and Optimization Tool
+> I came across this very cool tool to clean up your macOS environment: https://t.co/z1AS3gWXF8
+>
+> It consolidates features from CleanMyMac, AppCleaner, DaisyDisk, and iStat. Open source and gratis!
+
+- **Tweet:** https://x.com/pepicrft/status/2003772976718581923
+- **Link:** https://github.com/tw93/Mole
+- **Tags:** [[Coding]]
+- **Filed:** [mole](./knowledge/tools/mole.md)
+- **What:** An open-source macOS optimization tool that unifies cleaning, uninstallation, disk analysis, and system monitoring in a single command-line utility.
+
+## @Teslarati - Request for FSD Follow Mode Feature
+> Hey @elonmusk, do you think we could get a "Follow Mode," where you can still use FSD but follow a car when you're going to the same destination?
+>
+> The replies in this post below show a lot of people would appreciate it!
+> *Quoting @Teslarati:* Since v14.2.2.1 is on the way, we might as well share some thoughts on v14.2.2.
+>
+> Drove about 150 miles, 3 hours total.
+>
+> ✅ Speed Profiles seem good, but Standard was about as fast as Hurry usually is. Not complaining, but definitely felt like Chill was a tad too slow as Standard was faster than I'm used to.
+>
+> ✅ Had several occasions during heavier traffic on I-695 where the car would signal to change lanes and hesitate. At one point, it straddled the line a tad too long for my liking; I said, "Make up your mind" out loud. A few of the hesitations were warranted; people drive insanely fast on 695. I didn't feel stressed or upset with its decision-making at any point, even with the lane changing.
+>
+> ✅ One thing I noticed today that would be a great feature would be to follow a car. I followed my parents home after meeting them and there wasn't a Speed Profile that allowed me to keep up. It either wanted to pass them or it would not keep up. A follow mode would be a great touch if it could be refined.
+>
+> ✅ Took my Step Dad's Father for a ride, he's 87. It was awesome to see his reluctance on self-driving cars melt away with the ride. After three rides, he was more trusting than I've seen him with most human beings.
+
+- **Tweet:** https://x.com/Teslarati/status/2003890878939877872
+- **Tags:** [[Tesla]]
+- **What:** A feature request for Tesla's FSD to include a "Follow Mode" that allows vehicles to maintain a following distance behind another car to the same destination, with user feedback suggesting significant demand for this capability.
+
+## @mitchellh - Ghostty 1.0 Anniversary: One Year of Features and Growth
+> Ghostty 1.0 came out a year ago today. Since then:
+>
+> - Command Palette
+> - Background Images
+> - Quick Terminal Size
+> - Graphical Progress Bars (OSC 9;4)
+> - Undo/Redo Close (macOS)
+> - Terminal Bell (audio, graphical, and more)
+> - Custom Cursor Shaders - animations/trails
+> - SSH Improvements - auto terminfo copying, env fixes
+> - Quick Terminal on Linux
+> - Global Keybinds on Linux
+> - Server-Side Decorations (SSD) on Linux
+> - Performable Keybindings
+> - Bitmap Font Support
+> - Alpha Blending on both macOS and Linux
+> - Apple Shortcuts Integration (macOS)
+> - GTK rewrite with native GObject
+>
+> Coming in 1.3, already in nightly/tip:
+>
+> - Scrollback Search
+> - Scrollbars
+> - Key Tables / Chained Keybinds
+> - Copy as HTML/RTF
+> - libghostty started and already shipping in 3rd party production code on all platforms including web
+>
+> Organizationally:
+>
+> - Non-profit established
+> - Subsystem maintainers established with ~10 maintainers
+> - Community team established with another ~10 members
+>
+> Commits: 5,154
+> Unique contributors: 310
+
+- **Tweet:** https://x.com/mitchellh/status/2003942978600013877
+- **Tags:** [[Coding]]
+- **What:** Milestone update on Ghostty terminal's first year with significant feature additions including customization options, platform-specific improvements, and organizational growth with a non-profit structure.
+
+---
+
+# Tuesday, December 23, 2025
+
+## @theswansjr - Money as a Shared Hallucination
+
+> Money does not exist in nature.
+>
+> If every human vanished tomorrow—poof, Thanos snap—money dies with us.
+>
+> Not slowly. Instantly.
+>
+> Because money isn't real. It's not gravity. It's not water. It's not some fundamental law of physics carved into the universe's source code.
+>
+> Gravity pulls planets whether you believe in it or not. Water cycles through ecosystems without asking for permission. Those are natural phenomena. They persist.
+>
+> Money? Money is a shared hallucination. A collective delusion we all agreed to participate in because the alternative, pure barter, was a logistical nightmare.
+>
+> Look around. Animals hoard food. Birds collect shiny objects to attract mates. Squirrels bury acorns.
+>
+> But they're not pricing those acorns in "nut dollars." There's no interest rate on stored seeds. No squirrel is taking out a loan to front-run winter scarcity.
+>
+> That's instinct. That's biology. That's not money.
+>
+> Money only exists when humans assign value to something and agree that it represents stored labor, future purchasing power, or social coordination at scale.
+>
+> Without minds to recognize it, gold is just a shiny metal in the ground. Bitcoin is just dormant code on dead servers.
+>
+> Carl Menger figured this out in the 1870s. Money emerges organically from human action and voluntary agreement—not government decree, not divine mandate.
+>
+> Gold became money because humans decided it had the right properties: scarce, durable, divisible, portable, verifiable. We built entire civilizations around that consensus.
+>
+> But here's the kicker: gold isn't inherently money without us assigning it that role.
+>
+> It's just element 79 on the periodic table.
+>
+> Bitcoin? Same deal. It's a digital construct we engineered because we needed better properties for a global, hyperconnected world.
+>
+> But in a human-less universe? Bitcoin's ledger halts. The network dies. The protocol becomes a fossil record of a species that once tried to escape monetary debasement.
+>
+> This is the part most people miss:
+>
+> The evolution of money doesn't happen because it's etched into the fabric of reality. It happens because we build it. We improve it. We upgrade the operating system.
+>
+> Seashells → Gold → Paper → Digital.
+>
+> Each iteration solves problems the previous one couldn't. Each step is a reflection of human ingenuity, not natural inevitability.
+>
+> And right now, we're in the middle of the biggest monetary upgrade in human history.
+>
+> Bitcoin isn't "real" in the sense that it exists independent of us. But neither is the dollar. Neither is gold as money.
+>
+> The difference is Bitcoin was engineered—deliberately, mathematically, incorruptibly—to be the best form of money humans have ever created.
+>
+> 21 million hard cap. No central authority. No counterparty risk. No inflation. No debasement.
+>
+> It's not real because it's natural. It's real because we made it that way.
+>
+> And that's the point.
+
+- **Tweet:** https://x.com/theswansjr/status/2003458131829932233
+- **Tags:** [[Bitcoin]]
+- **What:** A deep philosophical essay on the nature of money as a human construct rather than a natural phenomenon, arguing that Bitcoin represents the latest evolution in monetary systems.
+
+## @JayaGup10 - AI's Trillion-Dollar Opportunity: Context Graphs
+
+> AI's trillion-dollar opportunity: Context graphs
+
+- **Tweet:** https://x.com/JayaGup10/status/2003525933534179480
+- **Tags:** [[AI]]
+- **What:** A brief exploration of context graphs as a significant opportunity in AI technology, likely discussing how contextual information can unlock massive value in artificial intelligence applications.
+
+## @mitchellh - Ghostty Vim Mode Implementation
+
+> Here's a short video (4m) that goes into more detail on how "vim mode" works in Ghostty and the multitude of features that are composed together to make it all work. This showcases how powerful Ghostty's keybinding system is getting!
+>
+> And don't worry, I plan on shipping a built-in "vim mode" table (unbound by default) so you can bind an opinionated "vim mode" with a single line in your config. But, if you want to modify it in any way, that's completely possible because this all works via standard config.
+
+- **Tweet:** https://x.com/mitchellh/status/2003560220786926046
+- **Tags:** [[Coding]]
+- **What:** Mitchell Hashimoto demonstrates the vim mode feature in Ghostty terminal, explaining how the powerful keybinding system enables composable features with a single-line configuration option.
+
+## @VicVijayakumar - Opus 4.5 Refactoring Legacy Code
+
+> I vibe coded some absolute slop 6 months ago when I built a feature, and Opus 4.5 is now cleaning it up. Maybe this is the answer to all the slop out there; newer models clean up the work of the older models.
+
+- **Tweet:** https://x.com/VicVijayakumar/status/2003663532793978966
+- **Tags:** [[Coding]]
+- **What:** An observation on how Opus 4.5 is capable of refactoring and improving previously written code, suggesting that newer AI models could address the "code debt" created by older model outputs.
+
+---
+
+# Monday, December 22, 2025
+
+---
+DATE: Monday, December 22, 2025
+## @ivanhzhao - Steam, Steel, and Infinite Minds
+
+> Steam, Steel, and Infinite Minds
+
+- **Tweet:** https://x.com/ivanhzhao/status/2003192654545539400
+- **Tags:** [[AI]]
+- **What:** A provocative thought piece on the evolution of technology and consciousness, exploring philosophical themes about industrial power and artificial intelligence.
+
+---
+
+# Friday, December 19, 2025
+
+## @farzyness - Tesla Cybercab $29k Vehicle with Full Self-Driving
+> Using Cybercab to hide a sub $30k Tesla that has unsupervised FSD + steering wheel and pedals will go down as one of the greatest misdirections of all time.
+>
+> Literally nobody sees it coming.
+>
+> Even the Tesla community doesn't buy it.
+>
+> Actually amazing.
+>
+> This will go down as an all-time product launch.
+>
+> Completely blind-side everyone.
+>
+> "Hey yeah so that Cybercab thing, we actually started building them and we're using them in Austin and other places, but we're actually at a point that we can make way more of them than places we can put them in because of places not letting us operate without a steering wheel and pedal...
+>
+> So yeah here's one with a steering wheel and pedal for $29k. Oh and it can drive itself without you having to pay attention.
+>
+> You can also do this monthly thing where you pay like $500 a month and payment, insurance, maintenance, charging, self-driving is included. Oh and in places where cars can drive themselves we will literally give it to you per month. No contract or lease needed. Just use your own fully covered Tesla for $500 a month, and when you're done just have it come back.
+>
+> Ok bye."
+>
+> Wiiiiiillllddddddd.
+>
+> $TSLA
+
+- **Tweet:** https://x.com/farzyness/status/2001897713097380300
+- **Tags:** [[Tesla]]
+- **What:** Analysis of Tesla's strategic product announcement revealing a sub-$30k vehicle with full self-driving capability and innovative $500/month service model, leveraging the Cybercab to address regulatory steering wheel requirements.
+
+## @PhilWhittlesee - Tesla FSD with Grok AI Route Navigation
+> Obligatory Tesla update, because this is just so cool:
+>
+> I had a doctor appointment, and was using the navigation and full-self-driving feature to get me there. It is off one of the main streets in the town, but from the direction I'm coming it is impossible to turn into the parking lot due to a concrete median. So, annoyingly, the navigation software always mandates a U-turn.
+>
+> That would be mostly fine, but in the past the FSD software has trouble with that U-turn. It needs to pull further into the intersection to pull it off, but it never used to, necessitating a reverse to complete it. It might not do that anymore, I'm not sure (it has been a while since I've taken it to that location, and FSD has been updated several times since then and is a lot better), but I didn't want to mess with it.
+>
+> I remembered that the most recent update, the 2025 Christmas update, integrated Grok into the navigation system, and you can use Grok voice prompts to adjust your route, add or remove stops, etc. I decided to give that a try.
+>
+> So I pull up Grok and ask it if can see my destination and route. It confirms that it can, gives me the address, etc. I ask if it can see the U-turn programmed in, and it confirms it with the intersection. I ask it to convert that u-turn to a left-hand-turn instead, and then to proceed about half a block, and then add a new left turn, which will take me into the parking lot via an alternate method.
+>
+> Easy. Grok does it. Says it has done it. Asks if it looks correct on the screen. The screen zooms in to show the new route in that area. It looks perfect. I say, "Yep, that looks good, execute that." And when we get there, it does!
+>
+> Coolest damn thing I've seen an AI do. The car drove itself, the AI accessed the data, adjusted the route based on my descriptions and satellite images, and then the car executed it. That is true, agentic AI functioning in my Model Y.
+>
+> The future is going to be amazing. And every other car manufacturer is in HUGE trouble.
+>
+> @TechOperator @technojawa @mikepat711
+
+- **Tweet:** https://x.com/PhilWhittlesee/status/2001899626304336250
+- **Tags:** [[Tesla]]
+- **What:** User demonstrates Tesla's integrated Grok AI in navigation system, showcasing voice-controlled route optimization with real-time satellite image analysis and autonomous vehicle execution.
+
+---
+DATE: Friday, December 19, 2025
+## @ennycodes - Real Coding Knowledge for Vibe Coding
+> You need real coding knowledge to vibe-code properly. https://t.co/2LRrFaaDeT
+
+- **Tweet:** https://x.com/ennycodes/status/2001949930538328248
+- **Link:** https://x.com/ennycodes/status/2001949930538328248/photo/1
+- **Tags:** [[Coding]]
+- **What:** Discussion about the necessity of foundational coding knowledge even when adopting rapid prototyping or "vibe coding" approaches.
+
+## @petergyang - Teresa Torres Using Claude Code for Life Management
+> Teresa Torres runs her entire life and business using two Claude Code terminals and a note taking app @obsdmd.
+>
+> It was genuinely mind blowing watching her demo using Claude Code to manage her to do list, write content, and much more.
+>
+> 📌 Subscribe to get our full episode in 2 days: https://t.co/Ggqaa3F11Z
+
+- **Tweet:** https://x.com/petergyang/status/2002016119981478375
+- **Link:** https://www.youtube.com/@peteryangyt?sub_confirmation=1
+- **Tags:** [[Coding]]
+- **What:** Case study of using Claude Code as a primary tool for personal and business management, including task lists, content writing, and general workflow automation.
+
+## @karpathy - 2025 LLM Year in Review
+> 2025 LLM Year in Review
+
+- **Tweet:** https://x.com/karpathy/status/2002118205729562949
+- **Tags:** [[AI]]
+- **What:** Annual retrospective on significant developments and trends in large language models throughout 2025.
+
+## @Altimor - Anthropic's Market Position as Premium AI Player
+> Anthropic is going to be the Apple of AI: the smaller, more luxury player, universally and rightfully beloved by the more sophisticated users
+
+- **Tweet:** https://x.com/Altimor/status/2002133511055311206
+- **Tags:** [[AI]]
+- **What:** Commentary on Anthropic's positioning as a premium, high-quality AI provider targeting sophisticated users rather than competing on mass market scale.
+
+## @shanaka86 - Bitcoin ETF Flows vs Gold: Institutional Behavior Shift
+> The gold vs Bitcoin debate officially ended this week.
+>
+> Nobody called it.
+> The data is conclusive.
+> The implications reshape everything.
+>
+> 2013: Gold crashes 28%
+> $GLD: $25 billion in REDEMPTIONS
+> Investors panic. Flee at first stress.
+>
+> 2025: Bitcoin drops 10%
+> $IBIT: $25 billion in INFLOWS
+> Institutions accumulate. Buy the entire dip.
+>
+> Same drawdown psychology.
+> $50 billion behavioral swing.
+> Opposite directions.
+>
+> This has never occurred for any alternative asset ETF in history.
+>
+> Now check the 2025 flow leaderboard:
+>
+> $IBIT ranked 6th overall
+> $25.4 billion in net flows
+> The ONLY negative performer on the board
+> Every other top fund up 15% to 30%
+>
+> Meanwhile $GLD ran +64%
+> Best gold year since 1979
+> Hottest precious metals tape in 45 years
+>
+> Bitcoin still out-raised it.
+> While down 10%.
+>
+> Let that sink in.
+>
+> The pension consultants see this data.
+> The endowments see this data.
+> The RIA models are already adjusting.
+>
+> BlackRock didn't build an ETF.
+> They canonized an asset class.
+>
+> Stocks. Bonds. Real Assets. Bitcoin.
+>
+> 60/40 just became 55/35/5/5.
+>
+> Bookmark this:
+>
+> BTC +30% in 2026 = IBIT pulls $60B to $80B and cracks $150B AUM faster than any fund in history.
+>
+> Screenshot it. 12 months. I own the outcome.
+>
+> Institutions just voted.
+> $25 billion during a correction.
+> While gold ran the tape of its life.
+>
+> They didn't choose gold.
+>
+> That's not noise.
+>
+> That's the signal.
+> *Quoting @EricBalchunas:* $IBIT is the only ETF on the 2025 Flow Leaderboard with a negative return for the year. CT's knee-jerk reaction is to whine about the return but the real takeaway is that is was 6th place DESPITE the negative return (Boomers putting on a HODL clinic). Even took in more than $GLD which was up 64%. That's a really good sign long term IMO. If you can do $25b in bad year imagine the flow potential in good year.
+
+- **Tweet:** https://x.com/shanaka86/status/2002163699185037483
+- **Tags:** [[Bitcoin]]
+- **What:** Deep analysis of institutional Bitcoin ETF flows vs gold ETF flows in 2025, arguing that the dramatic difference in investor behavior during market corrections signals a fundamental shift in asset class recognition and allocation patterns.
+
+---
+
+# Wednesday, December 17, 2025
+
+## @Riftwalkergame - Indie Sci-Fi Action RPG Development
+> I don't have millions in funding.
+> I'm a solo dev. A dad. A husband.
+> I'm building this with everything I have.
+>
+> If you love The Mandalorian, Dune, and Max Payne,
+> I'm making this game for you.
+>
+> Wishlist on Steam
+> https://t.co/sZQkNOzZ3K
+>
+> Support the journey https://t.co/ie9882KNB4
+>
+> #wishlistwednesday #gamedev #indiedev
+
+- **Tweet:** https://x.com/Riftwalkergame/status/2001322313048842635
+- **Link:** https://store.steampowered.com/app/4109980/Riftwalker/
+- **Tags:** [[Coding]]
+- **What:** Solo indie developer showcasing their sci-fi action RPG (Riftwalker) inspired by The Mandalorian, Dune, and Max Payne, seeking community support through Steam wishlist and Patreon.
+
+---
+
+# Tuesday, December 16, 2025
+
+## @cz_binance - Crypto Cycle Holding Strategy
+> If you were ever jealous of people buying crypto on the cheap, and able to hold them through the cycles, think about what they did in moments like this.
+
+- **Tweet:** https://x.com/cz_binance/status/2000835198985101501
+- **Tags:** [[Bitcoin]]
+- **What:** CZ reflects on the discipline required in cryptocurrency investing, highlighting the importance of market conviction during periods of uncertainty and volatility.
+
+---
+
+# Sunday, December 14, 2025
+
+---
+DATE: Sunday, December 14, 2025
+## @jonathanwstokes - Tesla Robotaxi Safety Monitors Removed in Austin
+> Tesla Robotaxi safety monitors removed in Austin, Texas. Been waiting a long time to post this chart! Congratulations to the engineering team behind this marvel. https://t.co/NUfUwrn2Xy
+
+- **Tweet:** https://x.com/jonathanwstokes/status/2000270664692117726
+- **Tags:** [[Tesla]]
+- **What:** Tesla removes safety monitors from Robotaxi operations in Austin, marking a significant milestone in autonomous vehicle development as the system demonstrates sufficient reliability.
+
+---
+
+# Saturday, December 13, 2025
+
+## @elonmusk - K2 Civilization Value Creation
+> @Gfilche Any meaningful progress towards a K2 civilization will result in value creation that is many orders of magnitude greater than the current economy
+
+> *Replying to @Gfilche:* Musk Industries about to be like half the stock market 😂
+
+- **Tweet:** https://x.com/elonmusk/status/1999792645686907365
+- **Tags:** [[Tesla]]
+- **What:** Elon Musk responds to speculation about Musk Industries' market potential, arguing that K2 civilization progress would generate vastly greater economic value than today's economy.
+
+---
+
+# Friday, December 12, 2025
+
+## @AdamBLiv - Inflation as Mass Wealth Extraction System
+> Inflation is the most successful system of mass wealth extraction ever created.
+>
+> You can trivialize it as prices rising, but it's really because human time is monetized, stored, then quietly destroyed.
+>
+> The United States has roughly 160 million workers.
+>
+> The average full-time worker supplies ~1,800 hours per year.
+>
+> That is ~288 billion hours of human labor produced annually.
+>
+> Those hours are not abstract.
+>
+> They are pieces of human life.
+>
+> Now apply "normal" inflation.
+>
+> At 3% annual inflation, the dollar loses ~59% of its purchasing power over 30 years.
+>
+> Only ~41% remains.
+>
+> This means nearly three-fifths of the value of stored labor is erased, not because productivity fell, but because the unit measuring it was diluted.
+>
+> No vote. No consent. No line item on a paycheck.
+>
+> This is a tax of your saved time, the most finite asset you have.
+>
+> The mechanism is simple:
+>
+> Persistent government deficits
+> Debt compounding faster than productivity
+> Currency expansion to service that debt
+> Past labor quietly paying present obligations
+>
+> Your savings do not fail. They are reassigned.
+>
+> Inflation allows the state to consume yesterday's work to fund today's promises, while the cost is diffused across the population.
+>
+> Prudence becomes a liability.
+>
+> Bitcoin breaks this equation.
+>
+> Fixed supply. No central issuer.
+>
+> No mechanism to dilute past labor.
+>
+> Bitcoin allows economic energy to be stored without decay.
+>
+> It is time that cannot be quietly stolen.
+>
+> That is why it matters.
+>
+> That is why it spreads.
+
+- **Tweet:** https://x.com/AdamBLiv/status/1999536964937056262
+- **Tags:** [[Bitcoin]]
+- **What:** Economic critique arguing that inflation functions as a hidden tax on saved labor, with Bitcoin presented as an alternative monetary system that preserves economic value over time.
+
+## @TrendingBitcoin - Chamath Palihapitiya's Bitcoin Price Prediction
+> 🇺🇸 Billionaire Chamath Palihapitiya explains why #Bitcoin is going to $1,140,000 this cycle
+>
+> Must watch!!
+
+- **Tweet:** https://x.com/TrendingBitcoin/status/1999573722068303935
+- **Link:** https://x.com/TrendingBitcoin/status/1999573722068303935/video/1
+- **Tags:** [[Bitcoin]]
+- **What:** Trending Bitcoin shares a video featuring venture capitalist Chamath Palihapitiya explaining a bullish Bitcoin price target of $1,140,000 for the current market cycle.
+
+## @simonw - OpenAI Adopts Anthropic's Skills Mechanism
+> OpenAI aren't talking about it yet, but it turns out they've adopted Anthropic's brilliant "skills" mechanism in a big way
+>
+> Skills are now live in both ChatGPT and their Codex CLI tool, I wrote up some detailed notes on how they work so far here:
+
+- **Tweet:** https://x.com/simonw/status/1999623295046664294
+- **Link:** https://simonwillison.net/2025/Dec/12/openai-skills/
+- **Filed:** [OpenAI Adopts Anthropic's Skills Mechanism](./knowledge/articles/openai-adopts-skills.md)
+- **Tags:** [[AI]]
+- **What:** Simon Willison documents how OpenAI has quietly implemented skills support (inspired by Anthropic's system) in both ChatGPT and Codex CLI, enabling LLMs to access reusable task modules from the filesystem.
+
+---
+
+# Thursday, December 11, 2025
+
+## @_The_Prophet__ - 2026 Debt Wall: A Bullish Signal for Bitcoin
+
+> ⚡️This chart is directionally true but the interpretation is dramatically wrong and reveals a shallow understanding of how sovereign debt, Treasury issuance, rollover dynamics, and fiscal-monetary coordination actually work.
+>
+> The person posting this is trying to sound like they discovered a nuclear threat, but what they're calling a "time bomb" is literally how the US sovereign funding system is designed to work.
+>
+> [Detailed analysis of US Treasury rollover mechanics and implications for Bitcoin]
+> *Quoting @NoLimitGains:* The U.S. Treasury has a massive problem nobody wants to talk about…
+>
+> Take a good look at this chart.
+>
+> That giant blue spike?
+>
+> Yeah… that's trillions in U.S. debt that expires in 2026. Not 2030. Not 2040.
+>
+> 2026.
+>
+> [Warning about massive debt maturity wall and potential market impact]
+
+- **Tweet:** https://x.com/_The_Prophet__/status/1999216900124082545
+- **Tags:** [[Bitcoin]]
+- **What:** Argues that the 2026 US Treasury debt maturity wall, rather than being a market crash signal, actually forces monetary policy easing and currency debasement that structurally supports Bitcoin as a hard-money hedge.
+
+---
+DATE: Thursday, December 11, 2025
+## @BStarr119 - FSD Predicts Future with Psychic Maneuvers on Cybertruck
+> So much to unpack in this one!
+>
+> FSD just predicted the future and I'm still processing it. Semi in front doing 58, middle lane crawling, overtake lane packed… I'm thinking "welp we're stuck" Mad Max measures closing rates of literally every car around us, sees a pocket forming in the right lane that doesn't even exist yet, dives under the semi (undertake), waits half a beat for the Ram to clear, then slots perfectly into the middle. Zero input from me. It literally calculated relative velocities better than my brain could. 14.2.1 on Cybertruck is straight up psychic now. All-Sight app got the whole magic trick frame-by-frame.
+
+- **Tweet:** https://x.com/BStarr119/status/1999289483267833932
+- **Tags:** [[Tesla]]
+- **What:** Elon Musk's FSD demonstrates advanced autonomous driving prediction on Cybertruck 14.2.1, calculating vehicle positions and velocities to execute a complex lane-change maneuver without driver input.
+
+---
+
+# Wednesday, December 10, 2025
+
+## @AdamBLiv - The Stages of Becoming Orange-Pilled
+
+> The Stages of Becoming Orange-Pilled
+>
+> Stage One: You're Sleeping
+>
+> You're comfortable. You have a job. A 401k.
+>
+> You believe in "the economy." You think the Federal Reserve is boring but necessary, like flossing or C-SPAN. You're saving money.
+>
+> By which I mean: you're watching your purchasing power evaporate in real-time while calling it "being responsible."
+>
+> [Long thread continues with detailed exploration of Bitcoin adoption journey through 7 stages, from initial sleep through enlightenment to spiritual acceptance]
+
+- **Tweet:** https://x.com/AdamBLiv/status/1998941335512826144
+- **Tags:** [[Bitcoin]]
+- **What:** Comprehensive thread mapping the psychological and intellectual journey of Bitcoin adoption in seven stages, from skepticism through zealotry to philosophical acceptance of financial sovereignty.
+
+---
+
+# Tuesday, December 9, 2025
+
+---
+DATE: Tuesday, December 9, 2025
+## @Prathkum - Coding is About Thinking, Not Writing
+
+> Most of coding was never about writing code.
+>
+> AI is just making this more obvious.
+>
+> You no longer need to recall syntax, function structure, boilerplate code, or even API endpoints.
+>
+> That's the easy part and AI is very good at it.
+>
+> The hard part was never typing. It was always thinking.
+>
+> And it still is.
+
+- **Tweet:** https://x.com/Prathkum/status/1998304627243057363
+- **Tags:** [[Coding]]
+- **What:** Reflects on how AI shifts focus from code syntax recall to higher-level problem-solving, emphasizing that the core challenge of programming has always been thinking, not typing.
+
+## @fundstrat - Tom Lee on Crypto Supercycle and Emerging Technologies
+
+> This is one of my favorite convos ever
+>
+> @farokh and I spoke about how my experiences in emerging technologies enabled me to appreciate the crypto supercycle
+>
+> And we discuss how my father and my mother always taught me to be patient and kind
+>
+> Please give it a listen 🎧 👂
+> *Quoting @farokh:* Oh my, the @fundstrat interview is ready and it's VERY GOOD!!!
+>
+> I love Tom, such a well spoken and kind person, can't wait to upload this one. https://t.co/fLOo8BlTho
+
+- **Tweet:** https://x.com/fundstrat/status/1998389958734667829
+- **Tags:** [[Investing]]
+- **What:** Tom Lee discusses his interview about how experience with emerging technologies shaped his perspective on the crypto supercycle, emphasizing patience and kindness as guiding principles.
+
+## @KatieMiller - Interview with Elon Musk
+
+> Absolutely surreal to interview one of the greatest minds of our time, a friend, and boss.
+>
+> Thank you, @elonmusk 🇺🇸🇺🇸🇺🇸
+>
+> https://t.co/vbYlZTTaBf
+
+- **Tweet:** https://x.com/KatieMiller/status/1998533044039270766
+- **Link:** https://x.com/katiemillerpod/status/1998528084631249096/video/1
+- **Tags:** [[Tesla]]
+- **What:** Katie Miller shares an interview with Elon Musk, describing it as surreal and expressing gratitude for the opportunity to speak with him.
+
+---
+
 # Sunday, December 7, 2025
 
 ## @elonmusk - Reply on Lunar Factories and Autogenous Economic Systems
@@ -41,28 +1246,7 @@
 
 # Friday, December 5, 2025
 
----
-## @_The_Prophet__ - SpaceX's $800B: Geopolitical Hegemony Outsourced to a Private Actor
 
-> ⚡️SpaceX at $800B is the first open acknowledgement of a reality that has been true for years: The United States is no longer the sole author of its technological destiny. It is now co-authoring it with a single private actor. This is dependence being priced. [Full analysis of how SpaceX has become indispensable infrastructure, Starlink as the first private sovereign layer, and the emergence of hybrid sovereign actors in geopolitics]
-
-- **Tweet:** https://x.com/_The_Prophet__/status/1997068080753922072
-- **Tags:** [[Space]]
-- **What:** Deep geopolitical analysis on how SpaceX's $800B valuation reflects its status as irreplaceable military and infrastructure backbone for the US, including satellite networks, Starlink sovereignty, and the outsourcing of technological hegemony to private actors.
-
-## @PTrubey - Tesla Optimus: Vision-Only Philosophy
-
-> Tesla is in another "lidar vs vision" debate, this time with their Optimus bot. Tesla infamously doesn't use lidar for vehicle self driving, something the chattering classes used as a rhetorical weapon against it.
->
-> Two bot companies (Figure, Sunday) have palm cameras, but Tesla doesn't and won't.
->
-> It's the same philosophy as to why they didn't use lidar. The eventual end goal is low cost, so eliminate anything that isn't ABSOLUTELY necessary. Using a palm camera will speed up training, but it's also a crutch that defers tackling harder problems that you'll eventually want to solve anyway. Finally, humans don't need palm cameras.
->
-> Tesla will be vindicated with their vehicle self driving decision, and will also likely be vindicated with this one too. It may slow down Tesla's production launch, but they'll end up with an inexpensive, high volume solution that reliably works in more situations.
-
-- **Tweet:** https://x.com/PTrubey/status/1996999238929297508
-- **Tags:** [[Tesla]]
-- **What:** Explains Tesla's design philosophy for Optimus humanoid bot: rejecting lidar and palm cameras in favor of vision-only systems for eventual low-cost, high-volume production at scale.
 
 ---
 
@@ -117,31 +1301,6 @@
 - **What:** Reframes the Tesla/EV debate by highlighting product quality as the primary reason for adoption, with environmental benefits as a secondary benefit.
 
 ---
-## @LynAldenContact - Lyn Alden's December Macro Newsletter
-
-> My December macro newsletter is now available.
->
-> It discusses the debasement trade, changing macro conditions, and the large dislocation between the economy and markets.
-
-- **Tweet:** https://x.com/LynAldenContact/status/1996340036682609047
-- **Link:** https://www.lynalden.com/december-2025-newsletter/
-- **Tags:** [[Investing]]
-- **Filed:** [december-2025-newsletter.md](./knowledge/articles/december-2025-newsletter.md)
-- **What:** Analysis of the "debasement trade" concept, macro conditions, and economy-market disconnect in her December newsletter (16 min read).
-
-## @niccruzpatane - Jensen Huang's first customer: Elon Musk and the NVIDIA GPU that became OpenAI's foundation
-
-> NVIDIA CEO Jensen Huang said @elonmusk was there for him as a customer when nobody else was.
->
-> "When I announced this thing, nobody in the world wanted it. I had no purchase orders—not one. Nobody wanted to buy it. Nobody wanted to be part of it, except for Elon. He was at the event, and we were doing a fireside chat about the future of self-driving cars. And he goes, "You know what? I have a company that could really use this." And I said, "Wow, my first customer." I was pretty excited about it. And he goes, "Yeah, we have this company. It's a non-profit company", and all the blood drained out of my face. I had just spent a few billion dollars building this thing. It cost $300,000. And the chances of a non-profit being able to pay for this thing were approximately zero, and he goes, "You know, it's an AI company, and it's a non-profit. And we could really use one of these supercomputers."
->
-> So I picked it up. I built the first one for ourselves—we're using it inside the company. I boxed one up, drove it up to San Francisco, and delivered it to Elon in 2016. I walked up to the second floor, where they were all kind of crammed into a room smaller than this place here, and that place turned out to be OpenAI."
-
-- **Tweet:** https://x.com/niccruzpatane/status/1996314610224312422
-- **Tags:** [[AI]]
-- **What:** Jensen Huang recounts how Elon Musk's OpenAI became NVIDIA's first customer for high-end GPUs in 2016, a pivotal moment in AI infrastructure history.
-
----
 
 # Tuesday, December 2, 2025
 
@@ -188,206 +1347,13 @@
 
 # Saturday, November 29, 2025
 
----
-## @elonmusk - Optimus as Von Neumann probe
 
-> Optimus will be the Von Neumann probe
-
-- **Tweet:** https://x.com/elonmusk/status/1994940491054682570
-- **Tags:** [[Tesla]]
-- **What:** Elon's concise take on Optimus as a self-replicating spacecraft probe, echoing sci-fi implications of general-purpose robotics.
-
-## @cybrtrkguy - Tesla FSD 14.2 Winter Driving: Detailed Testing Results
-
-FSD 14.2 STUNS IN WINTER DRIVING!
-
-Just got done driving ~100 miles on a snowy interstate and a little suburban driving. A few notes:
-
-FSD absolutely, definitively detects snow as a separate substance from rain.
-
-As the snow began to fall, there came a point where FSD first detected the snow and immediately slowed. From then on, it drove in a *completely different profile*.
-
-Generally, V14.2 kept 40-55mph on a 70mph interstate.
-
-When driving in Sloth/Chill and you try to increase the speed profile to Standard/Hurry, the truck displays a red error saying inclement weather is preventing FSD from speeding up. Fantastic!
-
-V14.2 takes corners slow as molasses to keep traction.
-
-It does NOT shoot gaps and pull out in front of other vehicles. V14.2 waits for BIG gaps to make its merge into traffic. It is properly cautious!
-
-One instance of Red Hands occurred when it was merging into a center left turn lane. This center lane was the only lane not plowed, so either 1. it got confused with lane markings or 2. Slid sideways very slightly and got upset.
-
-On straightaways on the interstate in areas with little snow coverage, V14.2 would speed up close to the speed limit. While the roads were wet today from road treatment, I was concerned for slick & frozen areas and manually backed off on the speed. While not technically unsafe, I did this out of an abundance of caution. IMO this is a grey area between "driving safely" and "not driving how I do" lol
-
-Not much ice today. Just snow and slush.
-
-***Tonight, 6-12 inches of fresh snow is forecasted to fall here. I'll be out at dawn tomorrow to test in worse conditions with less traffic.***
-
-Stay tuned.
-
-- **Tweet:** https://x.com/cybrtrkguy/status/1994901956318445831
-- **Tags:** [[Tesla]]
-- **What:** Detailed real-world testing of Tesla's Full Self-Driving 14.2 in winter snow conditions. Tests snow detection, adaptive speed profiles, cautious merging behavior, corner handling, and edge cases. Author plans further testing with heavier snowfall.
-
-## @dylan522p - SemiAnalysis Pivoting to Infographics for Accessibility
-
-Since peoole had trouble understanding the report, we've decided to make a major change.
-We will no longer drop 10k word nuanced pieces that describe what's happening in AI from models to datacenters to silicon.
-Instead we will do infographics even the buy side can understand.
-
-*Quoting @SemiAnalysis_:* We hear from clients and newsletter subs that our content is too hard to understand. Sorry for the 10K word writeups, here's your infographic. https://t.co/zfPNCGO2WU
-
-- **Tweet:** https://x.com/dylan522p/status/1994790171204587606
-- **Quoted:** https://x.com/SemiAnalysis_/status/1994788877253710266
-- **Tags:** [[AI]]
-- **What:** Dylan Patel responds to SemiAnalysis's decision to shift from long-form technical analysis to infographics for broader accessibility. Acknowledges that their detailed pieces on AI hardware and infrastructure were difficult for non-technical audiences to understand.
-
-## @julian_englert - Design-a-Protein: AI-Powered Protein Design Made Accessible
-
-We just made an app that walks you through designing a novel protein with AI from scratch. Takes about 5 minutes, requires zero biology knowledge.
-
-➡️ https://design-a-protein.com/
-
-The best part: we will actually synthesize 1000 of those protein designs in the lab and test their real world function as a therapeutic.
-
-- **Tweet:** https://x.com/julian_englert/status/1994767979427283060
-- **Link:** https://design-a-protein.com/
-- **Tags:** [[Biomics]]
-- **What:** An interactive web application that uses AI to help anyone design novel proteins in minutes without biology knowledge. The creators will synthesize and test 1000 designs from users in their lab to validate their real-world therapeutic potential.
-
-## @IntuitMachine - The $52B Deal That Changed AI Hardware Forever
-
-1/12
-I spent yesterday re-reading the TPUv7 deep-dive from SemiAnalysis and had to put my phone down twice.
-
-One sentence in particular broke my brain:
-
-Anthropic just signed a $52B deal to buy TPUv7 directly from Google.
-
-That's not a cloud contract. That's a lab buying its own nuclear weapons.
-
-2/12
-Everyone (me included) has been saying "NVIDIA owns AI hardware" for two years like it's gravity.
-
-Turns out gravity only works until the biggest customers decide they're tired of paying 75% margins to one company.
-
-3/12
-Here's the part people still don't get:
-
-Google didn't beat NVIDIA at raw performance.
-TPUv7 is "only" 20–30% faster on paper.
-They beat them on price-per-token by ~50% at system level.
-That's not incremental. That's the kind of gap that ends empires.
-
-4/12
-Think about it this way:
-In 2023, if you wanted to train a frontier model you basically sent a blank check to Jensen.
-In late 2025, Anthropic just sent Google a $52B purchase order and cut their inference bill by two-thirds overnight.
-That's not competition. That's defection.
-
-5/12
-And it's spreading.
-Meta is running TPU pilots. xAI is suspiciously quiet about their next cluster.
-Every lab is now doing the same math:
-"Why am I paying NVIDIA's 75% margin when I can pay Google's 30% margin and still get better uptime?"
-
-6/12
-The craziest detail: Google is now selling the chips directly.
-Not just renting hours on GCP.
-Actual metal. Ship it to your own colo.
-They turned the thing they built for Search/Docs/YouTube into a product anyone with a billion dollars can buy.
-That's like if AWS started selling their custom Graviton CPUs on DigiKey.
-
-7/12
-NVIDIA's only real defense left is CUDA lock-in.
-But the labs have figured out that rewriting in JAX/PyTorch-XLA costs a few engineering quarters once—and saves hundreds of millions forever.
-At that scale, the math is brutal.
-
-8/12
-So here's where we are today:
-The frontier labs have become the new sovereigns.
-Google and NVIDIA are now just uranium enrichers bidding for their business.
-The customer rebellion already happened. We just didn't notice because it was quiet and happened in purchase-order form.
-
-9/12
-If you're a startup founder still defaulting to CUDA "because ecosystem" in 2025—stop.
-You're voluntarily paying a 100% tax that no longer exists.
-Port to JAX this quarter and your series B can train a model twice the size.
-
-10/12
-If you're an investor still modeling NVIDIA at 70%+ margins through 2030—update the spreadsheet.
-The new equilibrium is ~55% and falling.
-Still absurdly profitable. Just not immortal.
-
-11/12
-The simplest way to say it:
-AI compute just went from "scarce luxury good" to "commodity you can buy by the pallet from Google."
-Everything else (price, roadmap, moats) follows from that single fact.
-
-12/12
-Next time someone drops a new SOTA benchmark, don't ask "how big was the model."
-Ask "whose silicon made that cheap enough to run?"
-The answer is increasingly "not NVIDIA."
-And once you start asking that question, you can't unsee what's happened.
-
-- **Tweet:** https://x.com/IntuitMachine/status/1994728917475729907
-- **Tags:** [[AI]]
-- **What:** Thread analyzing Anthropic's $52B deal for TPUv7 chips directly from Google, marking a shift in AI hardware dynamics. Discusses how TPUv7's 50% cost advantage per token is disrupting NVIDIA's market dominance and reshaping the competitive landscape for AI infrastructure.
 
 ---
 
 # Friday, November 28, 2025
 
----
-## @_avichawla - Strix: AI Pentesting Agent Replacing $50K Services
 
-Pentesting firms don't want you to see this.
-
-An open-source AI agent just replicated their $50k service.
-
-A "normal" pentest today looks like this:
-
-- $20k-$50k per engagement
-- 4-6 weeks of scoping, NDAs, kickoff calls
-- A big PDF that's outdated the moment you ship a new feature
-
-Meanwhile, AI agents are quietly starting to perform on-par with human pentester on the stuff that actually matters day-to-day:
-
-↳ Enumerating attack surface
-↳ Fuzzing endpoints
-↳ Chaining simple vulns into real impact
-↳ Producing PoCs and remediation steps developers can actually use
-
-And they do it in hours instead of weeks and at a fraction of the cost.
-
-This approach is actually implemented in Strix, a recently-trending open-source framework (14k+ stars) for AI pentesting agent.
-
-The framework spins up a team of AI "attackers" that probe your web apps, APIs, and code.
-
-It then returns validated findings with exploit evidence, remediation steps, and a full PDF report that looks exactly like what you'd get from a traditional firm, but without a $50k invoice and a month-long wait time.
-
-You can see the full implementation on GitHub and try it yourself.
-
-Just run: `strix --target https: //your-app .com` and you are good to go.
-
-Human red teams aren't disappearing but the routine pentest (pre-launch, post-refactor, quarterly checks) is clearly shifting to AI.
-
-Strix is one of the first tools that makes that shift feel real instead of hypothetical.
-
-I've shared the GitHub repo in the replies.
-
-- **Tweet:** https://x.com/_avichawla/status/1994305031974342832
-- **Tags:** [[Coding]]
-- **What:** Overview of Strix, an open-source AI pentesting framework that automates security testing at a fraction of traditional pentesting costs. Strix uses AI agents to enumerate attack surface, fuzz endpoints, and provide exploitation proof-of-concepts.
-
-## @nextbigfuture - Tesla Battery Chemistry Breakthrough: Million-Mile Cells with Heat Stability
-> Tesla has a major battery breakthrough
-
-- **Tweet:** https://x.com/nextbigfuture/status/1994277067991429431
-- **Link:** https://x.com/tslaming/status/1994010803595563511 (quote-tweet)
-- **Tags:** [[Tesla]]
-- **Filed:** [tesla-battery-chemistry-breakthrough](./knowledge/articles/tesla-battery-chemistry-breakthrough.md)
-- **What:** Quote tweet detailing Tesla's patent (US20250357544) on revolutionary battery chemistry by Jeff Dahn - introduces new dicarbonate electrolytes (DMOHC, DEOHC) paired with LiFSI salt achieving 99%+ capacity retention at 70°C+ after 3,500+ cycles, zero gas generation, and simpler cooling requirements. Enables "Million-Mile Battery" for robotaxis, faster Supercharging without thermal throttling, better heat performance in hot climates, and potential cost reduction through simpler passive cooling systems.
 
 ---
 
@@ -429,43 +1395,7 @@ I've shared the GitHub repo in the replies.
 
 # Saturday, November 22, 2025
 
----
-## @MarylandHODL21 - Bitcoin Sovereign Flywheel: Part 3 (BitBonds - Structural Innovation)
-> While the piece I posted yesterday is a stand-alone article responding to recent events, it also ties directly into the broader thesis I've been developing through a series on my Substack...
 
-- **Tweet:** https://x.com/MarylandHODL21/status/1992333713443561950
-- **Link:** https://x.com/hodlmaryland/status/1967633797303656844?s=46 (quote-tweet)
-- **Tags:** [[Bitcoin]]
-- **Filed:** [bitcoin-sovereign-flywheel-pt3](./knowledge/articles/bitcoin-sovereign-flywheel-pt3.md)
-- **What:** Comprehensive deep-dive into BitBonds as the structural innovation enabling the Bitcoin Sovereign Flywheel thesis - exploring how sovereign debt rebased against Bitcoin reserves could address the U.S. debt crisis through a self-reinforcing financial system. Quote tweet referencing Part 2 on stablecoins, Bitcoin reserves, and the sovereign flywheel architecture.
-
-## @TheBTCTherapist - Bitcoin, MSTR, and JPMorgan Analysis
-> If you're wondering what is going on with $Bitcoin, $MSTR and JP Morgan, you need to listen to this👇
->
-> It's probably the most important thing you're going to read today.
->
-> H/t: @HodlMaryland
-
-- **Tweet:** https://x.com/TheBTCTherapist/status/1992272581614043138
-- **Tags:** [[Bitcoin]]
-- **What:** Discussion of interconnections between Bitcoin, MicroStrategy stock, and JPMorgan's role in the crypto market dynamics.
-
-## @TheRealPlanC - Bitcoin Cost of Production Model at $70,000
-> One of the most important Bitcoin charts you have most likely never seen.
->
-> Notice how many times Bitcoin has found support at this estimated cost of production red line.
->
-> The line currently sits at $70,000.
->
-> This is not just on-chain data—this is a cost of production model for Bitcoin, which is a commodity, and commodities almost never trade below their cost of production.
->
-> Shout out to (@)paulewaulpaul for creating this chart.
->
-> Make sure you give him a follow—he does unique and great work.
-
-- **Tweet:** https://x.com/TheRealPlanC/status/1992245302456193100
-- **Tags:** [[Bitcoin]]
-- **What:** Cost of production analysis showing Bitcoin's $70,000 support level using commodity production models, highlighting historical support validation.
 
 ---
 
@@ -490,16 +1420,6 @@ I've shared the GitHub repo in the replies.
 - **Tweet:** https://x.com/sminston_with/status/1991914883609477597
 - **Tags:** [[Bitcoin]]
 - **What:** Macro analysis suggesting 2026 could bring a major Bitcoin run to $200k-$300k with support at mid-50k to mid-60k levels based on economic conditions.
-
----
-## @TheBTCTherapist - Raoul Pal Bitcoin Drawdown Thesis
-> 6 months ago, Raoul Pal said we are in an elongated business/debt cycle and that bitcoin would climb higher and then we would see a -35% drawdown and "everyone will be sure that it is over… and it won't be over."
->
-> You need to watch this again.
-
-- **Tweet:** https://x.com/TheBTCTherapist/status/1991853674587685240
-- **Tags:** [[Bitcoin]]
-- **What:** Recap of Raoul Pal's thesis on Bitcoin's elongated debt cycle with anticipated 35% drawdown and false bottom signals.
 
 ---
 
@@ -596,35 +1516,7 @@ I've shared the GitHub repo in the replies.
 
 # Sunday, November 16, 2025
 
----
-## @KobeissiLetter - Crypto Market Cap Structural Decline Over 41 Days
-> What is happening in crypto?
->
-> Over the last 41 days, crypto has erased -$1.1 trillion in market cap, or -$27 billion PER DAY.
->
-> Crypto market cap is now ~10% BELOW levels seen during the record -$19 billion liquidation on October 10th.
->
-> This is a structural move. Let us explain.
 
-- **Tweet:** https://x.com/KobeissiLetter/status/1990172348834832454
-- **Tags:** [[Bitcoin]] [[Crypto]]
-- **What:** Brief market analysis highlighting a major crypto market decline of $1.1 trillion over 41 days, which the author characterizes as a structural move requiring further explanation.
-
-## @pbeisel - Optimus: AI's Killer App for Embodied Intelligence
-
-> Optimus— AI's Killer App. This might be my most consequential post of the year. Tesla's AI team has been grinding for years on one of the hardest technical problems of our time: vehicle autonomy... Embodied AI is that next interface. It is the interface of AI. A humanoid robot, Optimus, will be the breakthrough. A natural voice interface, a physical human-like presence, and the ability to manipulate the real world as we do. It's AI you don't just talk to; it's AI that does things... Optimus will be the same kind of shift... And it's Tesla's AI team that's positioned to deliver it. A fully embodied intelligence with the reasoning of top-tier chatbots and the physical competence of a human.
-
-- **Tweet:** https://x.com/pbeisel/status/1990167809952006593
-- **Tags:** [[Tesla]]
-- **What:** A compelling essay arguing that Tesla's Optimus represents the next paradigm shift in human-AI interaction, moving from screen-based interfaces to physical embodied intelligence. Draws parallels to how smartphones revolutionized computing.
-
-## @HHorsley - Bitcoin's Tiny Share of Global Wealth
-
-> Globally, there's: ~$120+ trillion of wealth in equities, ~$140+ trillion of wealth in fixed income, ~$250+ trillion of wealth in real estate, ~$100+ trillion in M2 / money, ~$30 trillion in gold. There's $1.9 trillion in Bitcoin. Bitcoin at $85k, $95k, $105k is all the same thing. In any case, it's tiny. It has a long long way to go. And access is just now opening up for the $100s of trillions of wealth to be able to buy it for the first time.
-
-- **Tweet:** https://x.com/HHorsley/status/1989957107354063112
-- **Tags:** [[Bitcoin]]
-- **What:** A macro perspective showing Bitcoin's current market cap ($1.9T) is still tiny compared to traditional asset classes, positioning it as having significant room for growth as institutional access expands.
 
 ---
 
@@ -656,22 +1548,7 @@ I've shared the GitHub repo in the replies.
 
 # Wednesday, November 12, 2025
 
----
-## @DFinsterwalder - Neural Network MNIST Visualization with Three.js
 
-> I vibecoded this neural network visualization for my students and open sourced it. It shows a simple MLP trained on MNIST handwritten digits at several training steps. The visualization is using @threejs and it comes with training code in @PyTorch.
-
-- **Tweet:** https://x.com/DFinsterwalder/status/1988724242310132056
-- **Tags:** [[AI]]
-- **What:** An interactive neural network visualization tool that shows an MLP being trained on MNIST digits, built with Three.js for visualization and PyTorch for the training code. Great educational resource for understanding how neural networks learn.
-
-## @1914ad - Michael Saylor presentation on Bitcoin strategy
-
-> MUST WATCH: If you only watch one clip from Michael @Saylor yesterday, I recommend this one. 🤯 Any fatigue suffered by @Strategy investors will be replaced by fresh conviction. 🧡
-
-- **Tweet:** https://x.com/1914ad/status/1988643717973168583
-- **Tags:** [[Bitcoin]]
-- **What:** Recommendation to watch Michael Saylor's presentation clip on Bitcoin strategy for MicroStrategy investors.
 
 ---
 
@@ -718,22 +1595,7 @@ I've shared the GitHub repo in the replies.
 
 # Tuesday, November 4, 2025
 
----
-## @elonmusk - Tesla AI5 & AI6 chip roadmap and production timeline
 
-> Slightly different versions of the Tesla AI5 chip will be made at TSMC and Samsung simply because they translate designs to physical form differently, but the goal is that our AI software works identically.
->
-> We will have samples and maybe a small number of units in 2026, but high volume production is only possible in 2027.
->
-> AI6 will use the same fabs, but achieve roughly 2X performance. Aiming for a fast follow to AI5, so hopefully mid 2028 for volume production of AI6.
->
-> AI7 will need different fabs, as it is more adventurous.
->
-> **In reply to:** @BrianRoemmele on Tesla AI5 chip specifications
-
-- **Tweet:** https://x.com/elonmusk/status/1985785525429850463
-- **Tags:** [[Tesla]]
-- **What:** Elon outlines Tesla's AI chip roadmap including AI5 samples in 2026, volume production 2027, AI6 in mid-2028, and AI7 requiring different fabrication partners.
 
 ---
 
@@ -783,36 +1645,7 @@ I've shared the GitHub repo in the replies.
 
 # Wednesday, October 29, 2025
 
----
-## @Scobleizer - Cognitive Architectures and AI Consciousness
-> How did a 20-year-old beat Grok. And ChatGPT. And Perplexity. And Gemini?
->
-> In part one @blevlabs laid out how: he built a very different architecture to take AI to a new human level.
->
-> Cognitive architectures, he calls them.
->
-> I call them AI's with consciousness. Ones that learn, evolve, build themselves, and do so like we do.
->
-> Part I is here: https://x.com/Scobleizer/status/1983251942089658823
->
-> In this part two, he goes more into the technology.
->
-> And this was recorded more than a week ago in my home. Since then his system has gotten way better.
->
-> An exponentially learning system.
->
-> It is how we are going to get to AGI.
 
-- **Tweet:** https://x.com/Scobleizer/status/1983645577067036733
-- **Tags:** [[AI]]
-- **What:** Robert Scoble discusses a 20-year-old (@blevlabs) who has developed cognitive architectures representing a breakthrough AI approach with consciousness-like properties that learn and evolve exponentially.
-
-## @Scobleizer - Tesla's Data Advantage in Robot Training
-> I've been visiting as many robotics companies as I can in San Francisco.  And elsewhere (next week I'm heading to Abu Dhabi to meet technologists who are doing the same there).\n\nUnderstanding how robots are trained is leading me to a new thesis: \n\nTesla will be able to do everything that @1x_tech showed, and much much more, but completely autonomously, by the end of next year...
-
-- **Tweet:** https://x.com/Scobleizer/status/1983568621684310269
-- **Tags:** [[Tesla]]
-- **What:** Analysis of Tesla's unique advantage in robotics development through access to 12,000+ workers at Fremont factory who provide continuous training data collection and tagging at scale. Compares Tesla's data collection efficiency to competitors like 1x Technologies and argues Tesla has the best shot at building fully autonomous general-purpose robots by 2030.
 
 ---
 
@@ -849,31 +1682,7 @@ I've shared the GitHub repo in the replies.
 
 # Thursday, October 23, 2025
 
----
-## @AdamBLiv - Strategy Bitcoin Company Thesis
-> Strategy will be the world's most valuable company.\n\nEven if they never buy another Bitcoin.\n\nSaylor won the game.\n\nI show you in 72 seconds: https://t.co/Ato7VRsmbF
 
-- **Tweet:** https://x.com/AdamBLiv/status/1981490776954884448
-- **Tags:** [[Bitcoin]]
-- **What:** Investment thesis on Strategy becoming the world's most valuable company through Bitcoin and Saylor's strategy, explained in a 72-second video.
-
-## @wholemars - Tesla FSD Natural Language Prompting and Explainability
-> Ashok says that Tesla's FSD model can actually be prompted with natural language to explain why it made certain decisions
->
-> would be cool if that functionality was exposed to users somehow, maybe with Grok intermediating the outputs
-
-- **Tweet:** https://x.com/wholemars/status/1981481798988419543
-- **Tags:** [[Tesla]]
-- **What:** Discussion of Tesla FSD's ability to explain its decision-making via natural language prompting, with suggestion to expose this capability to users through Grok intermediation.
-
-## @skdh - Physicist Claims Changing Speed of Light Explains Dark Energy
-> A physicist claims that a changing speed of light explains dark energy and dark matter, both of which are just an "illusion". I've had a look.
-
-- **Tweet:** https://x.com/skdh/status/1981375057881641460
-- **Link:** https://www.youtube.com/watch?v=Zq8tfam1-zE (video)
-- **Tags:** [[Space]]
-- **Transcribe:** YouTube video - physics explanation
-- **What:** Sabine Hossenfelder reviews a physicist's controversial hypothesis that varying light speed can explain both dark energy and dark matter as illusions.
 
 ---
 
@@ -903,22 +1712,6 @@ I've shared the GitHub repo in the replies.
 - **Quote from @WClementeIII:** "Would be pretty wild if CT pivoted out of crypto and whales sold all their coins to bankers, just before the real move in BTC took place with no remaining supply overhang from OGs."
 - **Tags:** [[Bitcoin]]
 - **What:** Detailed analysis of how Wall Street ("smart money") is exploiting cycles of altcoin manipulation to accumulate Bitcoin from early crypto investors at a discount.
-
----
-## @CarlBMenger - U.S. Government Bitcoin Strategy Playbook
-> The U.S. government Play Book:
->
-> 1. PUMP #Gold and suppress #Bitcoin
-> 2. Re-value #Gold
-> 3. Buy #Bitcoin budget neutral
-> 4. PUMP #Bitcoin
-> 5. Never sell
->
-> Voila, The #Bitcoin Standard.
-
-- **Tweet:** https://x.com/CarlBMenger/status/1980527519116980471
-- **Tags:** [[Bitcoin]]
-- **What:** Theory on U.S. government strategy to establish a Bitcoin standard through coordinated gold revaluation and Bitcoin accumulation.
 
 ---
 
@@ -962,13 +1755,7 @@ I've shared the GitHub repo in the replies.
 
 # Thursday, October 16, 2025
 
----
-## @Sykodelic_ - Bitcoin market rotation analysis
-> I don't understand how so many people can't see it. GOLD added over $300bn to its market cap today. Just today. It's been adding an entire Bitcoin market cap in ONE WEEK! And people keep saying "wHeRe Is ThE MoNeY GoNna CoMe FroM bRo"? I don't understand how most cannot see that as soon as GOLD stalls, BTC is going to rip. It is the most obvious rotation stunt from big money. BTC is being held down on purpose so big money can run up GOLD and rinse it for as much as they can…
 
-- **Tweet:** https://x.com/Sykodelic_/status/1978728444038152542
-- **Tags:** [[Bitcoin]]
-- **What:** Analysis of macro market dynamics suggesting Bitcoin is being suppressed while gold rallies, with an expected rotation into crypto once gold tops out.
 
 ---
 
@@ -1021,39 +1808,6 @@ I've shared the GitHub repo in the replies.
 - **What:** Bitcoin Cousin releases a video exploring the fundamental nature of money and why we should question our understanding of this daily tool.
 
 ---
-## @TheRealPlanC - Bitcoin Quantile Model v2 Release
-
-> The wait is over!
->
-> Introducing... 🥁
->
-> Bitcoin Quantile Model v2.
->
-> You're going to want to bookmark this post—and follow for regular model updates.
->
-> After months of research and development, I'm very proud of this model—my flagship quantile framework.
->
-> I'm confident it's one of the best—if not the best—long-term Bitcoin investment frameworks available.
->
-> [Full text describes a sophisticated quantile regression model with 133,000+ data points, 999 quantile levels, and advanced statistical fitting]
-
-- **Tweet:** https://x.com/TheRealPlanC/status/1978449114179236198
-- **Tags:** [[Bitcoin]]
-- **What:** Plan C introduces Bitcoin Quantile Model v2, a comprehensive long-term investment framework using advanced statistical methods with 133,000+ data points and mathematical rigor.
-
-
-## @simpleminingio - Bitcoin Price Speculation via Energy Economics
-> Jeff Booth says "The system bounded by ENERGY will reprice all $900 trillion of assets.....divide that by 21 million Bitcoin and you get $43 million per coin."
->
-> WE'RE SO EARLY. https://t.co/8on0FtNl2Z
-
-- **Tweet:** https://x.com/simpleminingio/status/1978445586581131282
-- **Tags:** [[Bitcoin]]
-- **What:** References Jeff Booth's argument that repriceing global assets based on energy economics could value Bitcoin at $43 million per coin, emphasizing early-stage adoption.
-
----
-
----
 
 # Tuesday, October 14, 2025
 
@@ -1070,26 +1824,6 @@ I've shared the GitHub repo in the replies.
 - **Parent:** https://x.com/zerohedge/status/1977902940116472233
 - **Tags:** [[Bitcoin]]
 - **What:** Elon Musk argues that Bitcoin's value is fundamentally grounded in energy, making it impossible to counterfeit unlike fiat currency.
-
----
-
-## @abcampbell - China Can't Win
-> China Can't Win
-
-- **Tweet:** https://x.com/abcampbell/status/1978070295157096808
-- **Tags:** [[Politics]]
-- **What:** Brief political commentary on geopolitical dynamics and China's strategic position.
-
----
-
-## @willccbb - DGX Spark Hardware Assessment
-> i have no clue who the DGX spark is for. it's a slower mac studio that technically runs CUDA; it has a bunch of unified memory, but not enough perf to do much with it; you could get a faster gaming rig that does all the same stuff for less money. but also it's pretty + i want one
-
-- **Tweet:** https://x.com/willccbb/status/1978269552275312780
-- **Tags:** [[AI]]
-- **What:** Critique of NVIDIA's DGX Spark: underpowered for its price point compared to gaming rigs, yet aesthetically appealing as a developer machine.
-
----
 
 ---
 
@@ -1123,8 +1857,6 @@ I've shared the GitHub repo in the replies.
 
 ---
 
----
-
 # Sunday, October 12, 2025
 
 ## @AdamBLiv - Bitcoin and Risk: The Great Inversion Thesis
@@ -1148,53 +1880,6 @@ I've shared the GitHub repo in the replies.
 
 ---
 
-## @ElonTrades - Oct 11 Crypto Crash: Exchange Design Flaw and Coordinated Exploitation
-> The Oct 11 Crypto Crash — What Really Happened
->
-> TL;DR: Roughly $60–90M of $USDe was dumped on Binance, along with $wBETH and $BNSOL, exploiting a pricing flaw that valued collateral using Binance's own order-book data instead of external oracles.
->
-> That localized depeg triggered $500M–$1B in forced liquidations, cascaded into $19B+ globally, and earned the attackers about $192M via $1.1B in BTC/ETH shorts opened on Hyperliquid hours earlier, but minutes before Trump tariff announcement.
->
-> It wasn't a USDe failure!! It was Binance's design flaw, timed with macro panic (Trump's tariffs) for cover.
->
-> [Detailed six-part breakdown of setup, exploit, profit engine, contagion, fault analysis, and aftermath...]
-
-- **Tweet:** https://x.com/ElonTrades/status/1977340254047649966
-- **Tags:** [[Bitcoin]]
-- **What:** Forensic analysis of the $19B+ October 11 crypto liquidation cascade, revealing how a Binance collateral pricing vulnerability was exploited with $60-90M in stablecoin dumping and coordinated leveraged shorts for $192M profit.
-
----
-
-## @shanaka86 - Altcoin Catastrophe: 80%+ Intraday Losses in Top 100 Projects
-> 🚨 IF YOU STILL DON'T UNDERSTAND HOW CATASTROPHIC YESTERDAY WAS 🚨
->
-> Let me spell it out:
->
-> While Bitcoin dropped 10% like a normal Tuesday correction…
->
-> THE ENTIRE ALTCOIN MARKET GOT SENT TO THE SHADOW REALM
->
-> Here's what "blue chip" really means 👇
->
-> $ATOM: $4.00 → $0.001 (99.97% ANNIHILATED)
-> $SUI: $3.40 → $0.56 (83.5% OBLITERATED)
-> $APT: $5.00 → $0.75 (85% VAPORIZED)
-> $SEI: $0.28 → $0.07 (75% DELETED)
-> $LINK: $22 → $8 (63.6% DESTROYED)
-> $ADA: $0.80 → $0.30 (62.5% MASSACRED)
->
-> These aren't shitcoins. These are TOP 100 "INSTITUTIONAL GRADE" projects that VCs, YouTubers, and CT influencers told you were "safe." 80% nuked in MINUTES.
->
-> [Critique of diversification strategy, altcoin season narrative, and bitcoin-only thesis...]
-
-- **Tweet:** https://x.com/shanaka86/status/1977382301949673562
-- **Tags:** [[Bitcoin]]
-- **What:** Stark documentation of October 11-12 altcoin market collapse, showing top 100 projects losing 60-99% in minutes while Bitcoin dipped 10%, arguing that altcoins are leveraged beta with catastrophic downside and Bitcoin is the only surviving store of value.
-
----
-
----
-
 # Friday, October 3, 2025
 
 ## @aka_suje - Roi Acquired by OpenAI
@@ -1210,30 +1895,6 @@ I've shared the GitHub repo in the replies.
 - **Tweet:** https://x.com/aka_suje/status/1974190926177460670
 - **Tags:** [[AI]]
 - **What:** Announcement of Roi's acquisition by OpenAI, highlighting the company's focus on personalized financial software experiences built over 3 years.
-
----
-
-## @_The_Prophet__ - Unit-of-Account Fracture and Currency Regime Shift
-> ⚡️What you're really seeing here is the first stage of a global unit-of-account fracture.
->
-> •In nominal USD terms, everything looks like it's booming: stocks up triple digits, homes up double digits, "wealth" everywhere. That's the performance everyone sees.
->
-> •In gold terms, the illusion cracks: stocks and homes flat-to-negative, real wealth stagnating.
->
-> •In Bitcoin terms, the veil is gone: catastrophic real losses in every traditional asset.
->
-> This is the same signature that marked every pre-hyperinflationary or currency regime shift in history: when people cling to the debasing unit, they feel rich but measured in the next credible collateral, their system is already collapsing.
->
-> [Tweet continues with analysis of imperial carry trade and pre-revaluation ledger...]
->
-> *Quoting @LukeGromen:* "The Debasement Trade" since COVID: In USD: NDX up 165%, SPX up 102%, Home prices up 56%. In gold: NDX up 7%, SPX down 18%, Home prices down 37%. In BTC: NDX down 78%, SPX down 84%, Home prices down 87.
-
-- **Tweet:** https://x.com/_The_Prophet__/status/1974286626768760914
-- **Quoted:** https://x.com/LukeGromen/status/1974184554782220583
-- **Tags:** [[Bitcoin]]
-- **What:** Deep analysis of currency regime shift and unit-of-account transition, using debasement metrics across USD, gold, and Bitcoin to show real wealth destruction masked by nominal gains.
-
----
 
 ---
 
@@ -1262,8 +1923,6 @@ I've shared the GitHub repo in the replies.
 
 ---
 
----
-
 # Wednesday, October 1, 2025
 
 ## @DannyHabibs - 3D Viewer with Head Tracking for Browser
@@ -1277,8 +1936,6 @@ I've shared the GitHub repo in the replies.
 - **Parent:** https://x.com/DannyHabibs/status/1973418122578370592
 - **Tags:** [[Coding]]
 - **What:** Interactive 3D viewer demo using head tracking via webcam for immersive browser-based 3D content viewing without requiring manual camera dragging.
-
----
 
 ---
 
@@ -1403,17 +2060,6 @@ I've shared the GitHub repo in the replies.
 
 ---
 
-## @mikeyk - Every Version of Claude Attempts to Clone Claude.ai
-> We asked every version of Claude to make a clone of Claude(dot)ai, including today's Sonnet 4.5… see what happened in the video https://x.com/mikeyk/status/1972718726052286637/video/1
-
-- **Tweet:** https://x.com/mikeyk/status/1972718726052286637
-- **Tags:** [[AI]]
-- **What:** Demonstration video showing how different Claude models respond to a prompt to clone Claude.ai's interface, with results ranging from failure to success across model versions.
-
----
-
----
-
 # Sunday, September 28, 2025
 
 ## @TheBTCTherapist - Bitcoin sideways accumulation scenario
@@ -1423,30 +2069,6 @@ I've shared the GitHub repo in the replies.
 - **Tweet:** https://x.com/TheBTCTherapist/status/1972158522055184635
 - **Tags:** [[Bitcoin]]
 - **What:** Speculative scenario where Bitcoin stagnates at $100k while traditional finance accumulates heavily, then eventually surges to $1M.
-
----
-
-## @gregisenberg - Accenture mass layoffs due to AI
-
-> It's begun
-
-> *Quoting @Investingcom:* *ACCENTURE LAYS OFF 11,000 EMPLOYEES, WARNS MORE JOB CUTS ARE COMING DUE TO AI
-
-- **Tweet:** https://x.com/gregisenberg/status/1972305086102843710
-- **Quoted:** https://x.com/Investingcom/status/1972250466718474635
-- **Tags:** [[AI]]
-- **What:** Greg Isenberg highlights Accenture's announcement of 11,000 layoffs with warnings of additional job cuts due to AI automation.
-
----
-
-## @CatherinVaritek - My bags are packed and I don't know where I'm going
-> My bags are packed and I don't know where I'm going… 🥳
-
-- **Tweet:** https://x.com/CatherinVaritek/status/1972327842928341369
-- **Tags:** [[Baseball]]
-- **What:** A personal update about travel plans, captured from Catherine Varitek's tweet about an upcoming trip.
-
----
 
 ---
 
@@ -1461,30 +2083,6 @@ I've shared the GitHub repo in the replies.
 - **Tweet:** https://x.com/Vivek4real_/status/1971490788430446682
 - **Tags:** [[Bitcoin]]
 - **What:** News of major institutional wealth (Tiger 21 founder) buying Bitcoin on CNBC, suggesting significant capital inflows expected.
-
----
-
-## @SnazzyLabs - iOS 26 feature accessibility criticism
-
-> What I love most about iOS 26 is how everything now takes 1–2 extra taps, since previously available features are buried in the name of design.
-
-- **Tweet:** https://x.com/SnazzyLabs/status/1971606636038123644
-- **Tags:** [[Apple]]
-- **What:** Critical commentary on iOS 26's design decisions making previously accessible features harder to reach.
-
----
-
-## @IntuitMachine - AGI and the collapse of human labor share
-
-> Everyone 'knows' AGI will either make us all unemployed or fabulously wealthy. Except, a rather brilliant (and chilling) paper from a Yale economist suggests it's neither.
->
-> It says the economy will boom, and our wages... won't. A bit awkward.
-
-- **Tweet:** https://x.com/IntuitMachine/status/1971725636851912914
-- **Tags:** [[AI]]
-- **What:** Deep analysis of a Yale economist's "We Won't Be Missed" paper arguing AGI will drive economic growth while collapsing human labor income share as workers become "replicable" at computational cost.
-
----
 
 ---
 
@@ -1503,108 +2101,6 @@ I've shared the GitHub repo in the replies.
 
 ---
 
-## @sama - ChatGPT Pulse: Proactive AI Assistant Feature
-> Today we are launching my favorite feature of ChatGPT so far, called Pulse. It is initially available to Pro subscribers.
->
-> Pulse works for you overnight, and keeps thinking about your interests, your connected data, your recent chats, and more. Every morning, you get a custom-generated set of stuff you might be interested in.
->
-> It performs super well if you tell ChatGPT more about what's important to you. In regular chat, you could mention "I'd like to go visit Bora Bora someday" or "My kid is 6 months old and I'm interested in developmental milestones" and in the future you might get useful updates.
->
-> Think of treating ChatGPT like a super-competent personal assistant: sometimes you ask for things you need in the moment, but if you share general preferences, it will do a good job for you proactively.
->
-> This also points to what I believe is the future of ChatGPT: a shift from being all reactive to being significantly proactive, and extremely personalized.
-
-- **Tweet:** https://x.com/sama/status/1971297661748953263
-- **Tags:** [[AI]]
-- **What:** OpenAI launches ChatGPT Pulse, a proactive AI assistant feature that monitors user interests and provides curated recommendations overnight. Demonstrates shift toward proactive, personalized AI assistants.
-
----
-
-## @patrickc - Arc Institute: AI-Generated Genomes, Antibody Design, and Precision Gene Editing Breakthroughs
-> Over the past week, @arcinstitute published three new discoveries that I'm very proud of.
->
-> • The world's first functional AI-generated genomes. Using Evo 2 (the largest biology ML model ever trained, which Arc released in partnership with @nvidia in February), Arc scientists took advantage of the fact that Evo 2 is a generative model to produce completely new sequences for complete phage genomes. That is, they used AI to produce wholly new, never-before-seen-by-nature genomes. They experimentally synthesized these genomes and showed that these AI-generated phages actually work, killing E. coli bacteria with high efficacy.
->
-> • Germinal, an AI system for creating new antibodies. Antibody design is one of the great problems of medical biology given their obvious importance and usefulness for creating therapeutics. (Antibodies are tiny particles that help the immune system identify pathogens and other harmful intruders. See also the recent Works in Progress article on this topic: [1].) Today, designing effective antibodies is very expensive and slow. Germinal is a cheap and fast way to produce drug candidates, with success rates of up to 22%. This means that one can go from having to screen thousands of candidates in the lab to screening perhaps a few dozen. It's early, but I suspect that better methods for designing antibodies will be a very big deal for disease treatment in the coming years.
->
-> • Today, we published a paper showing that "bridge editing", which Arc scientists first introduced last year, can make precise edits in human cells that are up to 1 million base pairs long, and without relying on intrinsically unpredictable cellular repair machinery (which CRISPR requires, often leading to editing mistakes). They showed that it's possible to use this editing to cut out the DNA repeats that cause Friedreich's ataxia (a neurological disease), an approach which should also be relevant to Huntington's and other similar disorders. One particularly cool thing about it is that it's possible to specify every nucleotide within the extended editing window, meaning that recursive bridge edits could potentially be a powerful way to reprogram even biological traits that are caused by many genetic mutations. (Genetic therapies today target single mutations.)
->
-> Arc is pretty new. Its doors opened in mid 2022, and it's now 300 people. I'm excited about these discoveries because they show that a number of our hopes in starting Arc are starting to pay off:
->
-> • AI/ML and computation are at the center of all three. That is obviously true for the first two, but the mobile genetic element behind bridge editing was also discovered as a result of a complex computational search. One of our premises in starting Arc was the belief that the intersection of software/AI and experimental wet lab biology should enable great things. (And besides requiring great computational work, all three of these also required strong wet lab work, tightly coordinated under a single physical roof.)
->
-> • We've been toying with the idea that a handful of technologies are enabling a new kind of "Turing loop" in biology: sequencing advances (including single-cell sequencing) give us new ways to read; transformers and AI gives us new ways to think; and functional genomics (such as bridge editing) give us new ways to ways to write. This trio of discoveries span each part of this loop, and we're hopeful that there'll be compounding returns in improving each part.
->
-> • Arc is a non-profit, which we hoped would make collaborating with others easier, since we can avoid worries about financial return. This is indeed proving important, and all three of these projects involved close partnership with others. Germinal was done in partnership with @SynBioGaoLab at Stanford; Evo 2 was trained in partnership with Nvidia. Bridge editing was jointly published with a structure from the @HNisimasu Lab at the University of Tokyo. Arc tries to make its discoveries useful (see the Evo 2 Designer[2]) for others, and the code behind the computational projects is open source, hopefully making it easy for others to spot new opportunities for collaboration and partnership in the future. Most of all, Arc itself is an ongoing collaboration with @UCSF, @UCBerkeley, and @Stanford.
->
-> • With Arc, we wanted to enable better bottom-up and top-down work. With the fully flexible, no-strings-attached funding that we provide to investigators, we want to enable completely unexpected discoveries and avenues of investigation. With our institute initiatives (around creating a virtual cell and curing Alzheimer's), we want to bring to bear a scale and level of coordination that's usually difficult in basic science. Germinal is a "surprise" discovery that didn't involve top-down coordination, whereas Evo 2 is the result of ambitious high-level planning and funding.
->
-> • Humanity has never cured a complex disease (a category that includes most neurodegenerative diseases, most cancers, and most autoimmune diseases), and my hope is that Arc can help change this. It's also clear that AI will revolutionize biology, and I hope that Arc can effectively aggregate the ingredients needed to fully capitalize on its promise. I'm biased, but I think some of the coolest biology in the world is currently being done at Arc. (They're always hiring if you're interested.)
->
-> While I'm a cofounder of Arc, I spend almost all my time on Stripe, where we spend our time building economic infrastructure for the internet. All credit for Arc's progress should go to the remarkable scientists and staff who've made Arc their home or who've chosen to collaborate with us. (You can read more about these particular discoveries in these threads: [3], [4], [5].) I'm also very grateful to the amazing Stripe employees who've built the company that makes Arc's ongoing work possible, and to the millions of customers who've chosen to partner with Stripe. John and I feel fortunate to be able to support Arc's work to the extent that we do.
->
-> Maybe this is reading too much into it, but I sometimes feel that there's a commonality between @arcinstitute and @stripe. Both biology and economic infrastructure involve reasoning about complex systems with many levels of emergent effects, and in both cases building the right tools can have almost unboundedly large benefits. Even though progress in both tends to take a long time, it also feels like the next five years in both will be some of the most interesting in living memory.
->
-> (If economic infrastructure is your jam, we have a whole slew of fantastic announcements coming up at Stripe Tour in New York next week. Tune in!)
-
-- **Tweet:** https://x.com/patrickc/status/1971362920350248977
-- **Tags:** [[AI]]
-- **What:** Arc Institute announces three major biotechnology breakthroughs: AI-generated functional phage genomes using Evo 2, Germinal for antibody design, and bridge editing for precise genetic modifications up to 1 million base pairs. Demonstrates intersection of AI and wet lab biology.
-
----
-
-## @JulianGoldieSEO - Google AI Studio Build Mode Challenges Cursor and Paid Coding Tools
-> Google just killed every paid coding tool.
->
-> Their new AI Studio destroys Cursor completely.
->
-> Here's how to build React apps instantly:
->
-> → Open Google AI Studio Build Mode
-> → Type what you want to build
-> → Watch it code everything automatically
-> → Deploy to GitHub with one click
-> → Share working apps instantly
->
-> Features that crush the competition:
->
->   • Angular + React support ✔
->   • GitHub integration ✔
->   • Real-time code preview ✔
->   • Gemini API built-in ✔
->   • Enterprise AI for $0 ✔
->
-> Save this thread, you'll build faster apps.
->
-> Want the SOP? DM me. 💬
-
-- **Tweet:** https://x.com/JulianGoldieSEO/status/1971364094436630941
-- **Tags:** [[AI]]
-- **What:** Google AI Studio's Build Mode features automated React/Angular app development with GitHub integration, real-time preview, and free Gemini API access. Positioned as alternative to paid tools like Cursor.
-
----
-
-## @Scobleizer - FactoryAI: State-of-the-Art Software Engineering Platform and Developer Tools
-> How hot is this company? Go to X's search. Type "FactoryAI" and search. Look at just how much praise from developers this company is getting.
->
-> Then come back and watch this. It is the state of the art of software engineering.
->
-> The team at @FactoryAI goes deep with me today right after they launched a ton of new stuff for developers.
->
-> You have never visited a San Francisco AI company like this.
->
-> We cover everything from security to a demo at about 40 minutes in.
->
-> Cofounder @EnoReyes kicks it off.
-
-- **Tweet:** https://x.com/Scobleizer/status/1971373288929755495
-- **Tags:** [[AI]]
-- **What:** FactoryAI, a San Francisco-based company, launches new developer tools representing state-of-the-art in software engineering. Heavy developer praise on X. Video covers security and live demo of platform capabilities.
-
----
-
----
-
 # Thursday, September 18, 2025
 
 ## @AJamesMcCarthy - Falcon 9 Transit Across the Sun with Solar Telescope
@@ -1618,8 +2114,6 @@ I've shared the GitHub repo in the replies.
 - **Link:** https://x.com/AJamesMcCarthy/status/1968658340679921925/photo/1
 - **Tags:** [[Space]]
 - **What:** Unique astronomical photograph capturing a SpaceX Falcon 9 rocket transiting the sun's disk, photographed with a solar telescope to reveal chromosphere details. First-of-its-kind image combining space launch and solar observation.
-
----
 
 ---
 
@@ -1645,8 +2139,6 @@ I've shared the GitHub repo in the replies.
 
 ---
 
----
-
 # Monday, September 15, 2025
 
 ## @spottedinprod - Liquid Glass on iPhone: Best Collection
@@ -1656,18 +2148,6 @@ I've shared the GitHub repo in the replies.
 - **Link:** https://x.com/spottedinprod/status/1967655144671285544/photo/1
 - **Tags:** [[Apple]]
 - **What:** Curated collection showcasing liquid glass technology on iPhone devices, likely featuring photos or videos demonstrating this liquid metal coating's appearance and effects.
-
----
-
-## @bdsams - Secret Game Hidden on iOS
-> Does anyone else know about this secret game on iOS? https://t.co/Ihsyn9Q3Vl
-
-- **Tweet:** https://x.com/bdsams/status/1967679308320870632
-- **Link:** https://x.com/bdsams/status/1967679308320870632/video/1
-- **Tags:** [[Apple]]
-- **What:** Discovery of a hidden Easter egg game on iOS. The video demonstrates a secret game embedded within the iOS operating system that most users are unaware of.
-
----
 
 ---
 
@@ -1688,8 +2168,6 @@ I've shared the GitHub repo in the replies.
 
 ---
 
----
-
 # Friday, September 12, 2025
 
 ## @jack - A Cypherpunk's Manifesto
@@ -1699,8 +2177,6 @@ I've shared the GitHub repo in the replies.
 - **Filed:** [A Cypherpunk's Manifesto](./knowledge/articles/cypherpunk-manifesto.md)
 - **Tags:** [[Society]]
 - **What:** Eric Hughes' foundational 1993 essay on privacy as a necessity for open society and the role of cryptography and anonymous systems in defending individual privacy rights.
-
----
 
 ---
 
@@ -1719,8 +2195,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 ---
 
----
-
 # Tuesday, September 9, 2025
 
 ## @ns123abc - Elon confirms Tesla is making transformers
@@ -1730,35 +2204,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Link:** https://x.com/ns123abc/status/1965296726396534971/photo/1
 - **Tags:** [[Tesla]]
 - **What:** NIK sharing Elon's announcement that Tesla will manufacture transformer units, likely referring to electrical transformers for power distribution.
-
----
-
-## @saylordocs - Fidelity Bitcoin $1 Billion Prediction
-> 🇺🇸 Fidelity predicts that one #Bitcoin will be worth $1 billion by 2038 🤯 https://t.co/c7oxHBtndg
-
-- **Tweet:** https://x.com/saylordocs/status/1965450878812344741
-- **Tags:** [[Bitcoin]]
-- **What:** Fidelity's bold prediction that Bitcoin will reach $1 billion per coin by 2038, representing massive long-term value appreciation.
-
----
-
-## @MKBHD - iPhone 17 Square Sensor Landscape Selfie
-> The loudest cheer for the new iPhone 17 so far has been for the use of a square sensor so you don't have to rotate your iPhone to take a landscape selfie anymore
-
-- **Tweet:** https://x.com/MKBHD/status/1965470005455454548
-- **Tags:** [[Apple]]
-- **What:** Marques Brownlee noting that the iPhone 17's square sensor design is the most popular feature, allowing landscape selfies without rotation.
-
----
-
-## @bilawalsidhu - iPhone 17 Pro Genlock for 3D Capture
-> Having actual "genlock" on iPhone 17 Pro is kinda wild — that level of multi-camera synchronization makes it perfect for bullet time and 3d gaussian splatting rigs. https://t.co/xCk1vesaLr
-
-- **Tweet:** https://x.com/bilawalsidhu/status/1965478725543457141
-- **Tags:** [[Apple]]
-- **What:** Technical analysis of the iPhone 17 Pro's genlock feature enabling synchronized multi-camera capture for advanced 3D capture techniques and computational photography.
-
----
 
 ---
 
@@ -1787,18 +2232,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 ---
 
-## @NESN - Garrett Crochet gets a standing O
-> Garrett Crochet gets a standing O in Sacramento after his 10th K 👏 https://t.co/4PB6ySbPSq
-
-- **Tweet:** https://x.com/NESN/status/1965262637479899449
-- **Link:** https://x.com/NESN/status/1965262637479899449/video/1
-- **Tags:** [[Baseball]]
-- **What:** NESN's video of pitcher Garrett Crochet receiving a standing ovation in Sacramento after striking out 10 batters.
-
----
-
----
-
 # Sunday, September 7, 2025
 
 ## @chamath - Future of Energy: Distributed Home Generation
@@ -1807,30 +2240,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tweet:** https://x.com/chamath/status/1964545277098127722
 - **Tags:** [[Tesla]]
 - **What:** Chamath Palihapitiya predicts that a company enabling home electricity generation and coordinating millions of homes as a distributed grid could become America's largest power utility, hinting at Tesla's potential in energy infrastructure.
-
----
-
-## @thsottiaux - What would you like us to fix in codex?
-> What would you like us to fix in codex? What would be the biggest productivity unlock for you and your team?
-
-- **Tweet:** https://x.com/thsottiaux/status/1964742011673882691
-- **Tags:** [[AI]]
-- **What:** Tibo asking the community what features or fixes would unlock the most productivity in Codex, inviting suggestions from developers.
-
----
-
-## @RedSox - Cora's 600th win!
-> Cora's 600th win!
-
-> FINAL: #RedSox 7, Diamondbacks 4
-> #DirtyWater https://t.co/9cfIiMD1Xz
-
-- **Tweet:** https://x.com/RedSox/status/1964831449430868124
-- **Link:** https://x.com/RedSox/status/1964831449430868124/video/1
-- **Tags:** [[Baseball]]
-- **What:** Red Sox announcement of manager Cora reaching his 600th managerial win with a victory over the Diamondbacks.
-
----
 
 ---
 
@@ -1849,87 +2258,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 ---
 
-## @yacineMTB - ChatGPT Market Dominance Declaration
-> alright i'm calling it
-> chatGPT won
-
-- **Tweet:** https://x.com/yacineMTB/status/1964296809016090666
-- **Tags:** [[AI]]
-- **What:** Brief declaration of ChatGPT as the dominant AI tool in the market.
-
----
-
-## @grant_melson - Tesla Robotaxi Pricing Disruption
-> I just went across downtown Austin in a Tesla Robotaxi.
->
-> It was ONE FIFTH the price of an Uber!!
->
-> This is about to get ridiculous. $TSLA https://t.co/fBpVAcbrOM
-
-- **Tweet:** https://x.com/grant_melson/status/1964314867185201348
-- **Tags:** [[Tesla]]
-- **What:** Grant Melson shares his experience with Tesla's robotaxi service in Austin, noting that it costs one-fifth of the price of an Uber, highlighting the potential disruption to the ride-sharing market.
-
----
-
-## @alexocheema - AI-Driven Workforce Restructuring
-> Called it last year.
->
-> Junior roles down 23%.
-> Senior roles up 14%.
->
-> Harvard study tracked 285,000 firms. Results:
->
-> Before AI: 1 senior + 3 juniors = 4 person team
-> After AI: 1 senior + Claude = same output https://t.co/wAdQz9Sg8Z
->
-> *Quoting @alexocheema:* Most people don't understand @cursor_ai.
->
-> They think it will enable anyone to ship production code. They think it will replace developers.
->
-> It won't.
->
-> It will augment the best developers to make them 100x better (Lorenz curve).
->
-> What this does to the workforce is another question https://t.co/qKpcvUXoLS
-
-- **Tweet:** https://x.com/alexocheema/status/1964324239126782243
-- **Quoted:** https://x.com/alexocheema/status/1827019583028400194
-- **Tags:** [[Society]]
-- **What:** Alex Cheema cites a Harvard study showing that AI tools like Claude are transforming team composition—reducing junior roles 23% while senior roles grow 14%—suggesting AI augments senior developers rather than replacing them entirely.
-
----
-
-## @samhenrigold - MacBook Hinge Sensor Hack
-> Did you know your MacBook has a sensor that knows the exact angle of the screen hinge?
->
-> It's not exposed as a public API, but I figured out a way to read it and make it sound like an old wooden door. https://t.co/qysTbr9TV4
-
-- **Tweet:** https://x.com/samhenrigold/status/1964428927159382261
-- **Tags:** [[Coding]]
-- **What:** Sam Henri Gold demonstrates how to access the hidden hinge angle sensor in MacBooks and uses it creatively to produce sound effects mimicking an old wooden door—a clever example of undocumented hardware capabilities.
-
----
-
-## @congressdj - Tesla vs. CarPlay: Why CarPlay is Dying
-> "Tesla's suck because they don't have CarPlay".
->
-> Comments like this affirm to me that people have no idea of what they're talking about in 99% of shade posts about Tesla. 😂
->
-> I used to be that CarPlay guy. I held off buying a Tesla for years because of it. So when I finally bought a Tesla, I got all the extra screens and gear to project CarPlay on the dash. And guess what. I retuned all that garbage in under a week because I realized what Tesla offered made CarPlay look like a middle school app dev contest hobby project.
->
-> Don't get me wrong. CarPlay is fine for cars with limited capability. But it's been 2.5 years since I "demanded it", and now I've come to dread it.
->
-> CarPlay is dying, and it's not just Tesla owners who think so.
-
-- **Tweet:** https://x.com/congressdj/status/1964430012217729263
-- **Tags:** [[Tesla]]
-- **What:** DJ shares a personal anecdote about switching from a CarPlay advocate to a Tesla owner, explaining how Tesla's integrated interface surpassed his expectations and arguing that CarPlay is becoming obsolete as car manufacturers innovate beyond it.
-
----
-
----
-
 # Friday, September 5, 2025
 
 ## @DavidOndrej1 - GPT-5-High vs Claude Opus Performance Claims
@@ -1942,23 +2270,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tweet:** https://x.com/DavidOndrej1/status/1964015597022277725
 - **Tags:** [[AI]]
 - **What:** Comparative claim about model performance capabilities between GPT-5-High and Claude Opus.
-
----
-
-## @Scobleizer - OpenAI's Device Strategy and Apple Relevance
-> Coming later today: what @sama and Jony Ive are up to.
->
-> As learned this morning in the streets of San Francisco from a venture capitalist who is already investing in companies that are building for it.
->
-> The strategy that will decrease Apple's relevance to all our lives.
->
-> OpenAI's little device is the rock Sam Altman will throw that will take down the giant and show that Ive is right, and I am wrong about glasses.
-
-- **Tweet:** https://x.com/Scobleizer/status/1964052395811622942
-- **Tags:** [[AI]]
-- **What:** Speculation about OpenAI's upcoming device strategy and potential impact on Apple's market position, noting a collaborative effort between Sam Altman and Jony Ive.
-
----
 
 ---
 
@@ -1975,30 +2286,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Link:** https://x.com/damienhci/status/1963246088674017478/video/1
 - **Tags:** [[AI]]
 - **What:** Research paper presented at UIST2025 describing an innovative interactive writing tool that visualizes narrative elements (timeline, world map, character relationships) in real-time while editing, with bidirectional synchronization between text and visuals.
-
----
-
-## @damienhci - Visual Story-Writing: Interactive Narrative Editing
-> *Replying to @damienhci:* Of course, many more visualizations could help writers. That is why we propose a framework to help inform the design of visual representations that support the visual story-writing workflow. 👇
-> (7/8) https://t.co/uUd0QOgu6w
->
-> Our work lays the foundation for writing support, not just through words, but also visuals.
-> 📝Paper: https://t.co/GUHmEsHIuz
-> 🎥Video: https://t.co/TyxPAibAPl
-> 🖥️Code: https://t.co/brhHEQJiTI
-> 🕹️Demo: https://t.co/eEducI6ucm
-> (8/8)
-
-- **Tweet:** https://x.com/damienhci/status/1963246101324058979
-- **Paper:** https://arxiv.org/abs/2410.07486
-- **Code:** https://github.com/m-damien/VisualStoryWriting
-- **Demo:** https://damienmasson.com/VisualStoryWriting/
-- **Video:** https://www.youtube.com/watch?v=6o19_D8LBC0
-- **Tags:** [[AI]]
-- **Filed:** [VisualStoryWriting](./knowledge/tools/visual-story-writing.md)
-- **What:** An interactive text editor that visualizes story elements (character interactions, locations, timelines) and allows editing through visual manipulation. Research paper demonstrates how visual representations support creative writing and narrative planning.
-
----
 
 ---
 
@@ -2025,8 +2312,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 ---
 
----
-
 # Monday, September 1, 2025
 
 ## @RedSox - Chappy's Boston Debut
@@ -2037,18 +2322,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Link:** https://x.com/RedSox/status/1962553926051361189/photo/1
 - **Tags:** [[Baseball]]
 - **What:** Media post about the Red Sox player Chappy's debut or integration with the Boston team.
-
----
-
-## @Tesla - Master Plan Part IV
-
-> Master Plan Part IV
-
-- **Tweet:** https://x.com/Tesla/status/1962591324022153607
-- **Tags:** [[Tesla]]
-- **What:** Tesla's announcement of the fourth iteration of their strategic master plan.
-
----
 
 ---
 
@@ -2069,38 +2342,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 ---
 
-## @canvardar - Coding Like This
-> what's stopping you from coding like this?
-
-- **Tweet:** https://x.com/canvardar/status/1962202041721168000
-- **Link:** https://x.com/icanvardar/status/1962202041721168000/photo/1
-- **Tags:** [[Coding]]
-- **What:** Tweet with image showing a coding technique or pattern, prompting reflection on obstacles to adopting better coding practices.
-
----
-
-## @RedSox - Inside-the-Park Home Run
-> INSIDE-THE-PARK HOME RUN
-
-- **Tweet:** https://x.com/RedSox/status/1962228692597231620
-- **Link:** https://x.com/RedSox/status/1962228692597231620/video/1
-- **Tags:** [[Baseball]]
-- **What:** Video highlight of an inside-the-park home run from a Red Sox game.
-
----
-
-## @Jkylebass - ChatGPT LLM Accuracy and Bias Concerns
-
-> Chat GPT's LLM gave an outright false answer to an important question tonight. This interaction is an important reminder that AI output shouldn't be treated as truth. Was Chat GPT's answer politically motivated or directed by its chief philosopher? : 🧵 @elonmusk
-
-- **Tweet:** https://x.com/Jkylebass/status/1962337749786132526
-- **Tags:** [[AI]]
-- **What:** Critical observation about ChatGPT providing factually incorrect information and raising questions about whether such errors are politically motivated or influenced by design decisions.
-
----
-
----
-
 # Saturday, August 30, 2025
 
 ## @nathan_covey - Shift from "Google It" to "Ask Chat"
@@ -2111,8 +2352,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tweet:** https://x.com/nathan_covey/status/1961850029758443795
 - **Tags:** [[AI]]
 - **What:** Observation about how AI chatbots have become the default search method, replacing search engines as the primary query tool.
-
----
 
 ---
 
@@ -2136,20 +2375,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 ---
 
-## @NESN - Tolle's MLB Dream Moment
-> The moment Tolle's MLB dream came true 🥹
->
-> (via @RedSox)
-
-- **Tweet:** https://x.com/NESN/status/1961538655475871813
-- **Link:** https://x.com/RedSox/status/1961525734964355504/video/1
-- **Tags:** [[Baseball]]
-- **What:** Video of a player's dream moment coming true in their MLB career debut or milestone achievement.
-
----
-
----
-
 # Thursday, August 28, 2025
 
 ## @xai - Grok Code Fast 1: Speedy Agentic Coding Model
@@ -2162,8 +2387,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tweet:** https://x.com/xai/status/1961129789944627207
 - **Tags:** [[AI]]
 - **What:** xAI introduces Grok Code Fast 1, a lightweight reasoning model for agentic coding, now available across multiple developer tools for free.
-
----
 
 ---
 
@@ -2189,8 +2412,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 ---
 
----
-
 # Tuesday, August 26, 2025
 
 ## @sundarpichai - Google Translate AI Live Translation
@@ -2199,8 +2420,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tweet:** https://x.com/sundarpichai/status/1960373125884858604
 - **Tags:** [[AI]]
 - **What:** Google Translate announcement of new AI-powered live translation experience and language practice feature for iOS and Android.
-
----
 
 ---
 
@@ -2239,8 +2458,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 ---
 
----
-
 # Sunday, August 24, 2025
 
 ## @karpathy - LLM-Assisted Coding Workflows and Tool Choices
@@ -2262,8 +2479,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 ---
 
----
-
 # Friday, August 22, 2025
 
 ## @KobeissiLetter - Fed Rate Cuts Into Stagflation
@@ -2278,8 +2493,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tweet:** https://x.com/KobeissiLetter/status/1958972227724181632
 - **Tags:** [[Society]]
 - **What:** Economic analysis warning about the risks of monetary policy decisions during stagflation and the implications for asset ownership.
-
----
 
 ---
 
@@ -2298,9 +2511,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 - **Tweet:** https://x.com/vitransformer/status/1958135188749509016
 - **What:** A blog post analyzing Claude Code's apparent "magic" by reverse-engineering its API calls to reveal the use of system-reminder tags that maintain contextual awareness throughout operations.
-
-
----
 
 ---
 
@@ -2326,9 +2536,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tags:** [[Bitcoin]]
 - **What:** Trading analysis presenting two potential long-term scenarios for Bitcoin: either steady-state grinding within technical channels as it enters institutional adoption phase, or delayed blow-off volatility, with 80%+ probability assigned to the base case of dampened volatility.
 
-
----
-
 ---
 
 # Monday, August 18, 2025
@@ -2352,9 +2559,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tags:** [[Bitcoin]]
 - **What:** A Bitcoin content creator shares a YouTube analysis video from Simply Bitcoin TV about Bitcoin market analysis and trends.
 
-
----
-
 ---
 
 # Sunday, August 17, 2025
@@ -2371,9 +2575,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tweet:** https://x.com/niccruzpatane/status/1957180139176894554
 - **Tags:** [[Tesla]]
 - **What:** Analysis of Tesla's next-generation Roadster development using active downforce generation (fan-powered and deployable skirts) to potentially achieve 0-60 mph in under 1 second, breaking the current record held by the McMurtry Spéirling.
-
-
----
 
 ---
 
@@ -2446,9 +2647,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tags:** [[AI]]
 - **What:** A physician demonstrates how GPT-5's advanced reasoning model can analyze metabolomics datasets (1,300+ metabolites from ME/CFS patients) faster and more thoroughly than months of human research, uncovering new treatment targets and actionable insights.
 
-
----
-
 ---
 
 # Friday, August 15, 2025
@@ -2480,9 +2678,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tweet:** https://x.com/AnthropicAI/status/1956456337124065645
 - **Tags:** [[AI]]
 - **What:** Anthropic researchers discussing AI model interpretability and the importance of understanding how AI systems work internally.
-
-
----
 
 ---
 
@@ -2529,9 +2724,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tweet:** https://x.com/thejamescad/status/1955339868659388418
 - **Tags:** [[AI]]
 - **What:** Analysis of how AI answer engines (like ChatGPT) will disrupt traditional SEO and drive commerce decisions. Announces Profound's Series B funding and new Workflows feature for generative engine optimization (GEO) to help brands be discovered by AI systems instead of search engines.
-
-
----
 
 ---
 
@@ -2676,9 +2868,6 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 - **Tags:** [[AI]]
 - **What:** Demonstration of GPT-5's ability to predict outcomes of a complex month-long CAR-T cell immunotherapy experiment with remarkable accuracy, including experimental refinements. Shows AI potential for in silico experimentation to compress scientific timelines.
 
-
----
-
 ---
 
 # Saturday, August 9, 2025
@@ -2750,9 +2939,6 @@ Phenocopy with IL‑2 neutralization or low‑dose JAK3 inhibition. Counter‑re
 - **Tags:** [[AI]]
 - **What:** A striking account of GPT-5 Pro's capability as a scientific collaborator, where the model not only interpreted complex immunology data correctly but proposed a mechanistic explanation that advanced research by weeks, demonstrating AI's emerging value in fundamental science.
 
-
----
-
 ---
 
 # Tuesday, August 5, 2025
@@ -2817,9 +3003,6 @@ When creating the product, we accidentally entered a GitHub PR link into the gen
 - **Tags:** [[AI]]
 - **What:** A humorous example of Eleven Music's robustness, where the developers accidentally fed a GitHub PR link into the music generator and it produced unexpected creative output.
 
-
----
-
 ---
 
 # Sunday, August 3, 2025
@@ -2830,9 +3013,6 @@ When creating the product, we accidentally entered a GitHub PR link into the gen
 - **Tweet:** https://x.com/elonmusk/status/1952176488167649342
 - **Tags:** [[AI]]
 - **What:** Brief promotional statement from Elon Musk about Grok's capabilities, accompanied by a video demonstration. Emphasizes imaginative or creative reasoning features of the AI assistant.
-
-
----
 
 ---
 
@@ -2860,9 +3040,6 @@ When creating the product, we accidentally entered a GitHub PR link into the gen
 - **Tags:** [[AI]]
 - **Filed:** [Hierarchical Reasoning Model](./knowledge/tools/hrm.md), [Paper](./knowledge/articles/hierarchical-reasoning-model.md)
 - **What:** Analysis of the Hierarchical Reasoning Model (HRM), a 27M parameter recurrent architecture that achieves reasoning capabilities comparable to much larger models without pre-training or chain-of-thought supervision. Paper at arXiv 2506.21734 with official implementation on GitHub.
-
-
----
 
 ---
 
@@ -2901,9 +3078,6 @@ When creating the product, we accidentally entered a GitHub PR link into the gen
 - **Tags:** [[Coding]]
 - **What:** Google announced the release of Google Sans Code, a new monospace font specifically designed for code editors with improved readability at small sizes.
 
-
----
-
 ---
 
 # Wednesday, July 30, 2025
@@ -2914,9 +3088,6 @@ When creating the product, we accidentally entered a GitHub PR link into the gen
 - **Tweet:** https://x.com/jack/status/1950695755301142618
 - **Tags:** [[Society]]
 - **What:** Visualization showing the distribution of Bitchat adoption/usage across different segments or regions. Jack posts a distribution chart as a snapshot of platform growth metrics.
-
-
----
 
 ---
 
@@ -2953,9 +3124,6 @@ When creating the product, we accidentally entered a GitHub PR link into the gen
 - **Tags:** [[Bitcoin]]
 - **What:** Commemorative tweet marking the 15-year anniversary of an important Bitcoin milestone, with reference to historical context.
 
-
----
-
 ---
 
 # Monday, July 28, 2025
@@ -2970,9 +3138,6 @@ When creating the product, we accidentally entered a GitHub PR link into the gen
 - **Tags:** [[Society]]
 - **What:** New app called bitchat mesh, a Bluetooth mesh networking chat application that doesn't require internet, phone numbers, or email. Enables encrypted private messaging with message relay capability.
 
-
----
-
 ---
 
 # Saturday, July 26, 2025
@@ -2986,9 +3151,6 @@ When creating the product, we accidentally entered a GitHub PR link into the gen
 - **Tags:** [[Bitcoin]]
 - **What:** Video advertisement about Bitcoin featuring promotional content.
 
-
----
-
 ---
 
 # Thursday, July 24, 2025
@@ -3000,9 +3162,6 @@ When creating the product, we accidentally entered a GitHub PR link into the gen
 - **Tags:** [[AI]]
 - **What:** Elon Musk shared media content without additional context in the tweet text.
 
-
----
-
 ---
 
 # Wednesday, July 23, 2025
@@ -3013,9 +3172,6 @@ When creating the product, we accidentally entered a GitHub PR link into the gen
 - **Tweet:** https://x.com/TrendingBitcoin/status/1948067743904772551
 - **Tags:** [[Bitcoin]]
 - **What:** Response to common Bitcoin skepticism with visual evidence (video) addressing the "bubble" narrative.
-
-
----
 
 ---
 
@@ -3036,9 +3192,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Bitcoin]]
 - **What:** Comparison of different AI models' predictions for when Bitcoin will reach $1 million, showing diverse forecasts ranging from 2029 to 2033.
 
-
----
-
 ---
 
 # Wednesday, July 16, 2025
@@ -3050,9 +3203,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[AI]]
 - **What:** OpenAI demonstrated its reasoning model competing against human programmers at an international programming competition, showcasing advances in AI problem-solving capabilities.
 
-
----
-
 ---
 
 # Monday, July 14, 2025
@@ -3063,9 +3213,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/udiWertheimer/status/1944754496543863262
 - **Tags:** [[Bitcoin]]
 - **What:** Bold claim about Bitcoin's potential as a wealth-building asset for future generations.
-
-
----
 
 ---
 
@@ -3092,9 +3239,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Baseball]]
 - **What:** Celebratory post highlighting a complete game shutout performance.
 
-
----
-
 ---
 
 # Friday, July 11, 2025
@@ -3109,9 +3253,6 @@ HT @NeilJacobs for the idea.
 - **Quoted:** https://x.com/techartist_/status/1943716076329558181
 - **Tags:** [[AI]]
 - **What:** Interactive 3D particle visualization system built with Grok 4, demonstrating advanced GLSL shader techniques for generative patterns.
-
-
----
 
 ---
 
@@ -3147,9 +3288,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/KobeissiLetter/status/1943432282595025376
 - **Tags:** [[Bitcoin]]
 - **What:** Analysis thread exploring the relationship between Bitcoin's record high and the US Dollar's historic decline in the first half of 2025.
-
-
----
 
 ---
 
@@ -3187,9 +3325,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Bitcoin]]
 - **What:** Note about Bloomberg adding charts that measure Bitcoin prices in millions of dollars, suggesting institutional preparation for very high Bitcoin valuations.
 
-
----
-
 ---
 
 # Sunday, July 6, 2025
@@ -3208,9 +3343,6 @@ HT @NeilJacobs for the idea.
 - **Filed:** [bitchat](./knowledge/tools/bitchat.md)
 - **What:** A decentralized peer-to-peer messaging app using Bluetooth mesh for offline communication and Nostr protocol for global reach. Implements dual transport architecture with end-to-end encryption and IRC-style commands.
 
-
----
-
 ---
 
 # Saturday, July 5, 2025
@@ -3221,9 +3353,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/karpathy/status/1941616674094170287
 - **Tags:** [[Coding]]
 - **What:** Andrej Karpathy's metaphor for optimal open source architecture: write small, modular, self-contained code that can be copy-pasted without dependencies (bacterial code), while using a monorepo backbone for complex coordination (eukaryotic model).
-
-
----
 
 ---
 
@@ -3245,9 +3374,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Bitcoin]]
 - **What:** News alert about Ethiopia announcing $200 million in Bitcoin mining revenue over a six-month period, highlighting nation-state Bitcoin adoption and economic impact.
 
-
----
-
 ---
 
 # Wednesday, July 2, 2025
@@ -3260,9 +3386,6 @@ HT @NeilJacobs for the idea.
 - **Link:** https://www.youtube.com/watch?v=m08TxIsFTRI
 - **Tags:** [[Space]]
 - **What:** Andy Weir shares a YouTube video announcing the start of something related to The Martian franchise, cryptic announcement tweet with video content requiring transcription.
-
-
----
 
 ---
 
@@ -3292,9 +3415,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Society]]
 - **What:** Eric S. Raymond responds to discussion about inner monologue variation by explaining that some people (quiet-minds) think primarily in abstract representations like logic diagrams and geometric visualizations rather than verbal thought, without cognitive impairment.
 
-
----
-
 ---
 
 # Saturday, June 28, 2025
@@ -3312,9 +3432,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Society]]
 - **What:** Summary of a massive Stanford study showing that quitting social media has dramatic positive effects on mental and emotional health, comparable to therapy.
 
-
----
-
 ---
 
 # Monday, June 23, 2025
@@ -3327,9 +3444,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/pete_rizzo_/status/1937107098183102966
 - **Tags:** [[Bitcoin]]
 - **What:** Michael Saylor's prediction that Bitcoin will appreciate by $1 million annually for the next 20 years, positioning it as the superior investment vehicle.
-
-
----
 
 ---
 
@@ -3359,9 +3473,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Tesla]]
 - **What:** Financial analyst Dan Ives provides a detailed first-hand account of riding in Tesla's Robotaxi, praising its safety, smoothness, and decision-making, with confidence in Tesla's autonomous driving capabilities.
 
-
----
-
 ---
 
 # Friday, June 20, 2025
@@ -3383,9 +3494,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/DocumentingBTC/status/1936024052558143876
 - **Tags:** [[Bitcoin]]
 - **What:** Saturday Night Live's humorous take on Bitcoin and cryptocurrency, providing comedic education about the technology.
-
-
----
 
 ---
 
@@ -3413,9 +3521,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Tesla]]
 - **What:** Analysis of Waymo's recent scaling laws paper as evidence that Tesla's approach to autonomous driving—end-to-end learning with massive data from deployed vehicles—has proven superior to Waymo's handcrafted legacy stack.
 
-
----
-
 ---
 
 # Wednesday, June 18, 2025
@@ -3438,9 +3543,6 @@ HT @NeilJacobs for the idea.
 - **Quoted:** https://x.com/ycombinator/status/1935496106957488566
 - **Tags:** [[AI]]
 - **What:** Andrej Karpathy's keynote on treating LLMs as a new computing paradigm—combining properties of utilities, operating systems, and fabrication labs. Covers the psychology of LLMs as "people spirits," opportunities for autonomous products, accessible English-based programming, and building products for AI agents.
-
-
----
 
 ---
 
@@ -3469,9 +3571,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[AI]]
 - **What:** Summary of a 206-page peer-reviewed study showing that heavy LLM reliance impairs writers' neural patterns and linguistic capabilities (measured via EEG and text analysis), but that maintaining AI-free practice preserves cognitive function and language richness.
 
-
----
-
 ---
 
 # Sunday, June 15, 2025
@@ -3496,9 +3595,6 @@ HT @NeilJacobs for the idea.
 - **Link:** https://x.com/saylordocs/status/1934294914893762593/video/1
 - **Tags:** [[Bitcoin]]
 - **What:** Michael Saylor's statement about the long-term potential of the Bitcoin industry scaling to a $200 trillion market size, presented as video content.
-
-
----
 
 ---
 
@@ -3557,9 +3653,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Bitcoin]]
 - **What:** Deep analysis reframing Satoshi Nakamoto not as a person to identify but as an intentionally engineered myth—a memetic veil over cryptographers and dissidents. The identity's unknowability was part of Bitcoin's design to maintain trustless consensus.
 
-
----
-
 ---
 
 # Friday, June 13, 2025
@@ -3572,9 +3665,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/kimmonismus/status/1933555974348181704
 - **Tags:** [[AI]]
 - **What:** Report on SEAL, an LLM system capable of writing its own code updates, achieving 72.5% success on ARC-AGI benchmark tasks—a significant advancement in AI reasoning capabilities.
-
-
----
 
 ---
 
@@ -3598,9 +3688,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/karpathy/status/1929597620969951434
 - **Tags:** [[AI]]
 - **What:** Andrej Karpathy provides detailed breakdown of OpenAI's ChatGPT model lineup (o3, 4o, o4, etc.) and explains his practical routing strategy for choosing the right model based on task complexity and time constraints.
-
-
----
 
 ---
 
@@ -3631,9 +3718,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Tesla]]
 - **What:** Stock analyst sharing Tesla price target of $380 in near term and $800 longer term, expressing investment conviction and personal wealth goals tied to TSLA performance.
 
-
----
-
 ---
 
 # Friday, May 23, 2025
@@ -3644,9 +3728,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/squawksquare/status/1925870488959471643
 - **Tags:** [[Tesla]]
 - **What:** Analyst Dan Ives from Wedbush Securities raises TSLA price target to $500, signaling strong bullish sentiment on Tesla's future performance.
-
-
----
 
 ---
 
@@ -3682,13 +3763,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[AI]]
 - **What:** Optimistic perspective on humanity's future potential, with the assertion that current conditions represent the worst-case scenario.
 
-
-
----
-
-
----
-
 ---
 
 # Wednesday, May 21, 2025
@@ -3710,13 +3784,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[AI]]
 - **What:** Tesla Optimus breakthrough in learning manipulation tasks directly from internet videos of humans, enabling faster skill transfer and multi-tasking via a single neural network, with plans to expand to 3rd person video learning.
 
-
-
----
-
-
----
-
 ---
 
 # Tuesday, May 20, 2025
@@ -3733,13 +3800,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Space]]
 - **What:** Analysis of how Optimus humanoid robots with shovels would be 5x more productive per unit mass than transporting heavy grading equipment to Mars, with insights on how labor coordination constraints drive equipment optimization decisions.
 
-
-
----
-
-
----
-
 ---
 
 # Monday, May 19, 2025
@@ -3751,13 +3811,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/teslaownersSV/status/1924650536667951460
 - **Tags:** [[AI]]
 - **What:** Microsoft announced integration of xAI's Grok AI system into Azure Cloud Services, expanding Grok's availability to enterprise cloud users.
-
-
-
----
-
-
----
 
 ---
 
@@ -3771,13 +3824,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[AI]]
 - **What:** Scoble reflects on historical tech transitions (DOS to GUIs, Web 2.0) to illustrate how resistance to change has caused companies to fail and argues that understanding paradigm shifts is crucial for the future.
 
-
-
----
-
-
----
-
 ---
 
 # Friday, May 16, 2025
@@ -3789,13 +3835,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/mikepat711/status/1923330249502212553
 - **Tags:** [[Tesla]]
 - **What:** Tesla Full Self-Driving is being tested globally with significant improvements in consistency and smoothness, representing a major milestone in autonomous vehicle technology.
-
-
-
----
-
-
----
 
 ---
 
@@ -3813,13 +3852,6 @@ HT @NeilJacobs for the idea.
 - **Filed:** [grok-prompts](./knowledge/tools/grok-prompts.md)
 - **What:** xAI published Grok system prompts on GitHub in response to a security incident, providing transparency and public access to prompt versions and changes.
 
-
-
----
-
-
----
-
 ---
 
 # Wednesday, May 14, 2025
@@ -3831,13 +3863,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/pushmeet/status/1922669349854196198
 - **Tags:** [[AI]]
 - **What:** Google DeepMind's AlphaEvolve combines LLMs with automated evaluators to discover new algorithms for mathematics and computing problems.
-
-
-
----
-
-
----
 
 ---
 
@@ -3915,13 +3940,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Society]]
 - **What:** David Shapiro's comprehensive analysis of the post-labor economics timeline, arguing that humanoid robot production constraints mean 30-50 years before full labor automation, with detailed job categories that will remain, economic strategies like ESOPs, and implications for alignment and security.
 
-
-
----
-
-
----
-
 ---
 
 # Saturday, March 29, 2025
@@ -3933,13 +3951,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/BitcoinMagazine/status/1906051806435713083
 - **Tags:** [[Bitcoin]]
 - **What:** Marathon Digital (MARA) announced a $2 billion stock offering to fund Bitcoin purchases, demonstrating institutional adoption by publicly traded mining companies.
-
-
-
----
-
-
----
 
 ---
 
@@ -3962,13 +3973,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/elonmusk/status/1905731750275510312
 - **Tags:** [[AI]]
 - **What:** Announcement of xAI's acquisition of X (formerly Twitter) in an all-stock deal, combining AI capabilities with the social media platform's reach and user base of 600M+ users.
-
-
-
----
-
-
----
 
 ---
 
@@ -4002,13 +4006,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[AI]]
 - **What:** Sabine Hossenfelder's critical analysis of current LLM limitations, including persistent hallucinations, fabricated references, and systematic failures despite improvements over two years.
 
-
-
----
-
-
----
-
 ---
 
 # Wednesday, March 26, 2025
@@ -4020,13 +4017,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/IIICapital/status/1904881027719524838
 - **Tags:** [[Bitcoin]]
 - **What:** Explores the economic paradox of how Bitcoin can maintain scarcity when its source code is freely available and reproducible.
-
-
-
----
-
-
----
 
 ---
 
@@ -4057,13 +4047,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Tesla]]
 - **What:** Comprehensive summary of Tesla's Q1 2025 all-hands meeting covering vehicle production milestones, autonomous driving roadmap, Optimus humanoid robot development, energy infrastructure, and future vision for sustainable abundance.
 
-
-
----
-
-
----
-
 ---
 
 # Wednesday, March 19, 2025
@@ -4074,13 +4057,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/dotkrueger/status/1902469257146806552
 - **Tags:** [[AI]]
 - **What:** Bold predictions on AI and cryptocurrency adoption over the next five years, projecting Bitcoin price increases, blockchain mainstream adoption, and humanoid robot proliferation.
-
-
-
----
-
-
----
 
 ---
 
@@ -4149,13 +4125,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Space]]
 - **What:** Commentary on SpaceX's successful rescue of stranded astronauts from the ISS, highlighting Elon Musk's innovation in private spaceflight capabilities.
 
-
-
----
-
-
----
-
 ---
 
 # Friday, March 14, 2025
@@ -4180,13 +4149,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/JoshMandell6/status/1900640394200969581
 - **Tags:** [[Bitcoin]]
 - **What:** Tweet sharing a Bitcoin-related activity update or announcement with visual reference to a chart showing new activity.
-
-
-
----
-
-
----
 
 ---
 
@@ -4234,13 +4196,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[AI]]
 - **What:** A researcher updates their AGI prediction probability to 97% for this year, citing constraints on further discussion.
 
-
-
----
-
-
----
-
 ---
 
 # Thursday, March 6, 2025
@@ -4278,13 +4233,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Space]]
 - **What:** A firsthand report of Starship 8's test flight outcome in the Bahamas, with video documentation of the event.
 
-
-
----
-
-
----
-
 ---
 
 # Sunday, March 2, 2025
@@ -4296,13 +4244,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/saylor/status/1896239478710390941
 - **Tags:** [[Bitcoin]]
 - **What:** A statement from Michael Saylor about Bitcoin's fundamental role in the broader cryptocurrency ecosystem.
-
-
-
----
-
-
----
 
 ---
 
@@ -4317,13 +4258,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/MyLordBebo/status/1895762458096386322
 - **Tags:** [[Politics]]
 - **What:** A video explainer covering the Ukraine war and Russia's geopolitical response.
-
-
-
----
-
-
----
 
 ---
 
@@ -4380,13 +4314,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/karpathy/status/1895242932095209667
 - **Tags:** [[AI]]
 - **What:** Andrej Karpathy releases comprehensive 2-hour video guide on practical LLM ecosystem usage, covering model selection, tool integration, multimodal features, and real-world applications with detailed chapter breakdown.
-
-
-
----
-
-
----
 
 ---
 
@@ -4456,13 +4383,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Bitcoin]]
 - **What:** Discussion of MicroStrategy's bitcoin strategy during market volatility, highlighting historical pattern of recovery after major drawdowns and maintaining bullish outlook despite steep corrections.
 
-
-
----
-
-
----
-
 ---
 
 # Monday, February 24, 2025
@@ -4498,13 +4418,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/Vivek4real_/status/1894174093886283865
 - **Tags:** [[AI]]
 - **What:** Satirical commentary on sensationalist media coverage of Bitcoin price movements, highlighting how large percentage drops are presented as crashes even in bull markets.
-
-
-
----
-
-
----
 
 ---
 
@@ -4559,13 +4472,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[AI]]
 - **What:** Analysis of Europe as an undervalued asset in an AI-dominated future, arguing that human experience and cultural heritage become premium in a world of automation and unlimited productivity.
 
-
-
----
-
-
----
-
 ---
 
 # Thursday, February 20, 2025
@@ -4575,13 +4481,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/elonmusk/status/1892453176072134800
 - **Tags:** [[Tesla]]
 - **What:** Video post related to Cybertruck from official Tesla/Elon Musk account.
-
-
-
----
-
-
----
 
 ---
 
@@ -4703,13 +4602,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/AlexFinn/status/1891293258111955418
 - **Tags:** [[AI]]
 - **What:** A comprehensive prompt template for using AI to research niche markets, identify customer pain points, and generate detailed software product ideas with implementation plans for non-technical founders.
-
-
-
----
-
-
----
 
 ---
 
@@ -4857,13 +4749,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Bitcoin]]
 - **What:** A detailed analysis presenting circumstantial evidence that Jack Dorsey is Satoshi Nakamoto, connecting cryptography interests, pseudonyms, Bitcoin timeline, and various personal details spanning from the 1990s through 2024.
 
-
-
----
-
-
----
-
 ---
 
 # Thursday, February 13, 2025
@@ -4876,13 +4761,6 @@ HT @NeilJacobs for the idea.
 - **Tweet:** https://x.com/jamesdouma/status/1890261626617782766
 - **Tags:** [[Tesla]]
 - **What:** Comment praising the advancement and capability of Tesla's Full Self-Driving V13.2.7 software.
-
-
-
----
-
-
----
 
 ---
 
@@ -5003,13 +4881,6 @@ HT @NeilJacobs for the idea.
 - **Tags:** [[Baseball]]
 - **What:** Proposed Boston Red Sox Opening Day lineup featuring newly acquired Alex Bregman at second base.
 
-
-
----
-
-
----
-
 ---
 
 # Tuesday, February 11, 2025
@@ -5066,12 +4937,6 @@ Helps you build web scrapers in Python that resist website changes and anti-bot 
 - **Tags:** [[Coding]]
 - **Filed:** [scrapling](./knowledge/tools/scrapling.md)
 - **What:** Rohan Paul highlights Scrapling, a Python web scraping library that adapts to website changes, bypasses anti-bot protections, and offers 240x performance improvement over BeautifulSoup for text extraction.
-
-
----
-
-
----
 
 ---
 
@@ -5157,12 +5022,6 @@ We've shipped several improvements to Cursor's agent, including support for cust
 - **Tweet:** https://x.com/wholemars/status/1889057806252384415
 - **Tags:** [[Tesla]]
 - **What:** Demonstration of Tesla's FSD autonomously parking a vehicle without explicit autopark engagement, showing advanced autonomous capability progression.
-
-
----
-
-
----
 
 ---
 
@@ -5285,12 +5144,6 @@ This moment is not coincidence; it is succession.
 - **Tweet:** https://x.com/AdamBLiv/status/1888779036337278995
 - **Tags:** [[Bitcoin]]
 - **What:** Long-form analysis of GameStop and Strategy adopting Bitcoin as corporate treasury reserves, predicting a cascade of corporate Bitcoin adoption and the obsolescence of fiat as corporate reserves.
-
-
----
-
-
----
 
 ---
 
@@ -5454,12 +5307,6 @@ This moment is not coincidence; it is succession.
 - **Tags:** [[Bitcoin]]
 - **What:** Contrasts Buffett's traditional finance approach with Saylor's Bitcoin-centric capital allocation strategy, arguing Bitcoin represents the new risk-free asset versus fiat debasement.
 
-
----
-
-
----
-
 ---
 
 # Friday, February 7, 2025
@@ -5539,12 +5386,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tags:** [[Society]]
 - **What:** WikiLeaks investigation of Internews Network - US government NGO receiving $472.6M funding for global media operations, influence over 4,291 outlets, and alleged censorship support.
 
-
----
-
-
----
-
 ---
 
 # Thursday, February 6, 2025
@@ -5580,12 +5421,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tweet:** https://x.com/wholemars/status/1887515963060592725
 - **Tags:** [[Tesla]]
 - **What:** Whole Mars reporting on Tesla Optimus humanoid robot mass production announcement in Fremont, noting the counterintuitive market reaction.
-
-
----
-
-
----
 
 ---
 
@@ -5697,12 +5532,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tags:** [[AI]]
 - **What:** Owen exploring combining voice input (superwhisper) with Cursor AI agent for mostly hands-free coding workflow.
 
-
----
-
-
----
-
 ---
 
 # Tuesday, February 4, 2025
@@ -5751,12 +5580,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tags:** [[Politics]]
 - **What:** Andrea James explains zero-based budgeting in government, the scale of improper payments ($2.7T), and defends government restructuring efforts as necessary economic reform.
 
-
----
-
-
----
-
 ---
 
 # Monday, February 3, 2025
@@ -5780,12 +5603,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tweet:** https://x.com/DaveShapi/status/1886431269724029281
 - **Tags:** [[AI]]
 - **What:** David Shapiro flagged significant data released in early 2025 that he believes has major implications most people are overlooking.
-
-
----
-
-
----
 
 ---
 
@@ -5832,12 +5649,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tags:** [[AI]]
 - **What:** OpenAI launched an autonomous deep research agent that can analyze hundreds of sources and generate comprehensive reports in minutes instead of hours.
 
-
----
-
-
----
-
 ---
 
 # Friday, January 31, 2025
@@ -5861,12 +5672,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tags:** [[Bitcoin]]
 - **What:** Institutional investment analysis arguing that STRK provides retail investors an arbitrage advantage in Bitcoin exposure that institutions cannot exploit without career risk.
 
-
----
-
-
----
-
 ---
 
 # Thursday, January 30, 2025
@@ -5882,12 +5687,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tweet:** https://x.com/karpathy/status/1885026028428681698
 - **Tags:** [[AI]]
 - **What:** Andrej Karpathy's framework comparing LLM training to textbook learning—pretraining as reading, supervised finetuning as worked examples, reinforcement learning as practice problems.
-
-
----
-
-
----
 
 ---
 
@@ -5910,12 +5709,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tweet:** https://x.com/JAN3com/status/1884648702654243134
 - **Tags:** [[Bitcoin]]
 - **What:** Educational video arguing that Bitcoin differs from historical bubbles by consistently rebounding after downturns rather than disappearing.
-
-
----
-
-
----
 
 ---
 
@@ -5947,12 +5740,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tags:** [[Tesla]]
 - **What:** Tesla demonstrates autonomous vehicle capability with factory self-driving, moving vehicles from manufacturing to loading without human drivers.
 
-
----
-
-
----
-
 ---
 
 # Monday, January 27, 2025
@@ -5973,12 +5760,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tags:** [[Tesla]]
 - **What:** Tesla V4 Superchargers in North America now support 325kW charging speeds for Cybertruck.
 
-
----
-
-
----
-
 ---
 
 # Wednesday, December 6, 2023
@@ -5989,12 +5770,6 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tweet:** https://x.com/stackhodler/status/1732353193663688911
 - **Tags:** [[Bitcoin]]
 - **What:** Thoughtful reflection on the psychological and existential challenges of substantial wealth accumulation through Bitcoin and crypto investments, and how to prepare.
-
-
----
-
-
----
 
 ---
 
