@@ -1,3 +1,80 @@
+# Friday, December 26, 2025
+
+## @karpathy - Programmer skill issue in AI era
+
+> I've never felt this much behind as a programmer. The profession is being dramatically refactored as the bits contributed by the programmer are increasingly sparse and between. I have a sense that I could be 10X more powerful if I just properly string together what has become available over the last ~year and a failure to claim the boost feels decidedly like skill issue. There's a new programmable layer of abstraction to master (in addition to the usual layers below) involving agents, subagents, their prompts, contexts, memory, modes, permissions, tools, plugins, skills, hooks, MCP, LSP, slash commands, workflows, IDE integrations, and a need to build an all-encompassing mental model for strengths and pitfalls of fundamentally stochastic, fallible, unintelligible and changing entities suddenly intermingled with what used to be good old fashioned engineering. Clearly some powerful alien tool was handed around except it comes with no manual and everyone has to figure out how to hold it and operate it, while the resulting magnitude 9 earthquake is rocking the profession. Roll up your sleeves to not fall behind.
+
+- **Tweet:** https://x.com/karpathy/status/2004607146781278521
+- **Tags:** [[AI]]
+- **What:** Andrej Karpathy reflects on the paradigm shift in programming as AI tooling evolves, highlighting the need to master new layers of abstraction and AI-enabled workflow patterns to stay relevant.
+
+---
+
+# Thursday, December 25, 2025
+
+## @vkhosla - Mindset shift for AI founders
+
+> *Quoting @DBVolkov:* Andrej Karpathy literally dropped the mindset shift every AI founder needs to hear https://t.co/LScl0NEjMH
+
+- **Tweet:** https://x.com/vkhosla/status/2004321834645528889
+- **Quoted:** https://x.com/DBVolkov/status/2003873361508946414
+- **Tags:** [[AI]]
+- **What:** Vinod Khosla endorses Karpathy's insights on the mindset shift required for AI founders in the current era of AI-augmented development.
+
+---
+
+# Wednesday, December 24, 2025
+
+## @tom_doerr - Obsidian + Claude Code PKM Starter Kit
+
+> Personal knowledge management system with AI agents and hooks
+>
+> https://t.co/dCOIZDhhXr https://t.co/WaFsofrXeh
+
+- **Tweet:** https://x.com/tom_doerr/status/2003739364082303441
+- **Filed:** [obsidian-claude-pkm](./knowledge/tools/obsidian-claude-pkm.md)
+- **Tags:** [[AI]]
+- **What:** Complete personal knowledge management system combining Obsidian with Claude Code, featuring AI-powered hooks, custom agents, and modular rules for vault automation.
+
+---
+
+# Tuesday, December 23, 2025
+
+## @JayaGup10 - AI's trillion-dollar opportunity
+
+> AI's trillion-dollar opportunity: Context graphs
+
+- **Tweet:** https://x.com/JayaGup10/status/2003525933534179480
+- **Tags:** [[AI]]
+- **What:** Insight about context graphs as a major economic opportunity in the AI space.
+
+---
+
+# Monday, February 24, 2025
+
+## @karpathy - Agency > Intelligence
+
+> Agency > Intelligence
+>
+> I had this intuitively wrong for decades, I think due to a pervasive cultural veneration of intelligence, various entertainment/media, obsession with IQ etc. Agency is significantly more powerful and significantly more scarce. Are you hiring for agency? Are we educating for agency? Are you acting as if you had 10X agency?
+>
+> Grok explanation is ~close:
+>
+> "Agency, as a personality trait, refers to an individual's capacity to take initiative, make decisions, and exert control over their actions and environment. It's about being proactive rather than reactive—someone with high agency doesn't just let life happen to them; they shape it. Think of it as a blend of self-efficacy, determination, and a sense of ownership over one's path.
+>
+> People with strong agency tend to set goals and pursue them with confidence, even in the face of obstacles. They're the type to say, "I'll figure it out," and then actually do it. On the flip side, someone low in agency might feel more like a passenger in their own life, waiting for external forces—like luck, other people, or circumstances—to dictate what happens next.
+>
+> It's not quite the same as assertiveness or ambition, though it can overlap. Agency is quieter, more internal—it's the belief that you *can* act, paired with the will to follow through. Psychologists often tie it to concepts like locus of control: high-agency folks lean toward an internal locus, feeling they steer their fate, while low-agency folks might lean external, seeing life as something that happens *to* them."
+>
+> *Quoting @garrytan:* Intelligence is on tap now so agency is even more important
+
+- **Tweet:** https://x.com/karpathy/status/1894099637218545984
+- **Quoted:** https://x.com/garrytan/status/1894063324582625732
+- **Tags:** [[AI]]
+- **What:** Karpathy argues that agency is more valuable than intelligence in the modern era where intelligence is commoditized. He defines agency as the capacity to take initiative and shape one's environment, contrasting it with mere intelligence.
+
+---
+
 # Tuesday, December 30, 2025
 
 ## @khoomeik - Jensen's 2027 Announcement on NVIDIA Kyber Architecture
