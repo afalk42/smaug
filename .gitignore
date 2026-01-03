@@ -16,6 +16,9 @@ knowledge/
 .DS_Store
 Thumbs.db
 
+# Claude Code local permission settings
+.claude/settings.local.json
+
 # Editor files
 *.swp
 *.swo
