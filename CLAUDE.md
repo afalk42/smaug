@@ -17,6 +17,8 @@ npx smaug run -t
 
 # Fetch only (no processing)
 npx smaug fetch 20                    # Fetch 20 bookmarks
+npx smaug fetch --all                 # Fetch ALL bookmarks (paginated)
+npx smaug fetch --all --max-pages 5   # Limit pagination to 5 pages
 npx smaug fetch --source likes        # Fetch from likes
 npx smaug fetch --source both         # Fetch from both
 npx smaug fetch --media               # Include media attachments (experimental)
@@ -88,10 +90,25 @@ Key options:
 - `claudeModel`: "sonnet", "haiku", or "opus"
 - `autoInvokeClaude`: whether to run Claude after fetch
 - `categories`: custom category definitions
+- `folders`: map folder IDs to tag names (e.g., `{"1234567890": "ai-tools"}`)
 
 Environment variables override config (e.g., `AUTH_TOKEN`, `CT0`, `CLAUDE_MODEL`).
+
+### Bookmark Folders
+
+Configure folders to preserve Twitter bookmark folder organization as tags:
+```json
+{
+  "folders": {
+    "1234567890": "ai-tools",
+    "0987654321": "research"
+  }
+}
+```
+Get folder IDs from URLs like `https://x.com/i/bookmarks/1234567890`.
 
 ## External Dependencies
 
 - `bird` CLI (https://github.com/steipete/bird) - Twitter API wrapper, requires v0.5.0+ for bookmarks
+  - For `--all` pagination: build from git main branch (not npm v0.5.1)
 - `dayjs` - date handling

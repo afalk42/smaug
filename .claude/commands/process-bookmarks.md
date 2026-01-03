@@ -75,6 +75,7 @@ Prepared bookmarks are in: `./.state/pending-bookmarks.json`
 
 Each bookmark includes:
 - `id`, `author`, `authorName`, `text`, `tweetUrl`, `date`
+- `tags[]` - folder tags from bookmark folders (e.g., `["ai-tools"]`)
 - `links[]` - each with `original`, `expanded`, `type`, and `content`
   - `type`: "github", "article", "video", "tweet", "media", "image"
   - `content`: extracted text, headline, author (for articles/github)
@@ -151,12 +152,23 @@ Match each bookmark's links against category patterns (check `match` arrays). Us
 
 Add to `./bookmarks.md`:
 
-**CRITICAL ordering rules:**
-1. Use the bookmark's `date` field from the JSON, format as friendly date
-2. Check if that date section already exists near the TOP of the file
-3. If it exists: insert the new entry immediately AFTER the `# Date` header (ABOVE existing entries)
-4. If no section for that date: create new `# Weekday, Month Day, Year` section at the TOP
-5. Do NOT create duplicate date sections - always check first
+**CRITICAL ordering rules for bookmarks.md:**
+
+The file must be in **descending chronological order** (newest dates at TOP, oldest at BOTTOM).
+
+1. **Read the existing file structure first** - note all existing date sections and their positions
+2. Use each bookmark's `date` field (already formatted as "Weekday, Month Day, Year")
+3. **For each bookmark's date:**
+   - If that date section already exists: insert the entry immediately AFTER the `# Date` header (above other entries in that section)
+   - If no section exists for that date: create a new `# Weekday, Month Day, Year` section at the **correct chronological position** (NOT always at top!)
+4. **Chronological positioning for new date sections:**
+   - Find where the date belongs chronologically among existing sections
+   - Insert BEFORE any older dates, AFTER any newer dates
+   - Example: If file has "Jan 3" then "Jan 1", and you need "Jan 2", insert between them
+5. Do NOT create duplicate date sections - always search the entire file first
+6. Separate date sections with `---`
+
+**Processing order:** Bookmarks in pending-bookmarks.json are sorted oldest-first. Process them in order so that when each is inserted at the top of its date section, the final result has correct ordering within each day.
 
 **Header hierarchy:**
 - `# Thursday, January 2, 2026` - Date headers (h1)
@@ -169,9 +181,12 @@ Add to `./bookmarks.md`:
 
 - **Tweet:** {tweet_url}
 - **Link:** {expanded_url}
+- **Tags:** [[tag1]] [[tag2]] (if bookmark has tags from folders)
 - **Filed:** [{filename}](./knowledge/tools/{slug}.md) (if filed)
 - **What:** {1-2 sentence description of what this actually is}
 ```
+
+**Tags format:** Use wiki-link style `[[TagName]]` for each tag. Only include the **Tags:** line if the bookmark has tags in its `tags` array (from folder configuration). Example: `- **Tags:** [[AI]] [[Coding]]`
 
 **For quote tweets, include the quoted content:**
 ```markdown
@@ -182,6 +197,7 @@ Add to `./bookmarks.md`:
 
 - **Tweet:** {tweet_url}
 - **Quoted:** {quoted_tweet_url}
+- **Tags:** [[tag1]] [[tag2]] (if bookmark has tags)
 - **What:** {description}
 ```
 
@@ -194,6 +210,7 @@ Add to `./bookmarks.md`:
 
 - **Tweet:** {tweet_url}
 - **Parent:** {parent_tweet_url}
+- **Tags:** [[tag1]] [[tag2]] (if bookmark has tags)
 - **What:** {description}
 ```
 
@@ -258,7 +275,7 @@ title: "{tool_name}"
 type: tool
 date_added: {YYYY-MM-DD}
 source: "{github_url}"
-tags: [{relevant_tags}]
+tags: [{relevant_tags}, {folder_tags}]
 via: "Twitter bookmark from @{author}"
 ---
 
@@ -284,7 +301,7 @@ type: article
 date_added: {YYYY-MM-DD}
 source: "{article_url}"
 author: "{article_author}"
-tags: [{relevant_tags}]
+tags: [{relevant_tags}, {folder_tags}]
 via: "Twitter bookmark from @{author}"
 ---
 
@@ -310,7 +327,7 @@ type: podcast
 date_added: {YYYY-MM-DD}
 source: "{podcast_url}"
 show: "{show_name}"
-tags: [{relevant_tags}]
+tags: [{relevant_tags}, {folder_tags}]
 via: "Twitter bookmark from @{author}"
 status: needs_transcript
 ---
@@ -342,7 +359,7 @@ type: video
 date_added: {YYYY-MM-DD}
 source: "{video_url}"
 channel: "{channel_name}"
-tags: [{relevant_tags}]
+tags: [{relevant_tags}, {folder_tags}]
 via: "Twitter bookmark from @{author}"
 status: needs_transcript
 ---
