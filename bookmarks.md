@@ -1,3 +1,1211 @@
+# Wednesday, October 15, 2025
+
+## @simpleminingio - Bitcoin Price Speculation via Energy Economics
+> Jeff Booth says "The system bounded by ENERGY will reprice all $900 trillion of assets.....divide that by 21 million Bitcoin and you get $43 million per coin."
+>
+> WE'RE SO EARLY. https://t.co/8on0FtNl2Z
+
+- **Tweet:** https://x.com/simpleminingio/status/1978445586581131282
+- **Tags:** [[Bitcoin]]
+- **What:** References Jeff Booth's argument that repriceing global assets based on energy economics could value Bitcoin at $43 million per coin, emphasizing early-stage adoption.
+
+---
+
+# Tuesday, October 14, 2025
+
+## @elonmusk - Bitcoin as Energy-Backed Currency
+> *Replying to @zerohedge:* The money is not the problem: AI is the new global arms race, and capex will eventually be funded by governments (US and China). If you want to know why gold/silver/bitcoin is soaring, it's the "debasement" to fund the AI arms race.
+>
+> But you can't print energy
+>
+> True.
+>
+> That is why Bitcoin is based on energy: you can issue fake fiat currency, and every government in history has done so, but it is impossible to fake energy.
+
+- **Tweet:** https://x.com/elonmusk/status/1977986775994843641
+- **Parent:** https://x.com/zerohedge/status/1977902940116472233
+- **Tags:** [[Bitcoin]]
+- **What:** Elon Musk argues that Bitcoin's value is fundamentally grounded in energy, making it impossible to counterfeit unlike fiat currency.
+
+---
+
+## @abcampbell - China Can't Win
+> China Can't Win
+
+- **Tweet:** https://x.com/abcampbell/status/1978070295157096808
+- **Tags:** [[Politics]]
+- **What:** Brief political commentary on geopolitical dynamics and China's strategic position.
+
+---
+
+## @willccbb - DGX Spark Hardware Assessment
+> i have no clue who the DGX spark is for. it's a slower mac studio that technically runs CUDA; it has a bunch of unified memory, but not enough perf to do much with it; you could get a faster gaming rig that does all the same stuff for less money. but also it's pretty + i want one
+
+- **Tweet:** https://x.com/willccbb/status/1978269552275312780
+- **Tags:** [[AI]]
+- **What:** Critique of NVIDIA's DGX Spark: underpowered for its price point compared to gaming rigs, yet aesthetically appealing as a developer machine.
+
+---
+
+# Monday, October 13, 2025
+
+## @karpathy - nanochat: Full-Stack ChatGPT Clone from Scratch
+> Excited to release new repo: nanochat!
+> (it's among the most unhinged I've written).
+>
+> Unlike my earlier similar repo nanoGPT which only covered pretraining, nanochat is a minimal, from scratch, full-stack training/inference pipeline of a simple ChatGPT clone in a single, dependency-minimal codebase. You boot up a cloud GPU box, run a single script and in as little as 4 hours later you can talk to your own LLM in a ChatGPT-like web UI.
+>
+> It weighs ~8,000 lines of imo quite clean code to:
+>
+> - Train the tokenizer using a new Rust implementation
+> - Pretrain a Transformer LLM on FineWeb, evaluate CORE score across a number of metrics
+> - Midtrain on user-assistant conversations from SmolTalk, multiple choice questions, tool use.
+> - SFT, evaluate the chat model on world knowledge multiple choice (ARC-E/C, MMLU), math (GSM8K), code (HumanEval)
+> - RL the model optionally on GSM8K with "GRPO"
+> - Efficient inference the model in an Engine with KV cache, simple prefill/decode, tool use (Python interpreter in a lightweight sandbox), talk to it over CLI or ChatGPT-like WebUI.
+> - Write a single markdown report card, summarizing and gamifying the whole thing.
+>
+> Even for as low as ~$100 in cost (~4 hours on an 8XH100 node), you can train a little ChatGPT clone that you can kind of talk to, and which can write stories/poems, answer simple questions. About ~12 hours surpasses GPT-2 CORE metric. As you further scale up towards ~$1000 (~41.6 hours of training), it quickly becomes a lot more coherent and can solve simple math/code problems and take multiple choice tests. E.g. a depth 30 model trained for 24 hours (this is about equal to FLOPs of GPT-3 Small 125M and 1/1000th of GPT-3) gets into 40s on MMLU and 70s on ARC-Easy, 20s on GSM8K, etc.
+>
+> My goal is to get the full "strong baseline" stack into one cohesive, minimal, readable, hackable, maximally forkable repo. nanochat will be the capstone project of LLM101n (which is still being developed). I think it also has potential to grow into a research harness, or a benchmark, similar to nanoGPT before it. It is by no means finished, tuned or optimized (actually I think there's likely quite a bit of low-hanging fruit), but I think it's at a place where the overall skeleton is ok enough that it can go up on GitHub where all the parts of it can be improved.
+>
+> Link to repo and a detailed walkthrough of the nanochat speedrun is in the reply.
+
+- **Tweet:** https://x.com/karpathy/status/1977755427569111362
+- **Tags:** [[AI]]
+- **What:** Andrej Karpathy releases nanochat, a minimal full-stack implementation of a ChatGPT-like system with training, inference, and a web UI, designed to be readable and forkable for LLM education and research.
+
+---
+
+# Sunday, October 12, 2025
+
+## @AdamBLiv - Bitcoin and Risk: The Great Inversion Thesis
+> BITCOIN AND RISK: THE GREAT INVERSION THESIS
+>
+> I attempt something very ambitious in this video.
+>
+> I explain how risk is fundamentally mispriced, and I do it through the lens of my own personal story.
+>
+> I quit my job to spread the orange gospel when I woke up to this reality.
+>
+> Half an hour deep-dive into RISK, BITCOIN, and my own journey.
+>
+> We are early.
+>
+> Enjoy.
+
+- **Tweet:** https://x.com/AdamBLiv/status/1977328395202769211
+- **Tags:** [[Bitcoin]]
+- **What:** Video announcement exploring fundamental mispricing of risk through Bitcoin lens, featuring personal journey narrative about understanding the asset class.
+
+---
+
+## @ElonTrades - Oct 11 Crypto Crash: Exchange Design Flaw and Coordinated Exploitation
+> The Oct 11 Crypto Crash — What Really Happened
+>
+> TL;DR: Roughly $60–90M of $USDe was dumped on Binance, along with $wBETH and $BNSOL, exploiting a pricing flaw that valued collateral using Binance's own order-book data instead of external oracles.
+>
+> That localized depeg triggered $500M–$1B in forced liquidations, cascaded into $19B+ globally, and earned the attackers about $192M via $1.1B in BTC/ETH shorts opened on Hyperliquid hours earlier, but minutes before Trump tariff announcement.
+>
+> It wasn't a USDe failure!! It was Binance's design flaw, timed with macro panic (Trump's tariffs) for cover.
+>
+> [Detailed six-part breakdown of setup, exploit, profit engine, contagion, fault analysis, and aftermath...]
+
+- **Tweet:** https://x.com/ElonTrades/status/1977340254047649966
+- **Tags:** [[Bitcoin]]
+- **What:** Forensic analysis of the $19B+ October 11 crypto liquidation cascade, revealing how a Binance collateral pricing vulnerability was exploited with $60-90M in stablecoin dumping and coordinated leveraged shorts for $192M profit.
+
+---
+
+## @shanaka86 - Altcoin Catastrophe: 80%+ Intraday Losses in Top 100 Projects
+> 🚨 IF YOU STILL DON'T UNDERSTAND HOW CATASTROPHIC YESTERDAY WAS 🚨
+>
+> Let me spell it out:
+>
+> While Bitcoin dropped 10% like a normal Tuesday correction…
+>
+> THE ENTIRE ALTCOIN MARKET GOT SENT TO THE SHADOW REALM
+>
+> Here's what "blue chip" really means 👇
+>
+> $ATOM: $4.00 → $0.001 (99.97% ANNIHILATED)
+> $SUI: $3.40 → $0.56 (83.5% OBLITERATED)
+> $APT: $5.00 → $0.75 (85% VAPORIZED)
+> $SEI: $0.28 → $0.07 (75% DELETED)
+> $LINK: $22 → $8 (63.6% DESTROYED)
+> $ADA: $0.80 → $0.30 (62.5% MASSACRED)
+>
+> These aren't shitcoins. These are TOP 100 "INSTITUTIONAL GRADE" projects that VCs, YouTubers, and CT influencers told you were "safe." 80% nuked in MINUTES.
+>
+> [Critique of diversification strategy, altcoin season narrative, and bitcoin-only thesis...]
+
+- **Tweet:** https://x.com/shanaka86/status/1977382301949673562
+- **Tags:** [[Bitcoin]]
+- **What:** Stark documentation of October 11-12 altcoin market collapse, showing top 100 projects losing 60-99% in minutes while Bitcoin dipped 10%, arguing that altcoins are leveraged beta with catastrophic downside and Bitcoin is the only surviving store of value.
+
+---
+
+# Friday, October 3, 2025
+
+## @aka_suje - Roi Acquired by OpenAI
+> I'm excited to announce that Roi has been acquired by OpenAI!
+>
+> We started Roi 3 years ago to make investing accessible to everyone by building the most personalized financial experience. Along the way we realized personalization isn't just the future of finance. It's the future of software.
+>
+> This acquisition marks an incredible milestone for Roi, and we're thrilled to continue building out our vision at OpenAI. We're extremely grateful to our users, investors, friends, and family who made this journey possible.
+>
+> Thank you,
+> Sujith (aka suje)
+
+- **Tweet:** https://x.com/aka_suje/status/1974190926177460670
+- **Tags:** [[AI]]
+- **What:** Announcement of Roi's acquisition by OpenAI, highlighting the company's focus on personalized financial software experiences built over 3 years.
+
+---
+
+## @_The_Prophet__ - Unit-of-Account Fracture and Currency Regime Shift
+> ⚡️What you're really seeing here is the first stage of a global unit-of-account fracture.
+>
+> •In nominal USD terms, everything looks like it's booming: stocks up triple digits, homes up double digits, "wealth" everywhere. That's the performance everyone sees.
+>
+> •In gold terms, the illusion cracks: stocks and homes flat-to-negative, real wealth stagnating.
+>
+> •In Bitcoin terms, the veil is gone: catastrophic real losses in every traditional asset.
+>
+> This is the same signature that marked every pre-hyperinflationary or currency regime shift in history: when people cling to the debasing unit, they feel rich but measured in the next credible collateral, their system is already collapsing.
+>
+> [Tweet continues with analysis of imperial carry trade and pre-revaluation ledger...]
+>
+> *Quoting @LukeGromen:* "The Debasement Trade" since COVID: In USD: NDX up 165%, SPX up 102%, Home prices up 56%. In gold: NDX up 7%, SPX down 18%, Home prices down 37%. In BTC: NDX down 78%, SPX down 84%, Home prices down 87.
+
+- **Tweet:** https://x.com/_The_Prophet__/status/1974286626768760914
+- **Quoted:** https://x.com/LukeGromen/status/1974184554782220583
+- **Tags:** [[Bitcoin]]
+- **What:** Deep analysis of currency regime shift and unit-of-account transition, using debasement metrics across USD, gold, and Bitcoin to show real wealth destruction masked by nominal gains.
+
+---
+
+# Thursday, October 2, 2025
+
+## @kinetic_finance - Bitcoin Path to $20 Trillion Asset Class
+> ⚠️ You think you're late to Bitcoin.
+>
+> So did I.
+>
+> At $500
+> At $10,000.
+> At $100,000.
+>
+> The truth?
+>
+> Bitcoin is going to become a $20 Trillion asset & 99% of the world misunderstands it.
+>
+> In 7 minutes, I'll show you the exact path on how it gets there.
+>
+> 💥 THE EXIT MANUAL – EPISODE #7 https://x.com/kinetic_finance/status/1973892824539279731/video/1
+
+- **Tweet:** https://x.com/kinetic_finance/status/1973892824539279731
+- **Tags:** [[Bitcoin]]
+- **What:** Video analysis of Bitcoin's potential growth trajectory to $20 trillion market cap, discussing how market adoption could unfold and why most people misunderstand Bitcoin's role as a global asset.
+
+---
+
+# Wednesday, October 1, 2025
+
+## @DannyHabibs - 3D Viewer with Head Tracking for Browser
+> *Replying to @DannyHabibs:* Why this matters: most 3D on phones collapses to a flat video. Asking viewers to drag the camera fights lean-back behavior. Window Mode adds presence without new habits.
+>
+> Try it in your browser: https://lab.true3d.com/targets
+>
+> (Works on phones and laptop webcams too.)
+
+- **Tweet:** https://x.com/DannyHabibs/status/1973418124314828961
+- **Parent:** https://x.com/DannyHabibs/status/1973418122578370592
+- **Tags:** [[Coding]]
+- **What:** Interactive 3D viewer demo using head tracking via webcam for immersive browser-based 3D content viewing without requiring manual camera dragging.
+
+---
+
+# Monday, September 29, 2025
+
+## @IntuitMachine - AI and Inequality: How Better Tools Make Judgment More Valuable
+> Everyone "knows" that as AI gets better, humans become less valuable. Except three economists just proved the exact opposite using math from 1973 and Steve Jobs.
+>
+> And it explains something that's been driving researchers crazy...
+>
+> Why did computers make inequality WORSE but ChatGPT is making it BETTER?
+>
+> The data is bizarre. In the 1990s, computers widened wage gaps everywhere they appeared. But study after study shows AI helping struggling workers more than experts.
+>
+> I spent the morning with this research paper and... the answer flips our entire mental model.
+>
+> Think about how you use ChatGPT. You don't just type once and walk away, right? You iterate. You refine. You spot opportunities to improve.
+>
+> That back-and-forth? That's the key to everything.
+>
+> The researchers decomposed ALL cognitive work into three parts:
+>
+> Implementation (doing the task)
+> Opportunity judgment (seeing what could be better)
+> Payoff judgment (knowing what actually matters)
+>
+> Here's where it gets wild...
+>
+> AI is really good at implementation. Like, scary good. A junior coder with Cursor can suddenly write like they have 5 years experience.
+>
+> But that's not the interesting part...
+>
+> The better AI gets at implementation, the MORE valuable your judgment becomes. It's multiplicative, not substitutive.
+>
+> Imagine you're a designer. AI can now execute any design in seconds. But knowing WHICH design to make? When to iterate? What the client actually needs? That's all you.
+>
+> The math proves something counterintuitive: as tools get more powerful, the gap between someone who can spot opportunities and someone who can't gets BIGGER.
+>
+> But wait - why is AI currently reducing inequality then?
+>
+> Because we're in phase one. Right now, AI is compensating for skill differences. The struggling workers get huge boosts. The experts? They were already good at implementation.
+>
+> Phase two is coming though...
+>
+> Once implementation is basically free (think: anyone can code, design, write), the ONLY thing that matters is judgment. Who sees the opportunity? Who knows what's valuable?
+>
+> And that's when inequality explodes again. The paper even calculates the exact turning point.
+>
+> Here's what broke my brain: better AI makes full automation LESS likely, not more.
+>
+> Why? Because automated systems have fixed judgment. They can't adapt. A radiologist AI might be 99% accurate, but it can't realize "wait, this patient's case is weird, I should think differently."
+>
+> The flexibility to adjust your judgment in real-time? That's uniquely human. And it gets MORE valuable as the tools improve.
+>
+> Even crazier: this changes how teams should work.
+>
+> The paper shows that as AI improves, control should shift from people who are good at DOING to people good at SEEING opportunities.
+>
+> We're already seeing this. That study about Microsoft's Kinect? Machine vision experts suddenly mattered less than generalists who could spot novel uses.
+>
+> You know what this reminds me of? The shift from craftsmen to designers during industrialization.
+>
+> The machines could make anything. The value moved to knowing WHAT to make.
+>
+> We're about to see the same thing with cognitive work.
+>
+> Next time you use ChatGPT, try this: instead of focusing on getting it to do the task perfectly, focus on recognizing opportunities to iterate.
+>
+> That skill - seeing what could be better - that's your moat.
+>
+> The researchers call it "opportunity judgment" and it's about to become the most valuable skill in the economy.
+>
+> Quick test: Give two people the same AI tool and the same task. The output difference? That's pure judgment. And that gap is about to get a lot wider.
+>
+> One finding haunts me: the paper shows task-based predictions (like "AI will replace X jobs") are missing the point entirely.
+>
+> They measure what people do TODAY. But the whole point is that AI changes what the job even IS.
+>
+> A lawyer's job won't be "writing contracts." It'll be "knowing which contract variation creates the most value in this specific situation."
+>
+> Completely different skill.
+>
+> The paper maps out exactly when to automate vs augment. The formula is complex but the intuition is simple:
+>
+> If judgment variance is high → augment If tasks are predictable → automate If stakes are high → definitely augment
+>
+> Here's my take: we're training for the wrong future.
+>
+> Everyone's learning to prompt better. But prompting is just implementation. The real skill is recognizing when the output could be better and knowing what "better" means for your specific context.
+>
+> Schools teaching "AI literacy"? They're teaching people to be better bicycles. We should be teaching people to be better riders.
+>
+> (That's literally where the paper's title comes from - Jobs called computers "bicycles for the mind")
+>
+> Last thought that changes everything:
+>
+> The paper proves that in high-judgment work, making AI 10x better might make humans 100x more valuable.
+>
+> Because you can iterate faster. Test more ideas. Explore more opportunities.
+>
+> Your judgment gets amplified.
+>
+> So the question isn't "will AI replace me?"
+>
+> It's "am I developing the judgment to ride increasingly powerful bicycles?"
+>
+> Because the bicycles are about to get VERY fast. And the gap between good riders and bad ones is about to become a chasm.
+>
+> What patterns are you starting to notice in your field that others are missing?
+>
+> That's your future edge. And it's about to matter more than ever.
+>
+> /end
+>
+> PS - If you're curious about the math, the paper actually derives the exact inequality curve. It's U-shaped. We're at the bottom of the U right now. The climb up is coming.
+>
+> Makes you wonder what other "obvious" things about AI we have completely backwards...
+
+- **Tweet:** https://x.com/IntuitMachine/status/1972626981196911072
+- **Tags:** [[AI]]
+- **What:** Deep analysis of how AI augmentation makes human judgment more valuable rather than less. Explores the economics of cognitive work, showing that implementation and opportunity judgment create multiplicative rather than substitutive value.
+
+---
+
+## @mikeyk - Every Version of Claude Attempts to Clone Claude.ai
+> We asked every version of Claude to make a clone of Claude(dot)ai, including today's Sonnet 4.5… see what happened in the video https://x.com/mikeyk/status/1972718726052286637/video/1
+
+- **Tweet:** https://x.com/mikeyk/status/1972718726052286637
+- **Tags:** [[AI]]
+- **What:** Demonstration video showing how different Claude models respond to a prompt to clone Claude.ai's interface, with results ranging from failure to success across model versions.
+
+---
+
+# Sunday, September 28, 2025
+
+## @TheBTCTherapist - Bitcoin sideways accumulation scenario
+
+> Max pain for Bitcoin is 4 more years at $100,000 with constant accumulation by TradFi via OTC completely unaffecting price and causing widespread mental breakdowns in the bitcoin community, followed by an omega candle correction to $1,000,000.
+
+- **Tweet:** https://x.com/TheBTCTherapist/status/1972158522055184635
+- **Tags:** [[Bitcoin]]
+- **What:** Speculative scenario where Bitcoin stagnates at $100k while traditional finance accumulates heavily, then eventually surges to $1M.
+
+---
+
+## @gregisenberg - Accenture mass layoffs due to AI
+
+> It's begun
+
+> *Quoting @Investingcom:* *ACCENTURE LAYS OFF 11,000 EMPLOYEES, WARNS MORE JOB CUTS ARE COMING DUE TO AI
+
+- **Tweet:** https://x.com/gregisenberg/status/1972305086102843710
+- **Quoted:** https://x.com/Investingcom/status/1972250466718474635
+- **Tags:** [[AI]]
+- **What:** Greg Isenberg highlights Accenture's announcement of 11,000 layoffs with warnings of additional job cuts due to AI automation.
+
+---
+
+## @CatherinVaritek - My bags are packed and I don't know where I'm going
+> My bags are packed and I don't know where I'm going… 🥳
+
+- **Tweet:** https://x.com/CatherinVaritek/status/1972327842928341369
+- **Tags:** [[Baseball]]
+- **What:** A personal update about travel plans, captured from Catherine Varitek's tweet about an upcoming trip.
+
+---
+
+# Friday, September 26, 2025
+
+## @Vivek4real_ - Tiger 21 founder Bitcoin buying signal
+
+> 🇺🇸 $200 BILLION TIGER 21 FOUNDER JUST SAID LIVE ON CNBC THAT ULTRA RICH PEOPLE ARE NOW BUYING #BITCOIN
+>
+> TRILLIONS INCOMING 🚀
+
+- **Tweet:** https://x.com/Vivek4real_/status/1971490788430446682
+- **Tags:** [[Bitcoin]]
+- **What:** News of major institutional wealth (Tiger 21 founder) buying Bitcoin on CNBC, suggesting significant capital inflows expected.
+
+---
+
+## @SnazzyLabs - iOS 26 feature accessibility criticism
+
+> What I love most about iOS 26 is how everything now takes 1–2 extra taps, since previously available features are buried in the name of design.
+
+- **Tweet:** https://x.com/SnazzyLabs/status/1971606636038123644
+- **Tags:** [[Apple]]
+- **What:** Critical commentary on iOS 26's design decisions making previously accessible features harder to reach.
+
+---
+
+## @IntuitMachine - AGI and the collapse of human labor share
+
+> Everyone 'knows' AGI will either make us all unemployed or fabulously wealthy. Except, a rather brilliant (and chilling) paper from a Yale economist suggests it's neither.
+>
+> It says the economy will boom, and our wages... won't. A bit awkward.
+
+- **Tweet:** https://x.com/IntuitMachine/status/1971725636851912914
+- **Tags:** [[AI]]
+- **What:** Deep analysis of a Yale economist's "We Won't Be Missed" paper arguing AGI will drive economic growth while collapsing human labor income share as workers become "replicable" at computational cost.
+
+---
+
+# Thursday, September 25, 2025
+
+## @alxfazio - Graph-Guided Code Generation Framework for Repository Context
+> holy crap this paper might actually fix vibe coding
+>
+> keeping a repo's structure in context is a real struggle, and they've cooked up a graph-guided code generation framework that could solve that for good
+>
+> according to the authors, the framework is coming out soon https://t.co/pNNKYZxbT5
+
+- **Tweet:** https://x.com/alxfazio/status/1971113499150717079
+- **Tags:** [[AI]]
+- **What:** Research paper on a graph-guided code generation framework that maintains repository structure in context during AI coding, solving a major limitation of current "vibe coding" approaches. Framework coming soon.
+
+---
+
+## @sama - ChatGPT Pulse: Proactive AI Assistant Feature
+> Today we are launching my favorite feature of ChatGPT so far, called Pulse. It is initially available to Pro subscribers.
+>
+> Pulse works for you overnight, and keeps thinking about your interests, your connected data, your recent chats, and more. Every morning, you get a custom-generated set of stuff you might be interested in.
+>
+> It performs super well if you tell ChatGPT more about what's important to you. In regular chat, you could mention "I'd like to go visit Bora Bora someday" or "My kid is 6 months old and I'm interested in developmental milestones" and in the future you might get useful updates.
+>
+> Think of treating ChatGPT like a super-competent personal assistant: sometimes you ask for things you need in the moment, but if you share general preferences, it will do a good job for you proactively.
+>
+> This also points to what I believe is the future of ChatGPT: a shift from being all reactive to being significantly proactive, and extremely personalized.
+
+- **Tweet:** https://x.com/sama/status/1971297661748953263
+- **Tags:** [[AI]]
+- **What:** OpenAI launches ChatGPT Pulse, a proactive AI assistant feature that monitors user interests and provides curated recommendations overnight. Demonstrates shift toward proactive, personalized AI assistants.
+
+---
+
+## @patrickc - Arc Institute: AI-Generated Genomes, Antibody Design, and Precision Gene Editing Breakthroughs
+> Over the past week, @arcinstitute published three new discoveries that I'm very proud of.
+>
+> • The world's first functional AI-generated genomes. Using Evo 2 (the largest biology ML model ever trained, which Arc released in partnership with @nvidia in February), Arc scientists took advantage of the fact that Evo 2 is a generative model to produce completely new sequences for complete phage genomes. That is, they used AI to produce wholly new, never-before-seen-by-nature genomes. They experimentally synthesized these genomes and showed that these AI-generated phages actually work, killing E. coli bacteria with high efficacy.
+>
+> • Germinal, an AI system for creating new antibodies. Antibody design is one of the great problems of medical biology given their obvious importance and usefulness for creating therapeutics. (Antibodies are tiny particles that help the immune system identify pathogens and other harmful intruders. See also the recent Works in Progress article on this topic: [1].) Today, designing effective antibodies is very expensive and slow. Germinal is a cheap and fast way to produce drug candidates, with success rates of up to 22%. This means that one can go from having to screen thousands of candidates in the lab to screening perhaps a few dozen. It's early, but I suspect that better methods for designing antibodies will be a very big deal for disease treatment in the coming years.
+>
+> • Today, we published a paper showing that "bridge editing", which Arc scientists first introduced last year, can make precise edits in human cells that are up to 1 million base pairs long, and without relying on intrinsically unpredictable cellular repair machinery (which CRISPR requires, often leading to editing mistakes). They showed that it's possible to use this editing to cut out the DNA repeats that cause Friedreich's ataxia (a neurological disease), an approach which should also be relevant to Huntington's and other similar disorders. One particularly cool thing about it is that it's possible to specify every nucleotide within the extended editing window, meaning that recursive bridge edits could potentially be a powerful way to reprogram even biological traits that are caused by many genetic mutations. (Genetic therapies today target single mutations.)
+>
+> Arc is pretty new. Its doors opened in mid 2022, and it's now 300 people. I'm excited about these discoveries because they show that a number of our hopes in starting Arc are starting to pay off:
+>
+> • AI/ML and computation are at the center of all three. That is obviously true for the first two, but the mobile genetic element behind bridge editing was also discovered as a result of a complex computational search. One of our premises in starting Arc was the belief that the intersection of software/AI and experimental wet lab biology should enable great things. (And besides requiring great computational work, all three of these also required strong wet lab work, tightly coordinated under a single physical roof.)
+>
+> • We've been toying with the idea that a handful of technologies are enabling a new kind of "Turing loop" in biology: sequencing advances (including single-cell sequencing) give us new ways to read; transformers and AI gives us new ways to think; and functional genomics (such as bridge editing) give us new ways to ways to write. This trio of discoveries span each part of this loop, and we're hopeful that there'll be compounding returns in improving each part.
+>
+> • Arc is a non-profit, which we hoped would make collaborating with others easier, since we can avoid worries about financial return. This is indeed proving important, and all three of these projects involved close partnership with others. Germinal was done in partnership with @SynBioGaoLab at Stanford; Evo 2 was trained in partnership with Nvidia. Bridge editing was jointly published with a structure from the @HNisimasu Lab at the University of Tokyo. Arc tries to make its discoveries useful (see the Evo 2 Designer[2]) for others, and the code behind the computational projects is open source, hopefully making it easy for others to spot new opportunities for collaboration and partnership in the future. Most of all, Arc itself is an ongoing collaboration with @UCSF, @UCBerkeley, and @Stanford.
+>
+> • With Arc, we wanted to enable better bottom-up and top-down work. With the fully flexible, no-strings-attached funding that we provide to investigators, we want to enable completely unexpected discoveries and avenues of investigation. With our institute initiatives (around creating a virtual cell and curing Alzheimer's), we want to bring to bear a scale and level of coordination that's usually difficult in basic science. Germinal is a "surprise" discovery that didn't involve top-down coordination, whereas Evo 2 is the result of ambitious high-level planning and funding.
+>
+> • Humanity has never cured a complex disease (a category that includes most neurodegenerative diseases, most cancers, and most autoimmune diseases), and my hope is that Arc can help change this. It's also clear that AI will revolutionize biology, and I hope that Arc can effectively aggregate the ingredients needed to fully capitalize on its promise. I'm biased, but I think some of the coolest biology in the world is currently being done at Arc. (They're always hiring if you're interested.)
+>
+> While I'm a cofounder of Arc, I spend almost all my time on Stripe, where we spend our time building economic infrastructure for the internet. All credit for Arc's progress should go to the remarkable scientists and staff who've made Arc their home or who've chosen to collaborate with us. (You can read more about these particular discoveries in these threads: [3], [4], [5].) I'm also very grateful to the amazing Stripe employees who've built the company that makes Arc's ongoing work possible, and to the millions of customers who've chosen to partner with Stripe. John and I feel fortunate to be able to support Arc's work to the extent that we do.
+>
+> Maybe this is reading too much into it, but I sometimes feel that there's a commonality between @arcinstitute and @stripe. Both biology and economic infrastructure involve reasoning about complex systems with many levels of emergent effects, and in both cases building the right tools can have almost unboundedly large benefits. Even though progress in both tends to take a long time, it also feels like the next five years in both will be some of the most interesting in living memory.
+>
+> (If economic infrastructure is your jam, we have a whole slew of fantastic announcements coming up at Stripe Tour in New York next week. Tune in!)
+
+- **Tweet:** https://x.com/patrickc/status/1971362920350248977
+- **Tags:** [[AI]]
+- **What:** Arc Institute announces three major biotechnology breakthroughs: AI-generated functional phage genomes using Evo 2, Germinal for antibody design, and bridge editing for precise genetic modifications up to 1 million base pairs. Demonstrates intersection of AI and wet lab biology.
+
+---
+
+## @JulianGoldieSEO - Google AI Studio Build Mode Challenges Cursor and Paid Coding Tools
+> Google just killed every paid coding tool.
+>
+> Their new AI Studio destroys Cursor completely.
+>
+> Here's how to build React apps instantly:
+>
+> → Open Google AI Studio Build Mode
+> → Type what you want to build
+> → Watch it code everything automatically
+> → Deploy to GitHub with one click
+> → Share working apps instantly
+>
+> Features that crush the competition:
+>
+>   • Angular + React support ✔
+>   • GitHub integration ✔
+>   • Real-time code preview ✔
+>   • Gemini API built-in ✔
+>   • Enterprise AI for $0 ✔
+>
+> Save this thread, you'll build faster apps.
+>
+> Want the SOP? DM me. 💬
+
+- **Tweet:** https://x.com/JulianGoldieSEO/status/1971364094436630941
+- **Tags:** [[AI]]
+- **What:** Google AI Studio's Build Mode features automated React/Angular app development with GitHub integration, real-time preview, and free Gemini API access. Positioned as alternative to paid tools like Cursor.
+
+---
+
+## @Scobleizer - FactoryAI: State-of-the-Art Software Engineering Platform and Developer Tools
+> How hot is this company? Go to X's search. Type "FactoryAI" and search. Look at just how much praise from developers this company is getting.
+>
+> Then come back and watch this. It is the state of the art of software engineering.
+>
+> The team at @FactoryAI goes deep with me today right after they launched a ton of new stuff for developers.
+>
+> You have never visited a San Francisco AI company like this.
+>
+> We cover everything from security to a demo at about 40 minutes in.
+>
+> Cofounder @EnoReyes kicks it off.
+
+- **Tweet:** https://x.com/Scobleizer/status/1971373288929755495
+- **Tags:** [[AI]]
+- **What:** FactoryAI, a San Francisco-based company, launches new developer tools representing state-of-the-art in software engineering. Heavy developer praise on X. Video covers security and live demo of platform capabilities.
+
+---
+
+# Thursday, September 18, 2025
+
+## @AJamesMcCarthy - Falcon 9 Transit Across the Sun with Solar Telescope
+> I'm proud of this one.
+>
+> I brought a solar telescope to Florida to capture a Falcon 9 rocket launch transiting the sun. While these have been captured before, never with the details of the sun's chromosphere, which makes this one the first!
+>
+> See the video or get the print below 👇 https://t.co/hFIo6vvXTU
+
+- **Tweet:** https://x.com/AJamesMcCarthy/status/1968658340679921925
+- **Link:** https://x.com/AJamesMcCarthy/status/1968658340679921925/photo/1
+- **Tags:** [[Space]]
+- **What:** Unique astronomical photograph capturing a SpaceX Falcon 9 rocket transiting the sun's disk, photographed with a solar telescope to reveal chromosphere details. First-of-its-kind image combining space launch and solar observation.
+
+---
+
+# Tuesday, September 16, 2025
+
+## @iannuttall - Codex CLI Pro Tip: Enhanced Shell Function
+> Codex CLI pro tip
+>
+> Add this updated function to bashrc/zshrc &amp; run cdx instead of codex to get:
+>
+> - cdx update to update codex
+> - gpt-5 codex model
+> - web search enabled
+> - full auto mode (read, edit, run commands)
+> - summaries of model thinking
+>
+> (function in image alt text) https://t.co/qLlZGajY7B
+
+- **Tweet:** https://x.com/iannuttall/status/1967902687078519225
+- **Link:** https://x.com/iannuttall/status/1967902687078519225/photo/1
+- **Tags:** [[Coding]]
+- **What:** Shell function enhancement for Codex CLI that enables GPT-5 model, web search, full auto mode, and thinking summaries. Improves developer workflow when using Codex from the terminal.
+
+---
+
+# Monday, September 15, 2025
+
+## @spottedinprod - Liquid Glass on iPhone: Best Collection
+> Best of liquid glass (links below): https://t.co/gAxhqCGAH4
+
+- **Tweet:** https://x.com/spottedinprod/status/1967655144671285544
+- **Link:** https://x.com/spottedinprod/status/1967655144671285544/photo/1
+- **Tags:** [[Apple]]
+- **What:** Curated collection showcasing liquid glass technology on iPhone devices, likely featuring photos or videos demonstrating this liquid metal coating's appearance and effects.
+
+---
+
+## @bdsams - Secret Game Hidden on iOS
+> Does anyone else know about this secret game on iOS? https://t.co/Ihsyn9Q3Vl
+
+- **Tweet:** https://x.com/bdsams/status/1967679308320870632
+- **Link:** https://x.com/bdsams/status/1967679308320870632/video/1
+- **Tags:** [[Apple]]
+- **What:** Discovery of a hidden Easter egg game on iOS. The video demonstrates a secret game embedded within the iOS operating system that most users are unaware of.
+
+---
+
+# Saturday, September 13, 2025
+
+## @elder_plinius - Future Apple Hardware Vision: Smart Glasses + iPhone Air
+> if Apple is smart, they'll get rid of the camera bump entirely for the next iPhone Air
+>
+> they'll launch some beautiful minimalist  smart glasses with high quality cameras, which pair seamlessly with AirPods rather than waste space on crappy speakers in the glasses' frames
+>
+> leave the front facing camera in the iPhone Air for unlock and selfies
+>
+> throw in an Apple watch and make Apple Intelligence actually good, and you're halfway to being an omnilingual cyborg just by wearing your everyday outfit!
+
+- **Tweet:** https://x.com/elder_plinius/status/1966903101992161600
+- **Tags:** [[Apple]]
+- **What:** Design vision for Apple's future hardware strategy, combining iPhone Air, smart glasses, and Apple Intelligence for seamless wearable computing. Proposes eliminating the camera bump by offloading camera functionality to smart glasses.
+
+---
+
+# Friday, September 12, 2025
+
+## @jack - A Cypherpunk's Manifesto
+> https://t.co/Txt3eLyRRn
+
+- **Tweet:** https://x.com/jack/status/1966510310472274178
+- **Filed:** [A Cypherpunk's Manifesto](./knowledge/articles/cypherpunk-manifesto.md)
+- **Tags:** [[Society]]
+- **What:** Eric Hughes' foundational 1993 essay on privacy as a necessity for open society and the role of cryptography and anonymous systems in defending individual privacy rights.
+
+---
+
+# Wednesday, September 10, 2025
+
+## @callebtc - Bitcoin Blockchain Verification and Size
+> Verifying the Bitcoin blockchain with 16 years of transactions takes 4.5 hours on a MacBook.
+
+The entire blockchain fits on an SD card and there'll still be enough space left to fit in the next 16 years.
+
+Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
+
+- **Tweet:** https://x.com/callebtc/status/1965866696415248772
+- **Tags:** [[Bitcoin]]
+- **What:** Demonstrates Bitcoin's efficiency: the full 16-year blockchain verifies in 4.5 hours on consumer hardware and fits on an SD card with room for future growth, refuting scalability concerns.
+
+---
+
+# Tuesday, September 9, 2025
+
+## @ns123abc - Elon confirms Tesla is making transformers
+> Elon confirms Tesla is going to start making transformers 🤯 https://t.co/nHMX1n3M1o
+
+- **Tweet:** https://x.com/ns123abc/status/1965296726396534971
+- **Link:** https://x.com/ns123abc/status/1965296726396534971/photo/1
+- **Tags:** [[Tesla]]
+- **What:** NIK sharing Elon's announcement that Tesla will manufacture transformer units, likely referring to electrical transformers for power distribution.
+
+---
+
+## @saylordocs - Fidelity Bitcoin $1 Billion Prediction
+> 🇺🇸 Fidelity predicts that one #Bitcoin will be worth $1 billion by 2038 🤯 https://t.co/c7oxHBtndg
+
+- **Tweet:** https://x.com/saylordocs/status/1965450878812344741
+- **Tags:** [[Bitcoin]]
+- **What:** Fidelity's bold prediction that Bitcoin will reach $1 billion per coin by 2038, representing massive long-term value appreciation.
+
+---
+
+## @MKBHD - iPhone 17 Square Sensor Landscape Selfie
+> The loudest cheer for the new iPhone 17 so far has been for the use of a square sensor so you don't have to rotate your iPhone to take a landscape selfie anymore
+
+- **Tweet:** https://x.com/MKBHD/status/1965470005455454548
+- **Tags:** [[Apple]]
+- **What:** Marques Brownlee noting that the iPhone 17's square sensor design is the most popular feature, allowing landscape selfies without rotation.
+
+---
+
+## @bilawalsidhu - iPhone 17 Pro Genlock for 3D Capture
+> Having actual "genlock" on iPhone 17 Pro is kinda wild — that level of multi-camera synchronization makes it perfect for bullet time and 3d gaussian splatting rigs. https://t.co/xCk1vesaLr
+
+- **Tweet:** https://x.com/bilawalsidhu/status/1965478725543457141
+- **Tags:** [[Apple]]
+- **What:** Technical analysis of the iPhone 17 Pro's genlock feature enabling synchronized multi-camera capture for advanced 3D capture techniques and computational photography.
+
+---
+
+# Monday, September 8, 2025
+
+## @BrianRoemmele - Using media for AI training data
+> I got a message from a lead engineer at one of the largest AI companies freaking out over my use of media they never thought of for high protein AI training data.
+
+> So I went live to have him listen in.
+
+> "How the hell did you know all of this and for over 30 years".
+
+> 10-4. https://t.co/dT0dHOSsQn
+
+> *Quoting @BrianRoemmele:* Of course I have 100s and 1000s of hours of fire, police, air traffic radio saved from over a decade to train AI models on for high protein non-Reddit data.
+
+> I also am the only AI engineer using CB radio. This data is more complex, not high order, but needed.
+
+> Dull example: https://t.co/CpSSDW70ew
+
+- **Tweet:** https://x.com/BrianRoemmele/status/1965164698141425874
+- **Quoted:** https://x.com/BrianRoemmele/status/1964835683677479307
+- **Link:** https://x.com/BrianRoemmele/status/1965164698141425874/video/1
+- **Tags:** [[AI]]
+- **What:** Brian Roemmele discussing his use of radio broadcast recordings (fire, police, air traffic) as high-quality, non-Reddit AI training data, drawing attention from industry engineers.
+
+---
+
+## @NESN - Garrett Crochet gets a standing O
+> Garrett Crochet gets a standing O in Sacramento after his 10th K 👏 https://t.co/4PB6ySbPSq
+
+- **Tweet:** https://x.com/NESN/status/1965262637479899449
+- **Link:** https://x.com/NESN/status/1965262637479899449/video/1
+- **Tags:** [[Baseball]]
+- **What:** NESN's video of pitcher Garrett Crochet receiving a standing ovation in Sacramento after striking out 10 batters.
+
+---
+
+# Sunday, September 7, 2025
+
+## @chamath - Future of Energy: Distributed Home Generation
+> At some point in the near future, the largest power utility in America will be a company that a) has sold 10Ms of households the ability to generate their own electricity and b) uses an app and sensors to tie them all together as a distributed power utility.
+
+- **Tweet:** https://x.com/chamath/status/1964545277098127722
+- **Tags:** [[Tesla]]
+- **What:** Chamath Palihapitiya predicts that a company enabling home electricity generation and coordinating millions of homes as a distributed grid could become America's largest power utility, hinting at Tesla's potential in energy infrastructure.
+
+---
+
+## @thsottiaux - What would you like us to fix in codex?
+> What would you like us to fix in codex? What would be the biggest productivity unlock for you and your team?
+
+- **Tweet:** https://x.com/thsottiaux/status/1964742011673882691
+- **Tags:** [[AI]]
+- **What:** Tibo asking the community what features or fixes would unlock the most productivity in Codex, inviting suggestions from developers.
+
+---
+
+## @RedSox - Cora's 600th win!
+> Cora's 600th win!
+
+> FINAL: #RedSox 7, Diamondbacks 4
+> #DirtyWater https://t.co/9cfIiMD1Xz
+
+- **Tweet:** https://x.com/RedSox/status/1964831449430868124
+- **Link:** https://x.com/RedSox/status/1964831449430868124/video/1
+- **Tags:** [[Baseball]]
+- **What:** Red Sox announcement of manager Cora reaching his 600th managerial win with a victory over the Diamondbacks.
+
+---
+
+# Saturday, September 6, 2025
+
+## @jjanezhang - AI Coding Tools Impact on Code Quality
+> It's been about a year since my team has fully adopted all the AI coding tools (Cursor, Claude Code)
+>
+> And day to day I am feeling the added cruft in the code base. Unit tests are not catching regressions. Unneeded mocking, comments, are left in between. More refactoring is needed to add new features.
+>
+> I find myself sitting down and rewriting files to ensure completeness, correctness, and ease for future developers more than I ever have before.
+
+- **Tweet:** https://x.com/jjanezhang/status/1964206805523058949
+- **Tags:** [[Coding]]
+- **What:** Personal observation after one year of team-wide AI coding assistant adoption, noting increased code complexity, technical debt, and need for manual refactoring despite productivity gains.
+
+---
+
+## @yacineMTB - ChatGPT Market Dominance Declaration
+> alright i'm calling it
+> chatGPT won
+
+- **Tweet:** https://x.com/yacineMTB/status/1964296809016090666
+- **Tags:** [[AI]]
+- **What:** Brief declaration of ChatGPT as the dominant AI tool in the market.
+
+---
+
+## @grant_melson - Tesla Robotaxi Pricing Disruption
+> I just went across downtown Austin in a Tesla Robotaxi.
+>
+> It was ONE FIFTH the price of an Uber!!
+>
+> This is about to get ridiculous. $TSLA https://t.co/fBpVAcbrOM
+
+- **Tweet:** https://x.com/grant_melson/status/1964314867185201348
+- **Tags:** [[Tesla]]
+- **What:** Grant Melson shares his experience with Tesla's robotaxi service in Austin, noting that it costs one-fifth of the price of an Uber, highlighting the potential disruption to the ride-sharing market.
+
+---
+
+## @alexocheema - AI-Driven Workforce Restructuring
+> Called it last year.
+>
+> Junior roles down 23%.
+> Senior roles up 14%.
+>
+> Harvard study tracked 285,000 firms. Results:
+>
+> Before AI: 1 senior + 3 juniors = 4 person team
+> After AI: 1 senior + Claude = same output https://t.co/wAdQz9Sg8Z
+>
+> *Quoting @alexocheema:* Most people don't understand @cursor_ai.
+>
+> They think it will enable anyone to ship production code. They think it will replace developers.
+>
+> It won't.
+>
+> It will augment the best developers to make them 100x better (Lorenz curve).
+>
+> What this does to the workforce is another question https://t.co/qKpcvUXoLS
+
+- **Tweet:** https://x.com/alexocheema/status/1964324239126782243
+- **Quoted:** https://x.com/alexocheema/status/1827019583028400194
+- **Tags:** [[Society]]
+- **What:** Alex Cheema cites a Harvard study showing that AI tools like Claude are transforming team composition—reducing junior roles 23% while senior roles grow 14%—suggesting AI augments senior developers rather than replacing them entirely.
+
+---
+
+## @samhenrigold - MacBook Hinge Sensor Hack
+> Did you know your MacBook has a sensor that knows the exact angle of the screen hinge?
+>
+> It's not exposed as a public API, but I figured out a way to read it and make it sound like an old wooden door. https://t.co/qysTbr9TV4
+
+- **Tweet:** https://x.com/samhenrigold/status/1964428927159382261
+- **Tags:** [[Coding]]
+- **What:** Sam Henri Gold demonstrates how to access the hidden hinge angle sensor in MacBooks and uses it creatively to produce sound effects mimicking an old wooden door—a clever example of undocumented hardware capabilities.
+
+---
+
+## @congressdj - Tesla vs. CarPlay: Why CarPlay is Dying
+> "Tesla's suck because they don't have CarPlay".
+>
+> Comments like this affirm to me that people have no idea of what they're talking about in 99% of shade posts about Tesla. 😂
+>
+> I used to be that CarPlay guy. I held off buying a Tesla for years because of it. So when I finally bought a Tesla, I got all the extra screens and gear to project CarPlay on the dash. And guess what. I retuned all that garbage in under a week because I realized what Tesla offered made CarPlay look like a middle school app dev contest hobby project.
+>
+> Don't get me wrong. CarPlay is fine for cars with limited capability. But it's been 2.5 years since I "demanded it", and now I've come to dread it.
+>
+> CarPlay is dying, and it's not just Tesla owners who think so.
+
+- **Tweet:** https://x.com/congressdj/status/1964430012217729263
+- **Tags:** [[Tesla]]
+- **What:** DJ shares a personal anecdote about switching from a CarPlay advocate to a Tesla owner, explaining how Tesla's integrated interface surpassed his expectations and arguing that CarPlay is becoming obsolete as car manufacturers innovate beyond it.
+
+---
+
+# Friday, September 5, 2025
+
+## @DavidOndrej1 - GPT-5-High vs Claude Opus Performance Claims
+> GPT-5-High is simply better than Claude 4.1 Opus
+>
+> anyone who says otherwise is either lying
+>
+> or they are not building serious software
+
+- **Tweet:** https://x.com/DavidOndrej1/status/1964015597022277725
+- **Tags:** [[AI]]
+- **What:** Comparative claim about model performance capabilities between GPT-5-High and Claude Opus.
+
+---
+
+## @Scobleizer - OpenAI's Device Strategy and Apple Relevance
+> Coming later today: what @sama and Jony Ive are up to.
+>
+> As learned this morning in the streets of San Francisco from a venture capitalist who is already investing in companies that are building for it.
+>
+> The strategy that will decrease Apple's relevance to all our lives.
+>
+> OpenAI's little device is the rock Sam Altman will throw that will take down the giant and show that Ive is right, and I am wrong about glasses.
+
+- **Tweet:** https://x.com/Scobleizer/status/1964052395811622942
+- **Tags:** [[AI]]
+- **What:** Speculation about OpenAI's upcoming device strategy and potential impact on Apple's market position, noting a collaborative effort between Sam Altman and Jony Ive.
+
+---
+
+# Wednesday, September 3, 2025
+
+## @damienhci - Visual Story-Writing with Real-time Visualization
+
+> Visual Story-Writing. While you write, our word processor visualizes the timeline, world map, and character relationships. Editing these visuals updates the story (e.g. drag a character on the map to move them).
+>
+> This summarizes our #UIST2025 paper. #HCI #LLMs #AI Thread 🧵
+> (1/8) https://t.co/zXu4auGkgo
+
+- **Tweet:** https://x.com/damienhci/status/1963246088674017478
+- **Link:** https://x.com/damienhci/status/1963246088674017478/video/1
+- **Tags:** [[AI]]
+- **What:** Research paper presented at UIST2025 describing an innovative interactive writing tool that visualizes narrative elements (timeline, world map, character relationships) in real-time while editing, with bidirectional synchronization between text and visuals.
+
+---
+
+## @damienhci - Visual Story-Writing: Interactive Narrative Editing
+> *Replying to @damienhci:* Of course, many more visualizations could help writers. That is why we propose a framework to help inform the design of visual representations that support the visual story-writing workflow. 👇
+> (7/8) https://t.co/uUd0QOgu6w
+>
+> Our work lays the foundation for writing support, not just through words, but also visuals.
+> 📝Paper: https://t.co/GUHmEsHIuz
+> 🎥Video: https://t.co/TyxPAibAPl
+> 🖥️Code: https://t.co/brhHEQJiTI
+> 🕹️Demo: https://t.co/eEducI6ucm
+> (8/8)
+
+- **Tweet:** https://x.com/damienhci/status/1963246101324058979
+- **Paper:** https://arxiv.org/abs/2410.07486
+- **Code:** https://github.com/m-damien/VisualStoryWriting
+- **Demo:** https://damienmasson.com/VisualStoryWriting/
+- **Video:** https://www.youtube.com/watch?v=6o19_D8LBC0
+- **Tags:** [[AI]]
+- **Filed:** [VisualStoryWriting](./knowledge/tools/visual-story-writing.md)
+- **What:** An interactive text editor that visualizes story elements (character interactions, locations, timelines) and allows editing through visual manipulation. Research paper demonstrates how visual representations support creative writing and narrative planning.
+
+---
+
+# Tuesday, September 2, 2025
+
+## @CierrePorbin - Lightning Network Transaction Throughput Analysis
+
+> Lightning Network will make altcoins obsolete.
+>
+> Ethereum 15 TPS 🙈
+>
+> PayPal 200 TPS 😭
+>
+> Visa 24,000 TPS 🤐
+>
+> Solana 65k TPS 😶
+>
+> Lightning 40,000,000 TPS 🤯 https://t.co/ivv8bVp9b8
+
+- **Tweet:** https://x.com/CierrePorbin/status/1962907248134393923
+- **Link:** https://x.com/CierrePorbin/status/1962907248134393923/video/1
+- **Tags:** [[Bitcoin]]
+- **What:** Comparative analysis of transaction throughput across major blockchain and payment networks, highlighting Lightning Network's theoretical capacity advantage over altcoins.
+
+---
+
+# Monday, September 1, 2025
+
+## @RedSox - Chappy's Boston Debut
+
+> Chappy's right at home in Boston. https://t.co/1alUpL2uij
+
+- **Tweet:** https://x.com/RedSox/status/1962553926051361189
+- **Link:** https://x.com/RedSox/status/1962553926051361189/photo/1
+- **Tags:** [[Baseball]]
+- **What:** Media post about the Red Sox player Chappy's debut or integration with the Boston team.
+
+---
+
+## @Tesla - Master Plan Part IV
+
+> Master Plan Part IV
+
+- **Tweet:** https://x.com/Tesla/status/1962591324022153607
+- **Tags:** [[Tesla]]
+- **What:** Tesla's announcement of the fourth iteration of their strategic master plan.
+
+---
+
+# Sunday, August 31, 2025
+
+## @TheRealPlanC - Bitcoin Slow Grind to Million
+> What if the earlier "Bitcoin cycles" were nothing more than the product of a retail-dominated, FOMO-fueled market?
+>
+> What if, from here on, Bitcoin simply slow-grinds up and to the right, with long, drawn-out, uneventful 10–30% corrections and consolidations?
+>
+> And every time we enter one of these consolidations, people selling think the cycle is over and that Bitcoin will drop 50–80% so they can buy back in lower—but it never does.
+>
+> Instead, we just keep grinding slowly upward to $1,000,000 over the next seven years in a very boring and underwhelming way, as Bitcoin continues to gain acceptance and adoption from the traditional financial system and major players.
+
+- **Tweet:** https://x.com/TheRealPlanC/status/1962181012789613046
+- **Tags:** [[Bitcoin]]
+- **What:** Analysis suggesting Bitcoin may not follow previous boom/bust cycles but instead experience steady adoption-driven growth toward $1M over seven years.
+
+---
+
+## @canvardar - Coding Like This
+> what's stopping you from coding like this?
+
+- **Tweet:** https://x.com/canvardar/status/1962202041721168000
+- **Link:** https://x.com/icanvardar/status/1962202041721168000/photo/1
+- **Tags:** [[Coding]]
+- **What:** Tweet with image showing a coding technique or pattern, prompting reflection on obstacles to adopting better coding practices.
+
+---
+
+## @RedSox - Inside-the-Park Home Run
+> INSIDE-THE-PARK HOME RUN
+
+- **Tweet:** https://x.com/RedSox/status/1962228692597231620
+- **Link:** https://x.com/RedSox/status/1962228692597231620/video/1
+- **Tags:** [[Baseball]]
+- **What:** Video highlight of an inside-the-park home run from a Red Sox game.
+
+---
+
+## @Jkylebass - ChatGPT LLM Accuracy and Bias Concerns
+
+> Chat GPT's LLM gave an outright false answer to an important question tonight. This interaction is an important reminder that AI output shouldn't be treated as truth. Was Chat GPT's answer politically motivated or directed by its chief philosopher? : 🧵 @elonmusk
+
+- **Tweet:** https://x.com/Jkylebass/status/1962337749786132526
+- **Tags:** [[AI]]
+- **What:** Critical observation about ChatGPT providing factually incorrect information and raising questions about whether such errors are politically motivated or influenced by design decisions.
+
+---
+
+# Saturday, August 30, 2025
+
+## @nathan_covey - Shift from "Google It" to "Ask Chat"
+> I've noticed nearly nobody says "Google it" anymore
+>
+> They say "Ask chat"
+
+- **Tweet:** https://x.com/nathan_covey/status/1961850029758443795
+- **Tags:** [[AI]]
+- **What:** Observation about how AI chatbots have become the default search method, replacing search engines as the primary query tool.
+
+---
+
+# Friday, August 29, 2025
+
+## @balajis - Bitcoin Wins: A Video Essay on Economic Transformation
+> When Bitcoin wins...
+>
+> 0:00 It ends the Fed
+> 02:10 Payments become packets
+> 3:30 Keynesianism falls like Communism
+> 4:20 Real estate falls in real terms
+> 5:40 Fiat billionaires get flipped
+> 6:20 Money printer runs out of toner
+> 7:50 The battle begins...
+> 10:00 ...and it's time to build https://t.co/D5nSUQaJJM
+
+- **Tweet:** https://x.com/balajis/status/1961529239993536687
+- **Tags:** [[Bitcoin]]
+- **What:** Balaji's video essay on the implications and transformations that would occur if Bitcoin achieved mainstream adoption, covering monetary, economic, and social shifts.
+
+---
+
+## @NESN - Tolle's MLB Dream Moment
+> The moment Tolle's MLB dream came true 🥹
+>
+> (via @RedSox)
+
+- **Tweet:** https://x.com/NESN/status/1961538655475871813
+- **Link:** https://x.com/RedSox/status/1961525734964355504/video/1
+- **Tags:** [[Baseball]]
+- **What:** Video of a player's dream moment coming true in their MLB career debut or milestone achievement.
+
+---
+
+# Thursday, August 28, 2025
+
+## @xai - Grok Code Fast 1: Speedy Agentic Coding Model
+> Introducing Grok Code Fast 1, a speedy and economical reasoning model that excels at agentic coding.
+>
+> Now available for free on GitHub Copilot, Cursor, Cline, Kilo Code, Roo Code, opencode, and Windsurf.
+>
+> https://t.co/3tMbmLbxOP
+
+- **Tweet:** https://x.com/xai/status/1961129789944627207
+- **Tags:** [[AI]]
+- **What:** xAI introduces Grok Code Fast 1, a lightweight reasoning model for agentic coding, now available across multiple developer tools for free.
+
+---
+
+# Wednesday, August 27, 2025
+
+## @karpathy - Environments as the New Frontier: From Pretraining to RL
+> In era of pretraining, what mattered was internet text. You'd primarily want a large, diverse, high quality collection of internet documents to learn from.
+>
+> In era of supervised finetuning, it was conversations. Contract workers are hired to create answers for questions, a bit like what you'd see on Stack Overflow / Quora, or etc., but geared towards LLM use cases.
+>
+> Neither of the two above are going away (imo), but in this era of reinforcement learning, it is now environments. Unlike the above, they give the LLM an opportunity to actually interact - take actions, see outcomes, etc. This means you can hope to do a lot better than statistical expert imitation. And they can be used both for model training and evaluation. But just like before, the core problem now is needing a large, diverse, high quality set of environments, as exercises for the LLM to practice against.
+>
+> In some ways, I'm reminded of OpenAI's very first project (gym), which was exactly a framework hoping to build a large collection of environments in the same schema, but this was way before LLMs. So the environments were simple academic control tasks of the time, like cartpole, ATARI, etc. The @PrimeIntellect environments hub (and the `verifiers` repo on GitHub) builds the modernized version specifically targeting LLMs, and it's a great effort/idea. I pitched that someone build something like it earlier this year:
+> https://t.co/ANHhasxzD8
+> Environments have the property that once the skeleton of the framework is in place, in principle the community / industry can parallelize across many different domains, which is exciting.
+>
+> Final thought - personally and long-term, I am bullish on environments and agentic interactions but I am bearish on reinforcement learning specifically. I think that reward functions are super sus, and I think humans don't use RL to learn (maybe they do for some motor tasks etc, but not intellectual problem solving tasks). Humans use different learning paradigms that are significantly more powerful and sample efficient and that haven't been properly invented and scaled yet, though early sketches and ideas exist (as just one example, the idea of "system prompt learning", moving the update to tokens/contexts not weights and optionally distilling to weights as a separate process a bit like sleep does).
+
+- **Tweet:** https://x.com/karpathy/status/1960803117689397543
+- **Quoted:** https://x.com/PrimeIntellect/status/1960783427948699680
+- **Tags:** [[AI]]
+- **What:** Andrej Karpathy's thoughts on the evolution of LLM training paradigms, from pretraining to supervised finetuning to RL, arguing that environments are the new key resource while questioning the viability of pure RL approaches in favor of novel learning paradigms.
+
+---
+
+# Tuesday, August 26, 2025
+
+## @sundarpichai - Google Translate AI Live Translation
+> Every month, people use Google to translate around 1 trillion words. Today, we're introducing a new AI-powered live translation experience in the Google Translate app, plus a new beta feature to help you practice new languages. Rolling out now on iOS + Android. https://t.co/0DvKYqbSTV
+
+- **Tweet:** https://x.com/sundarpichai/status/1960373125884858604
+- **Tags:** [[AI]]
+- **What:** Google Translate announcement of new AI-powered live translation experience and language practice feature for iOS and Android.
+
+---
+
+# Monday, August 25, 2025
+
+## @JacksonAtkinsX - NVIDIA PostNAS: 53x LLM Speedup via Hybrid Attention
+> NVIDIA research just made LLMs 53x faster. 🤯
+>
+> Imagine slashing your AI inference budget by 98%.
+>
+> This breakthrough doesn't require training a new model from scratch; it upgrades your existing ones for hyper-speed while matching or beating SOTA accuracy.
+>
+> Here's how it works:
+>
+> The technique is called Post Neural Architecture Search (PostNAS). It's a revolutionary process for retrofitting pre-trained models.
+>
+> Freeze the Knowledge: It starts with a powerful model (like Qwen2.5) and locks down its core MLP layers, preserving its intelligence.
+>
+> Surgical Replacement: It then uses a hardware-aware search to replace most of the slow, O(n²) full-attention layers with a new, hyper-efficient linear attention design called JetBlock.
+>
+> Optimize for Throughput: The search keeps a few key full-attention layers in the exact positions needed for complex reasoning, creating a hybrid model optimized for speed on H100 GPUs.
+>
+> The result is Jet-Nemotron: an AI delivering 2,885 tokens per second with top-tier model performance and a 47x smaller KV cache.
+>
+> Why this matters to your AI strategy:
+>
+> - Business Leaders: A 53x speedup translates to a ~98% cost reduction for inference at scale. This fundamentally changes the ROI calculation for deploying high-performance AI.
+>
+> - Practitioners: This isn't just for data centers. The massive efficiency gains and tiny memory footprint (154MB cache) make it possible to deploy SOTA-level models on memory-constrained and edge hardware.
+>
+> - Researchers: PostNAS offers a new, capital-efficient paradigm. Instead of spending millions on pre-training, you can now innovate on architecture by modifying existing models, dramatically lowering the barrier to entry for creating novel, efficient LMs.
+
+- **Tweet:** https://x.com/JacksonAtkinsX/status/1960090774122483783
+- **Tags:** [[AI]]
+- **What:** Deep dive into NVIDIA's PostNAS technique for retrofitting existing LLMs with hybrid attention layers, achieving 53x speedup and 98% inference cost reduction.
+
+---
+
+# Sunday, August 24, 2025
+
+## @karpathy - LLM-Assisted Coding Workflows and Tool Choices
+> Continuing the journey of optimal LLM-assisted coding experience. In particular, I find that instead of narrowing in on a perfect one thing my usage is increasingly diversifying across a few workflows that I "stitch up" the pros/cons of:
+>
+> Personally the bread & butter (~75%?) of my LLM assistance continues to be just (Cursor) tab complete. This is because I find that writing concrete chunks of code/comments myself and in the right part of the code is a high bandwidth way of communicating "task specification" to the LLM, i.e. it's primarily about task specification bits - it takes too many bits and too much latency to communicate what I want in text, and it's faster to just demonstrate it in the code and in the right place. Sometimes the tab complete model is annoying so I toggle it on/off a lot.
+>
+> Next layer up is highlighting a concrete chunk of code and asking for some kind of a modification.
+>
+> Next layer up is Claude Code / Codex / etc, running on the side of Cursor, which I go to for larger chunks of functionality that are also fairly easy to specify in a prompt. These are super helpful, but still mixed overall and slightly frustrating at times. I don't run in YOLO mode because they can go off-track and do dumb things you didn't want/need and I ESC fairly often. I also haven't learned to be productive using more than one instance in parallel - one already feels hard enough. I haven't figured out a good way to keep CLAUDE[.]md good or up to date. I often have to do a pass of "cleanups" for coding style, or matters of code taste. E.g. they are too defensive and often over-use try/catch statements, they often over-complicate abstractions, they overbloat code (e.g. a nested if-the-else constructs when a list comprehension or a one-liner if-then-else would work), or they duplicate code chunks instead of creating a nice helper function, things like that... they basically don't have a sense of taste. They are indispensable in cases where I inch into a more vibe-coding territory where I'm less familiar (e.g. writing some rust recently, or sql commands, or anything else I've done less of before). I also tried CC to teach me things alongside the code it was writing but that didn't work at all - it really wants to just write code a lot more than it wants to explain anything along the way. I tried to get CC to do hyperparameter tuning, which was highly amusing. They are also super helpful in all kinds of lower-stakes one-off custom visualization or utilities or debugging code that I would never write otherwise because it would have taken way too long. E.g. CC can hammer out 1,000 lines of one-off extensive visualization/code just to identify a specific bug, which gets all deleted right after we find it. It's the code post-scarcity era - you can just create and then delete thousands of lines of super custom, super ephemeral code now, it's ok, it's not this precious costly thing anymore.
+>
+> Final layer of defense is GPT5 Pro, which I go to for the hardest things. E.g. it has happened to me a few times now that I / Cursor / CC are all stuck on a bug for 10 minutes, but when I copy paste the whole thing to 5 Pro, it goes off for 10 minutes but then actually finds a really subtle bug. It is very strong. It can dig up all kinds of esoteric docs and papers and such. I've also used it for other meatier tasks, e.g. suggestions on how to clean up abstractions (mixed results, sometimes good ideas but not all), or an entire literature review around how people do this or that and it comes back with good relevant resources / pointers.
+>
+> Anyway, coding feels completely blown open with possibility across a number of "kinds" of coding and then a number of tools with their pros/cons. It's hard to avoid the feeling of anxiety around not being at the frontier of what is collectively possible, hence random sunday shower of thoughts and a good amount of curiosity about what others are finding.
+
+- **Tweet:** https://x.com/karpathy/status/1959703967694545296
+- **Tags:** [[Coding]]
+- **What:** Detailed reflection on optimal workflows for LLM-assisted coding, comparing tools (Cursor tab complete vs Claude Code vs GPT-5 Pro) with practical observations about their strengths and limitations.
+
+---
+
+# Friday, August 22, 2025
+
+## @KobeissiLetter - Fed Rate Cuts Into Stagflation
+> In case you don't realize what's happening:
+>
+> The Fed is about to start cutting rates into stagflation.
+>
+> That means rate cuts into rising inflation with a weakening labor market.
+>
+> If you don't own assets, you will be left in the dust.
+
+- **Tweet:** https://x.com/KobeissiLetter/status/1958972227724181632
+- **Tags:** [[Society]]
+- **What:** Economic analysis warning about the risks of monetary policy decisions during stagflation and the implications for asset ownership.
+
+---
+
+# Wednesday, August 20, 2025
+
+## @SebastienBubeck - GPT-5-Pro Proves New Mathematical Bounds
+> Claim: gpt-5-pro can prove new interesting mathematics.
+>
+> Proof: I took a convex optimization paper with a clean open problem in it and asked gpt-5-pro to work on it. It proved a better bound than what is in the paper, and I checked the proof it's correct.
+>
+> Details below.
+
+- **Tweet:** https://x.com/SebastienBubeck/status/1958198661139009862
+- **Tags:** [[AI]]
+- **What:** A demonstration of GPT-5-Pro's capability to solve novel mathematical problems, improving upon published bounds in convex optimization research.
+
+---
+
+## @MatthewBerman - Voice AI for Productivity While Driving
+> I would pay $1,000 per month for voice AI that could let me get actual work done when I drive. Answer emails, schedule meetings and do other tasks
+
+- **Tweet:** https://x.com/MatthewBerman/status/1958293896208998701
+- **Tags:** [[AI]]
+- **What:** Commentary on the high commercial value of voice AI that could enable productive task completion during commutes.
+
+---
+
+## @DeryaTR_ - Google AI Co-Scientist Beta Testing
+> I've been beta testing @GoogleAI Co-Scientist for some time. It generates novel ideas, hypotheses & scientific proposals. It's unbelievably good; together with the other AI models I discuss here, it fundamentally changes how science is done & will make the world a better place!❤️
+
+- **Tweet:** https://x.com/DeryaTR_/status/1958337308052365657
+- **Tags:** [[AI]]
+- **What:** Positive assessment of Google's Co-Scientist AI tool and its transformative potential for scientific research and hypothesis generation.
+
+---
+
 # Wednesday, August 20, 2025
 
 ## @vitransformer - Claude Code System Prompts and API Introspection
