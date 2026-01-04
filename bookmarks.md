@@ -1246,6 +1246,146 @@ DATE: Tuesday, December 9, 2025
 
 # Friday, December 5, 2025
 
+DATE: Friday, December 5, 2025
+## @_The_Prophet__ - SpaceX as geopolitical pillar at $800B
+
+> ⚡️SpaceX at $800B is the first open acknowledgement of a reality that has been true for years:
+>
+> The United States is no longer the sole author of its technological destiny.
+>
+> It is now co-authoring it with a single private actor.
+>
+> This is dependence being priced.
+>
+> Deep down, everyone in power already knows the following:
+>
+> 1.   The U.S. can no longer project force without SpaceX.
+>
+> Military satellite networks, reconnaissance layers, battlefield communication, drone coordination, GPS redundancy, missile warning systems, hardened global internet continuity.
+>
+> All of it is drifting into SpaceX's orbit.
+>
+> If SpaceX died tomorrow, American power would fracture instantly.
+>
+> That is not true of Lockheed.
+> That is not true of Boeing.
+> That is not true of NASA.
+>
+> Only SpaceX.
+>
+> That is why this valuation is rising:
+> because the market finally sees the state's dependency.
+>
+> 2.  Starlink is the first private sovereign infrastructure in human history.
+>
+> Not a company.
+>
+> A sovereign layer.
+>
+> A parallel communication grid that:
+> •bypasses states
+> •bypasses borders
+> •bypasses terrestrial chokepoints
+> •can service militaries
+> •can service dissidents
+> •can service entire governments
+> •and answers to no nation
+>
+> This is unprecedented.
+>
+> In private.
+>
+> Off-world.
+>
+> Untouchable.
+>
+> Every intelligence agency in the world knows what this means:
+>
+> Musk controls the most strategically important communications backbone on Earth.
+>
+> That alone is worth more than $800B.
+>
+> 3.  The U.S. is quietly transferring parts of geopolitical hegemony to Musk because it has no alternative.
+>
+> This is the deeper part.
+>
+> The federal apparatus cannot innovate at the required velocity.
+> It cannot engineer at scale.
+> It cannot build the new frontier infrastructure.
+> It cannot match China's industrial acceleration.
+>
+> But SpaceX can.
+>
+> The state is losing the ability to lead technological epochs.
+>
+> So it is selecting a proxy out of necessity.
+>
+> Hegemony has outsourced its vital organs.
+>
+> 4.  The real valuation is "indispensable."
+>
+> When something becomes indispensable to a superpower, its monetary valuation stops being financial and becomes existential.
+>
+> SpaceX's true value is this:
+>
+> "Without us, you fall behind."
+>
+> And that is the most powerful position any entity can hold in the twenty first century.
+>
+> Every insider knows it.
+> Every sovereign knows it.
+> Every hedge fund whisper network knows it.
+> Markets are just catching up.
+>
+> 5.   The deepest layer:
+>
+> SpaceX is the prototype of a new category of actor.
+>
+> Not corporate.
+> Not governmental.
+> Not national.
+>
+> Something else.
+>
+> A hybrid sovereign.
+>
+> A structure that exists across borders, powers states, but is not subordinate to them.
+>
+> A new type of node in the geopolitical lattice.
+>
+> This is why the number jumped.
+> Because the number was never the story.
+>
+> The story is that a private actor has become a geopolitical pillar.
+>
+> The first of its kind.
+>
+> But not the last.
+>
+> That is the truth beneath the truth.
+>
+> *Quoting @SawyerMerritt:* HOLY SHIT (if true) 🚀
+
+- **Tweet:** https://x.com/_The_Prophet__/status/1997068080753922072
+- **Quoted:** https://x.com/SawyerMerritt/status/1997015504968454625
+- **Tags:** [[Space]]
+- **What:** Analysis of SpaceX's geopolitical significance and the $800B valuation, arguing it reflects government dependency on private space infrastructure rather than purely financial value. Discusses Starlink's role as sovereign communication infrastructure and the emergence of hybrid state-corporate entities.
+
+DATE: Friday, December 5, 2025
+## @PTrubey - Tesla Optimus vision-only approach and low-cost strategy
+
+> Tesla is in another "lidar vs vision" debate, this time with their Optimus bot. Tesla infamously doesn't use lidar for vehicle self driving, something the chattering classes used as a rhetorical weapon against it.
+>
+> Two bot companies (Figure, Sunday) have palm cameras, but Tesla doesn't and won't.
+>
+> It's the same philosophy as to why they didn't use lidar. The eventual end goal is low cost, so eliminate anything that isn't ABSOLUTELY necessary. Using a palm camera will speed up training, but it's also a crutch that defers tackling harder problems that you'll eventually want to solve anyway. Finally, humans don't need palm cameras.
+>
+> Tesla will be vindicated with their vehicle self driving decision, and will also likely be vindicated with this one too. It may slow down Tesla's production launch, but they'll end up with an inexpensive, high volume solution that reliably works in more situations.
+
+- **Tweet:** https://x.com/PTrubey/status/1996999238929297508
+- **Tags:** [[Tesla]]
+- **What:** Discussion of Tesla's choice to use vision-only systems for Optimus robots rather than palm cameras used by competitors (Figure, Sunday). Explains this follows Tesla's broader philosophy of eliminating non-essential components to achieve low-cost mass production.
+
 
 
 ---
@@ -1273,6 +1413,19 @@ DATE: Tuesday, December 9, 2025
 ---
 
 # Wednesday, December 3, 2025
+
+DATE: Wednesday, December 3, 2025
+## @LynAldenContact - December macro newsletter: debasement trade and market dislocation
+
+> My December macro newsletter is now available.
+>
+> It discusses the debasement trade, changing macro conditions, and the large dislocation between the economy and markets.
+
+- **Tweet:** https://x.com/LynAldenContact/status/1996340036682609047
+- **Link:** https://www.lynalden.com/december-2025-newsletter/
+- **Tags:** [[Investing]]
+- **Filed:** [december-2025-newsletter](./knowledge/articles/december-2025-newsletter.md)
+- **What:** Newsletter from Lyn Alden analyzing the "debasement trade" concept, examining where it holds true and where it's misleading, plus discussion of macro conditions and the disconnect between economy and financial markets.
 
 ## @PTrubey - Tesla's AI5 Chip Ambitions and Samsung Transition
 
@@ -1347,11 +1500,78 @@ DATE: Tuesday, December 9, 2025
 
 # Saturday, November 29, 2025
 
+DATE: Saturday, November 29, 2025
+## @julian_englert - Design Novel Proteins with AI in 5 Minutes
+> We just made an app that walks you through designing a novel protein with AI from scratch. Takes about 5 minutes, requires zero biology knowledge.
+>
+> ➡️ https://t.co/L3dg6H6BTU
+>
+> The best part: we will actually synthesize 1000 of those protein designs in the lab and test their real world function as a therapeutic.
+
+- **Tweet:** https://x.com/julian_englert/status/1994767979427283060
+- **Link:** https://design-a-protein.com/
+- **Tags:** [[Biomics]]
+- **Filed:** [Design a Protein - AI-Powered Protein Design Tool](./knowledge/tools/design-a-protein.md)
+- **What:** Interactive web application enabling users to design novel proteins using AI in ~5 minutes without biology knowledge. Designs are validated through laboratory synthesis and testing for therapeutic applications.
+
+DATE: Saturday, November 29, 2025
+## @cybrtrkguy - FSD 14.2 Winter Driving Analysis
+> FSD 14.2 STUNS IN WINTER DRIVING!
+>
+> Just got done driving ~100 miles on a snowy interstate and a little suburban driving. A few notes:
+>
+> FSD absolutely, definitively detects snow as a separate substance from rain.
+>
+> As the snow began to fall, there came a point where FSD first detected the snow and immediately slowed. From then on, it drove in a *completely different profile*.
+>
+> Generally, V14.2 kept 40-55mph on a 70mph interstate.
+>
+> When driving in Sloth/Chill and you try to increase the speed profile to Standard/Hurry, the truck displays a red error saying inclement weather is preventing FSD from speeding up. Fantastic!
+>
+> V14.2 takes corners slow as molasses to keep traction.
+>
+> It does NOT shoot gaps and pull out in front of other vehicles. V14.2 waits for BIG gaps to make its merge into traffic. It is properly cautious!
+>
+> One instance of Red Hands occurred when it was merging into a center left turn lane. This center lane was the only lane not plowed, so either 1. it got confused with lane markings or 2. Slid sideways very slightly and got upset.
+>
+> On straightaways on the interstate in areas with little snow coverage, V14.2 would speed up close to the speed limit. While the roads were wet today from road treatment, I was concerned for slick & frozen areas and manually backed off on the speed. While not technically unsafe, I did this out of an abundance of caution. IMO this is a grey area between "driving safely" and "not driving how I do" lol
+>
+> Not much ice today. Just snow and slush.
+>
+> ***Tonight, 6-12 inches of fresh snow is forecasted to fall here. I'll be out at dawn tomorrow to test in worse conditions with less traffic.***
+>
+> Stay tuned.
+
+- **Tweet:** https://x.com/cybrtrkguy/status/1994901956318445831
+- **Tags:** [[Tesla]]
+- **What:** Detailed real-world testing of Tesla FSD 14.2 in winter conditions (100 miles on snowy interstate). FSD adapts driving profile for snow, reduces speed to 40-55mph, avoids aggressive merging, and prevents speed increases in inclement weather. One incident of Red Hands on unplowed lane.
+
+DATE: Saturday, November 29, 2025
+## @elonmusk - Optimus as Von Neumann probe
+
+> Optimus will be the Von Neumann probe
+
+- **Tweet:** https://x.com/elonmusk/status/1994940491054682570
+- **Tags:** [[Tesla]]
+- **What:** Brief statement comparing Tesla's Optimus robot to Von Neumann probes (self-replicating spacecraft concept). Suggests Optimus could operate autonomously and reproduce itself, indicating long-term vision for space exploration capabilities.
+
 
 
 ---
 
 # Friday, November 28, 2025
+
+DATE: Friday, November 28, 2025
+## @nextbigfuture - Tesla Major Battery Breakthrough
+> Tesla has a major battery breakthrough
+>
+> *Quoting @tslaming:* 📄 The patent US20250357544, filed by Tesla with renowned battery researcher Jeff Dahn listed as a lead inventor, details a significant breakthrough in battery chemistry 🔋
+
+- **Tweet:** https://x.com/nextbigfuture/status/1994277067991429431
+- **Quoted:** https://x.com/tslaming/status/1994010803595563511
+- **Tags:** [[Tesla]]
+- **Filed:** [Tesla Battery Breakthrough - DMOHC Electrolyte](./knowledge/articles/tesla-battery-breakthrough.md)
+- **What:** Tesla's patent US20250357544 introduces dicarbonate electrolytes (DMOHC/DEOHC) that dramatically improve lithium-ion battery durability at high temperatures and voltages, enabling longer-lasting batteries for robotaxis and extreme conditions.
 
 
 
@@ -1395,11 +1615,80 @@ DATE: Tuesday, December 9, 2025
 
 # Saturday, November 22, 2025
 
+DATE: Saturday, November 22, 2025
+## @TheRealPlanC - Bitcoin Mining Cost of Production Analysis
+
+> One of the most important Bitcoin charts you have most likely never seen.
+>
+> Notice how many times Bitcoin has found support at this estimated cost of production red line.
+>
+> The line currently sits at $70,000.
+>
+> This is not just on-chain data—this is a cost of production model for Bitcoin, which is a commodity, and commodities almost never trade below their cost of production.
+>
+> Shout out to (@)paulewaulpaul for creating this chart.
+>
+> Make sure you give him a follow—he does unique and great work.
+
+- **Tweet:** https://x.com/TheRealPlanC/status/1992245302456193100
+- **Tags:** [[bitcoin]] [[economics]] [[mining]]
+- **What:** Analysis of Bitcoin's cost of production model showing repeated support at estimated mining cost ($70k), applying commodity economics principles to argue Bitcoin rarely trades below production cost.
+
+DATE: Saturday, November 22, 2025
+## @TheBTCTherapist - Bitcoin, MSTR, and JP Morgan Analysis
+> If you're wondering what is going on with $Bitcoin, $MSTR and JP Morgan, you need to listen to this👇
+>
+> It's probably the most important thing you're going to read today.
+
+- **Tweet:** https://x.com/TheBTCTherapist/status/1992272581614043138
+- **Link:** https://x.com/HodlMaryland/status/1992075094349500433/video/1
+- **Tags:** [[Bitcoin]]
+- **What:** Video discussing Bitcoin, MicroStrategy, and JP Morgan. Needs transcript for full context.
+
+DATE: Saturday, November 22, 2025
+## @MarylandHODL21 - BitBonds: The Structural Innovation
+> While the piece I posted yesterday is a stand-alone article responding to recent events, it also ties directly into the broader thesis I've been developing through a series on my Substack.
+>
+> So far, I've completed:
+>
+> 1.Preface: The Coup We Never Voted For
+>
+> 2.Part 1: Coup to Code - The End Run Around the Fed
+>
+> 3.Part 2: Unlocking the Sovereign Flywheel
+>
+> I'm now working on the final two sections:
+>
+> 4.Part 3: BitBonds - The Structural Innovation
+>
+> 5.Part 4: The Great Incentive Alignment and the End of the Great Distraction
+>
+> *Quoting @MctoshiW:* @HodlMaryland is pt1 "The Trump Gambit"?  just making sure I didn't miss something else.  Great read 👍
+
+- **Tweet:** https://x.com/MarylandHODL21/status/1992333713443561950
+- **Quoted:** https://x.com/MctoshiW/status/1992327471140946326
+- **Link:** https://x.com/hodlmaryland/status/1967633797303656844?s=46
+- **Tags:** [[Bitcoin]]
+- **Filed:** [BitBonds - The Structural Innovation](./knowledge/articles/bitbonds-structural-innovation.md)
+- **What:** Comprehensive article on sovereign monetary architecture using Bitcoin reserves, stablecoins, and BitBonds as structural innovations to address national debt and economic incentive alignment.
+
 
 
 ---
 
 # Friday, November 21, 2025
+
+DATE: Friday, November 21, 2025
+## @TheBTCTherapist - Bitcoin Cycle Analysis: Raoul Pal's Prediction
+
+> 6 months ago, Raoul Pal said we are in an elongated business/debt cycle and that bitcoin would climb higher and then we would see a -35% drawdown and "everyone will be sure that it is over… and it won't be over."
+>
+> You need to watch this again.
+
+- **Tweet:** https://x.com/TheBTCTherapist/status/1991853674587685240
+- **Link:** https://x.com/Vivek4real_/status/1919417578692198438/video/1
+- **Tags:** [[bitcoin]] [[market-cycles]]
+- **What:** Video reference to Raoul Pal's macroeconomic analysis predicting Bitcoin will experience a -35% drawdown within an elongated debt cycle, but will continue higher long-term. Needs transcript.
 
 ## @MarylandHODL21 - Trump's Gambit: White House vs JPMorgan
 > Trump's Gambit: The Quiet War Between the White House and JPMorgan
@@ -1515,6 +1804,62 @@ DATE: Tuesday, December 9, 2025
 ---
 
 # Sunday, November 16, 2025
+
+DATE: Sunday, November 16, 2025
+## @HHorsley - Bitcoin's Place in Global Wealth
+
+> Globally, there's:
+> ~$120+ trillion of wealth in equities
+> ~$140+ trillion of wealth in fixed income
+> ~$250+ trillion of wealth in real estate
+> ~$100+ trillion in M2 / money
+> ~$30 trillion in gold
+>
+> There's $1.9 trillion in Bitcoin.
+>
+> Bitcoin at $85k, $95k, $105k is all the same thing.
+>
+> In any case, it's tiny. It has a long long way to go. And access is just now opening up for the $100s of trillions of wealth to be able to buy it for the first time.
+>
+> Don't lose the forrest for the trees.
+
+- **Tweet:** https://x.com/HHorsley/status/1989957107354063112
+- **Tags:** [[bitcoin]] [[economics]]
+- **What:** Comparative analysis of Bitcoin's market cap relative to global wealth across equities, bonds, real estate, money supply, and gold. Argues Bitcoin remains undervalued as institutional access expands.
+
+DATE: Sunday, November 16, 2025
+## @pbeisel - Optimus: Embodied AI as Computing Paradigm Shift
+
+> Optimus— AI's Killer App
+>
+> This might be my most consequential post of the year.
+>
+> Tesla's AI team has been grinding for years on one of the hardest technical problems of our time: vehicle autonomy. It's the little team that could— while everyone else chased prestige, giant paychecks, and the chance to bask in the presence of the supposed "AI gods" at the likes of Google and Meta, this group stayed focused and solved autonomy the unglamorous way: pixel by pixel, version by version. That's what real engineering looks like.
+>
+> But what they've built isn't just for driving. It's the foundation for Optimus.
+>
+> Marc Andreessen (@pmarca) recently pointed out that today's "chatbot interface" is a temporary phase, much like text-based computers before the revolutionary Macintosh ushered in the graphical interface, and before the iPhone redefined the very idea of a personal device. Interfaces evolve, and they evolve toward whatever delivers the most utility— and sometimes present in novel ways.
+>
+> Embodied AI is that next interface. It is the interface of AI.
+>
+> A humanoid robot, Optimus, will be the breakthrough. A natural voice interface, a physical human-like presence, and the ability to manipulate the real world as we do. It's AI you don't just talk to; it's AI that does things. This will be how most people on Earth interact with artificial intelligence: not through a screen, but through a physical assistant that feels as natural as interacting with another person.
+>
+> Most people didn't see that "the phone" would become the dominant computing device. It looked like a communication tool— until the iPhone turned it into the center of modern life. Today, more people will read this post on a smartphone than on a computer.
+>
+> Optimus will be the same kind of shift.
+>
+> And it's Tesla's AI team that's positioned to deliver it. A fully embodied intelligence with the reasoning of top-tier chatbots and the physical competence of a human. Yes, it will likely integrate pieces of Grok from @xAI. But the core— its ability to perceive, navigate, and act in the real world— comes from Tesla's autonomy stack and its unmatched real-world data engine.
+>
+> This is the killer app of AI.
+>
+> @Tesla_AI
+>
+> *Quoting:* The Magic of Tesla FSD, part 8 (Optimus edition)
+
+- **Tweet:** https://x.com/pbeisel/status/1990167809952006593
+- **Quoted:** https://x.com/pbeisel/status/1978097056372986101
+- **Tags:** [[ai]] [[tesla]] [[robotics]] [[embodied-ai]]
+- **What:** Long-form essay arguing that embodied AI in the form of humanoid robots (Optimus) represents the next paradigm shift in computing interfaces, similar to how the iPhone revolutionized mobile computing. Contends Tesla's autonomy expertise positions them uniquely to deliver this breakthrough.
 
 
 
@@ -1682,6 +2027,16 @@ DATE: Tuesday, December 9, 2025
 
 # Thursday, October 23, 2025
 
+DATE: Thursday, October 23, 2025
+## @skdh - Variable Speed of Light and Dark Energy
+
+> A physicist claims that a changing speed of light explains dark energy and dark matter, both of which are just an "illusion". I've had a look.
+
+- **Tweet:** https://x.com/skdh/status/1981375057881641460
+- **Link:** https://www.youtube.com/watch?v=Zq8tfam1-zE
+- **Tags:** [[space]] [[physics]]
+- **What:** Video analysis examining a physicist's hypothesis that variable speed of light could explain dark energy and dark matter. Needs transcript.
+
 
 
 ---
@@ -1810,6 +2165,15 @@ DATE: Tuesday, December 9, 2025
 ---
 
 # Tuesday, October 14, 2025
+
+DATE: Tuesday, October 14, 2025
+## @abcampbell - China Geopolitical Analysis
+
+> China Can't Win
+
+- **Tweet:** https://x.com/abcampbell/status/1978070295157096808
+- **Tags:** [[Politics]]
+- **What:** Brief geopolitical statement regarding China's strategic position. Headline-style tweet warranting further context or full article content.
 
 ## @elonmusk - Bitcoin as Energy-Backed Currency
 > *Replying to @zerohedge:* The money is not the problem: AI is the new global arms race, and capex will eventually be funded by governments (US and China). If you want to know why gold/silver/bitcoin is soaring, it's the "debasement" to fund the AI arms race.
@@ -2062,6 +2426,15 @@ DATE: Tuesday, December 9, 2025
 
 # Sunday, September 28, 2025
 
+DATE: Sunday, September 28, 2025
+## @CatherinVaritek - Personal Travel Plans
+
+> My bags are packed and I don't know where I'm going… 🥳
+
+- **Tweet:** https://x.com/CatherinVaritek/status/1972327842928341369
+- **Tags:** [[Baseball]]
+- **What:** Personal tweet expressing excitement about an upcoming travel destination. Context suggests connection to baseball-related activities or events.
+
 ## @TheBTCTherapist - Bitcoin sideways accumulation scenario
 
 > Max pain for Bitcoin is 4 more years at $100,000 with constant accumulation by TradFi via OTC completely unaffecting price and causing widespread mental breakdowns in the bitcoin community, followed by an omega candle correction to $1,000,000.
@@ -2073,6 +2446,15 @@ DATE: Tuesday, December 9, 2025
 ---
 
 # Friday, September 26, 2025
+
+DATE: Friday, September 26, 2025
+## @SnazzyLabs - iOS 26 UX Design Criticism
+
+> What I love most about iOS 26 is how everything now takes 1–2 extra taps, since previously available features are buried in the name of design.
+
+- **Tweet:** https://x.com/SnazzyLabs/status/1971606636038123644
+- **Tags:** [[Apple]]
+- **What:** Critique of iOS 26's user experience design decisions that reportedly bury previously accessible features behind additional navigation layers.
 
 ## @Vivek4real_ - Tiger 21 founder Bitcoin buying signal
 
@@ -2141,6 +2523,15 @@ DATE: Tuesday, December 9, 2025
 
 # Monday, September 15, 2025
 
+DATE: Monday, September 15, 2025
+## @bdsams - Secret iOS Game Discovery
+
+> Does anyone else know about this secret game on iOS?
+
+- **Tweet:** https://x.com/bdsams/status/1967679308320870632
+- **Tags:** [[Apple]]
+- **What:** Brief mention of an undocumented or hidden game on iOS. Link points to video content requiring further investigation.
+
 ## @spottedinprod - Liquid Glass on iPhone: Best Collection
 > Best of liquid glass (links below): https://t.co/gAxhqCGAH4
 
@@ -2197,6 +2588,23 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 # Tuesday, September 9, 2025
 
+DATE: Tuesday, September 9, 2025
+## @MKBHD - iPhone 17 Square Sensor Innovation
+> The loudest cheer for the new iPhone 17 so far has been for the use of a square sensor so you don't have to rotate your iPhone to take a landscape selfie anymore
+
+- **Tweet:** https://x.com/MKBHD/status/1965470005455454548
+- **Tags:** [[Apple]]
+- **What:** Marques Brownlee's observation on iPhone 17 launch - the square sensor allowing landscape selfies without rotation was the most enthusiastically received feature announcement.
+
+DATE: Tuesday, September 9, 2025
+## @bilawalsidhu - iPhone 17 Pro Genlock Technology for 3D Capture
+
+> Having actual "genlock" on iPhone 17 Pro is kinda wild — that level of multi-camera synchronization makes it perfect for bullet time and 3d gaussian splatting rigs.
+
+- **Tweet:** https://x.com/bilawalsidhu/status/1965478725543457141
+- **Tags:** [[Apple]]
+- **What:** Exploration of iPhone 17 Pro's genlock capability for synchronized multi-camera capture, enabling advanced cinematography techniques like bullet time and 3D Gaussian splatting.
+
 ## @ns123abc - Elon confirms Tesla is making transformers
 > Elon confirms Tesla is going to start making transformers 🤯 https://t.co/nHMX1n3M1o
 
@@ -2208,6 +2616,15 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 ---
 
 # Monday, September 8, 2025
+
+DATE: Monday, September 8, 2025
+## @NESN - Garrett Crochet's Standing Ovation
+> Garrett Crochet gets a standing O in Sacramento after his 10th K 👏 https://t.co/4PB6ySbPSq
+
+- **Tweet:** https://x.com/NESN/status/1965262637479899449
+- **Link:** https://x.com/NESN/status/1965262637479899449/video/1
+- **Tags:** [[Baseball]]
+- **What:** NESN highlights - pitcher Garrett Crochet receives standing ovation after reaching 10 strikeouts in Sacramento game.
 
 ## @BrianRoemmele - Using media for AI training data
 > I got a message from a lead engineer at one of the largest AI companies freaking out over my use of media they never thought of for high protein AI training data.
@@ -2234,6 +2651,18 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 # Sunday, September 7, 2025
 
+DATE: Sunday, September 7, 2025
+## @RedSox - Cora's 600th Win
+> Cora's 600th win!
+>
+> FINAL: #RedSox 7, Diamondbacks 4
+> #DirtyWater https://t.co/9cfIiMD1Xz
+
+- **Tweet:** https://x.com/RedSox/status/1964831449430868124
+- **Link:** https://x.com/RedSox/status/1964831449430868124/video/1
+- **Tags:** [[Baseball]]
+- **What:** Red Sox highlights - manager Cora's 600th win milestone, final score 7-4 over Diamondbacks.
+
 ## @chamath - Future of Energy: Distributed Home Generation
 > At some point in the near future, the largest power utility in America will be a company that a) has sold 10Ms of households the ability to generate their own electricity and b) uses an app and sensors to tie them all together as a distributed power utility.
 
@@ -2244,6 +2673,34 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 ---
 
 # Saturday, September 6, 2025
+
+DATE: Saturday, September 6, 2025
+## @alexocheema - AI's Impact on Tech Workforce
+> Called it last year.
+>
+> Junior roles down 23%.
+> Senior roles up 14%.
+>
+> Harvard study tracked 285,000 firms. Results:
+>
+> Before AI: 1 senior + 3 juniors = 4 person team
+> After AI: 1 senior + Claude = same output https://t.co/wAdQz9Sg8Z
+>
+> *Quoting @alexocheema:*
+> Most people don't understand @cursor_ai.
+>
+> They think it will enable anyone to ship production code. They think it will replace developers.
+>
+> It won't.
+>
+> It will augment the best developers to make them 100x better (Lorenz curve).
+>
+> What this does to the workforce is another question https://t.co/qKpcvUXoLS
+
+- **Tweet:** https://x.com/alexocheema/status/1964324239126782243
+- **Quoted:** https://x.com/alexocheema/status/1827019583028400194
+- **Tags:** [[Society]]
+- **What:** Analysis of AI's workforce impact based on Harvard study of 285,000 firms - shows junior roles declining 23% while senior roles up 14%, with AI augmenting top developers rather than replacing them.
 
 ## @jjanezhang - AI Coding Tools Impact on Code Quality
 > It's been about a year since my team has fully adopted all the AI coding tools (Cursor, Claude Code)
@@ -2327,6 +2784,15 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 
 # Sunday, August 31, 2025
 
+DATE: Sunday, August 31, 2025
+## @RedSox - Inside-the-Park Home Run
+> INSIDE-THE-PARK HOME RUN https://t.co/JIfpCl08xV
+
+- **Tweet:** https://x.com/RedSox/status/1962228692597231620
+- **Link:** https://x.com/RedSox/status/1962228692597231620/video/1
+- **Tags:** [[Baseball]]
+- **What:** Red Sox highlights - inside-the-park home run video from August 31, 2025.
+
 ## @TheRealPlanC - Bitcoin Slow Grind to Million
 > What if the earlier "Bitcoin cycles" were nothing more than the product of a retail-dominated, FOMO-fueled market?
 >
@@ -2356,6 +2822,17 @@ Enough of the FUD already. Bitcoin is doing great. https://t.co/r85Y65GDPM
 ---
 
 # Friday, August 29, 2025
+
+DATE: Friday, August 29, 2025
+## @NESN - Tolle MLB Dream Debut Moment
+> The moment Tolle's MLB dream came true 🥹
+>
+> (via @RedSox)
+
+- **Tweet:** https://x.com/NESN/status/1961538655475871813
+- **Link:** https://x.com/RedSox/status/1961525734964355504/video/1
+- **Tags:** [[Baseball]]
+- **What:** Emotional moment capturing a player's MLB debut/dream realization with the Red Sox, shared via video from the official Red Sox account.
 
 ## @balajis - Bitcoin Wins: A Video Essay on Economic Transformation
 > When Bitcoin wins...
@@ -4486,6 +4963,17 @@ HT @NeilJacobs for the idea.
 
 # Sunday, February 16, 2025
 
+DATE: Sunday, February 16, 2025
+## @TheRealJPap58 - Red Sox Win Prediction & Betting Analysis
+> Vegas has Red Sox wins at 86.5 and I will be putting 10k on that over!! Who is with me? #FreeMoney
+>
+> *Quoting @Steve_Perrault:* As of right now how many games do you think the Red Sox are gonna win this season? Correct answer gets a free pizza. #loyalty
+
+- **Tweet:** https://x.com/TheRealJPap58/status/1891298245755691038
+- **Quoted:** https://x.com/Steve_Perrault/status/1891229242614055017
+- **Tags:** [[Baseball]]
+- **What:** Jonathan Papelbon's sports betting analysis on Red Sox projected win total for the season, responding to a prediction question with specific Vegas over/under odds.
+
 ## @karpathy - ChatGPT 4o's New Conversational Personality
 
 > Actually I quite like the new ChatGPT 4o personality, whatever they did.
@@ -5783,3 +6271,115 @@ via @statnews https://t.co/IajxPjRIVo
 - **Tweet:** https://x.com/teslascope/status/1725751745178194115
 - **Tags:** [[Tesla]]
 - **What:** Tesla releases new FSD beta version with improvements and simplified controls for employees.
+
+# Monday, February 17, 2025
+
+DATE: Monday, February 17, 2025
+## @DOGE - Treasury Account Symbol (TAS) Requirements Enforcement
+> The Treasury Access Symbol (TAS) is an identification code linking a Treasury payment to a budget line item (standard financial process).
+>
+> In the Federal Government, the TAS field was optional for ~$4.7 Trillion in payments and was often left blank, making traceability almost impossible. As of Saturday, this is now a required field, increasing insight into where money is actually going. Thanks to @USTreasury for the great work.
+
+- **Tweet:** https://x.com/DOGE/status/1891614960452522187
+- **Link:** https://tfx.treasury.gov/taxonomy/term/10257
+- **Tags:** [[Politics]]
+- **Filed:** [Treasury Account Symbol - TAS](./knowledge/articles/treasury-account-symbol-tas.md)
+- **What:** DOGE announcement of new Treasury Account Symbol (TAS) field requirement for federal government payments, making ~$4.7 trillion in spending traceable. This represents a significant transparency improvement in government financial accountability.
+
+---
+
+# Wednesday, February 19, 2025
+
+DATE: Wednesday, February 19, 2025
+## @satyanadella - Microsoft Quantum Computing Breakthrough: Topoconductors & Majorana 1
+> A couple reflections on the quantum computing breakthrough we just announced...
+>
+> Most of us grew up learning there are three main types of matter that matter: solid, liquid, and gas. Today, that changed.
+>
+> After a nearly 20 year pursuit, we've created an entirely new state of matter, unlocked by a new class of materials, topoconductors, that enable a fundamental leap in computing.
+>
+> It powers Majorana 1, the first quantum processing unit built on a topological core.
+>
+> We believe this breakthrough will allow us to create a truly meaningful quantum computer not in decades, as some have predicted, but in years.
+>
+> The qubits created with topoconductors are faster, more reliable, and smaller.
+>
+> They are 1/100th of a millimeter, meaning we now have a clear path to a million-qubit processor.
+>
+> Imagine a chip that can fit in the palm of your hand yet is capable of solving problems that even all the computers on Earth today combined could not!
+
+- **Tweet:** https://x.com/satyanadella/status/1892242895094313420
+- **Tags:** [[Quantum]]
+- **What:** Satya Nadella's announcement of Microsoft's quantum computing breakthrough: the creation of topoconductors (new materials) enabling the Majorana 1 quantum processing unit with 100x qubit improvements, promising practical quantum computers within years rather than decades.
+
+---
+
+# Saturday, May 3, 2025
+
+DATE: Saturday, May 3, 2025
+## @VigilantFox - Kevin McCarthy vs Bill Maher: Economy & 2028 Predictions
+> Kevin McCarthy just rocked Bill Maher with two brutal truth bombs.
+>
+> First, he crushed the media's panic over Trump's economy—shutting Maher down with cold, hard numbers.
+>
+> Then came a devastating prediction about 2028 that left Maher genuinely horrified.
+>
+> If this is the best the Democrats can offer, it's game over.
+>
+> 🧵 THREAD
+
+- **Tweet:** https://x.com/VigilantFox/status/1918523475594985789
+- **Tags:** [[Politics]]
+- **What:** Vigilant Fox's analysis of Kevin McCarthy's interview with Bill Maher discussing Trump's economic performance and predictions for the 2028 presidential election.
+
+---
+
+# Saturday, January 3, 2026
+
+DATE: Saturday, January 3, 2026
+## @iruletheworldmo - Footprints in the sand
+
+> Footprints in the sand
+
+- **Tweet:** https://x.com/iruletheworldmo/status/2007538247401124177
+- **Tags:** [[AI]]
+- **What:** Brief poetic post about leaving traces or marks. Appears to be a personal reflection rather than informational content.
+DATE: Saturday, January 3, 2026
+## @jarrodwatts - Claude HUD Plugin Released
+> Introducing Claude HUD!
+>
+> A Claude Code plugin that shows you:
+> · context remaining in the session
+> · what tools are executing
+> · which subagents are running
+> · claude's to-do list progress
+>
+> Easy installation guide below ↓ https://t.co/SEP7MJuFZb
+
+- **Tweet:** https://x.com/jarrodwatts/status/2007579355762045121
+- **Tags:** [[AI]]
+- **What:** Release announcement for Claude HUD, a plugin that provides visibility into Claude Code session metrics including context usage, tool execution status, subagent activity, and task progress.
+
+---
+
+# Sunday, January 4, 2026
+
+DATE: Sunday, January 4, 2026
+## @elonmusk - On Singularity Achievement
+> *Replying to @DavidSHolz:* ive done more personal coding projects over christmas break than i have in the last 10 years. its crazy. i can sense the limitations, but i *know* nothing is going to be the same anymore.
+>
+> We have entered the Singularity
+
+- **Tweet:** https://x.com/elonmusk/status/2007738847397036143
+- **Parent:** https://x.com/DavidSHolz/status/2007650184680092158
+- **Tags:** [[Coding]]
+- **What:** Elon Musk's brief response to a discussion about the transformative impact of AI-assisted coding, responding to observations about increased productivity and capability with large language models.
+DATE: Sunday, January 4, 2026
+## @tunguz - On Modern Conflict
+> WWIII will be vibe coded.
+
+- **Tweet:** https://x.com/tunguz/status/2007749790134890719
+- **Tags:** [[Society]]
+- **What:** Speculative commentary on the nature of future conflict and competition in a world dominated by AI and programming, suggesting that dominance will come through cultural and coded automation rather than traditional warfare.
+
+---
