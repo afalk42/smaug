@@ -1,3 +1,52 @@
+# Sunday, January 4, 2026
+
+DATE: Sunday, January 4, 2026
+## @elonmusk - On Singularity Achievement
+> *Replying to @DavidSHolz:* ive done more personal coding projects over christmas break than i have in the last 10 years. its crazy. i can sense the limitations, but i *know* nothing is going to be the same anymore.
+>
+> We have entered the Singularity
+
+- **Tweet:** https://x.com/elonmusk/status/2007738847397036143
+- **Parent:** https://x.com/DavidSHolz/status/2007650184680092158
+- **Tags:** [[Coding]]
+- **What:** Elon Musk's brief response to a discussion about the transformative impact of AI-assisted coding, responding to observations about increased productivity and capability with large language models.
+DATE: Sunday, January 4, 2026
+## @tunguz - On Modern Conflict
+> WWIII will be vibe coded.
+
+- **Tweet:** https://x.com/tunguz/status/2007749790134890719
+- **Tags:** [[Society]]
+- **What:** Speculative commentary on the nature of future conflict and competition in a world dominated by AI and programming, suggesting that dominance will come through cultural and coded automation rather than traditional warfare.
+
+---
+# Saturday, January 3, 2026
+
+DATE: Saturday, January 3, 2026
+## @iruletheworldmo - Footprints in the sand
+
+> Footprints in the sand
+
+- **Tweet:** https://x.com/iruletheworldmo/status/2007538247401124177
+- **Tags:** [[AI]]
+- **What:** Brief poetic post about leaving traces or marks. Appears to be a personal reflection rather than informational content.
+DATE: Saturday, January 3, 2026
+## @jarrodwatts - Claude HUD Plugin Released
+> Introducing Claude HUD!
+>
+> A Claude Code plugin that shows you:
+> · context remaining in the session
+> · what tools are executing
+> · which subagents are running
+> · claude's to-do list progress
+>
+> Easy installation guide below ↓ https://t.co/SEP7MJuFZb
+
+- **Tweet:** https://x.com/jarrodwatts/status/2007579355762045121
+- **Tags:** [[AI]]
+- **What:** Release announcement for Claude HUD, a plugin that provides visibility into Claude Code session metrics including context usage, tool execution status, subagent activity, and task progress.
+
+---
+
 # Friday, January 2, 2026
 
 ## @alexhillman - Smaug: Twitter Bookmark Archiver Dragon
@@ -6861,58 +6910,6 @@ DATE: Saturday, May 3, 2025
 - **Tweet:** https://x.com/VigilantFox/status/1918523475594985789
 - **Tags:** [[Politics]]
 - **What:** Vigilant Fox's analysis of Kevin McCarthy's interview with Bill Maher discussing Trump's economic performance and predictions for the 2028 presidential election.
-
----
-
-# Saturday, January 3, 2026
-
-DATE: Saturday, January 3, 2026
-## @iruletheworldmo - Footprints in the sand
-
-> Footprints in the sand
-
-- **Tweet:** https://x.com/iruletheworldmo/status/2007538247401124177
-- **Tags:** [[AI]]
-- **What:** Brief poetic post about leaving traces or marks. Appears to be a personal reflection rather than informational content.
-DATE: Saturday, January 3, 2026
-## @jarrodwatts - Claude HUD Plugin Released
-> Introducing Claude HUD!
->
-> A Claude Code plugin that shows you:
-> · context remaining in the session
-> · what tools are executing
-> · which subagents are running
-> · claude's to-do list progress
->
-> Easy installation guide below ↓ https://t.co/SEP7MJuFZb
-
-- **Tweet:** https://x.com/jarrodwatts/status/2007579355762045121
-- **Tags:** [[AI]]
-- **What:** Release announcement for Claude HUD, a plugin that provides visibility into Claude Code session metrics including context usage, tool execution status, subagent activity, and task progress.
-
----
-
-# Sunday, January 4, 2026
-
-DATE: Sunday, January 4, 2026
-## @elonmusk - On Singularity Achievement
-> *Replying to @DavidSHolz:* ive done more personal coding projects over christmas break than i have in the last 10 years. its crazy. i can sense the limitations, but i *know* nothing is going to be the same anymore.
->
-> We have entered the Singularity
-
-- **Tweet:** https://x.com/elonmusk/status/2007738847397036143
-- **Parent:** https://x.com/DavidSHolz/status/2007650184680092158
-- **Tags:** [[Coding]]
-- **What:** Elon Musk's brief response to a discussion about the transformative impact of AI-assisted coding, responding to observations about increased productivity and capability with large language models.
-DATE: Sunday, January 4, 2026
-## @tunguz - On Modern Conflict
-> WWIII will be vibe coded.
-
-- **Tweet:** https://x.com/tunguz/status/2007749790134890719
-- **Tags:** [[Society]]
-- **What:** Speculative commentary on the nature of future conflict and competition in a world dominated by AI and programming, suggesting that dominance will come through cultural and coded automation rather than traditional warfare.
-
----
 
 ---
 
