@@ -36,7 +36,7 @@ npx smaug setup                       # Interactive wizard
 
 ### Two-Phase Workflow
 
-1. **Fetch Phase** (`processor.js`): Fetches tweets via `bird` CLI, expands t.co links, extracts GitHub/article content, outputs JSON to `.state/pending-bookmarks.json`
+1. **Fetch Phase** (`processor.js`): Fetches tweets via `xurl` CLI (X API v2), uses pre-expanded URLs from API entities, extracts GitHub/article content, outputs JSON to `.state/pending-bookmarks.json`
 
 2. **Process Phase** (`job.js` → Claude Code): Invokes Claude Code with `/process-bookmarks` skill to categorize and file bookmarks
 
@@ -51,7 +51,7 @@ npx smaug setup                       # Interactive wizard
 ### Data Flow
 
 ```
-Twitter API (via bird CLI)
+X API v2 (via xurl CLI)
     ↓
 .state/pending-bookmarks.json (prepared bookmarks with expanded links)
     ↓
@@ -90,25 +90,14 @@ Key options:
 - `claudeModel`: "sonnet", "haiku", or "opus"
 - `autoInvokeClaude`: whether to run Claude after fetch
 - `categories`: custom category definitions
-- `folders`: map folder IDs to tag names (e.g., `{"1234567890": "ai-tools"}`)
+- `folders`: map folder IDs to tag names (retained for reference; X API v2 does not support folder-specific fetching)
 
-Environment variables override config (e.g., `AUTH_TOKEN`, `CT0`, `CLAUDE_MODEL`).
-
-### Bookmark Folders
-
-Configure folders to preserve Twitter bookmark folder organization as tags:
-```json
-{
-  "folders": {
-    "1234567890": "ai-tools",
-    "0987654321": "research"
-  }
-}
-```
-Get folder IDs from URLs like `https://x.com/i/bookmarks/1234567890`.
+Environment variables override config (e.g., `XURL_PATH`, `CLAUDE_MODEL`).
 
 ## External Dependencies
 
-- `bird` CLI (https://github.com/steipete/bird) - Twitter API wrapper, requires v0.5.0+ for bookmarks
-  - For `--all` pagination: build from git main branch (not npm v0.5.1)
+- `xurl` CLI (https://github.com/xdevplatform/xurl) - X API v2 CLI tool, uses OAuth 2.0
+  - Install: `npm install -g @xdevplatform/xurl`
+  - Auth: `xurl auth default` (OAuth 2.0 flow)
+  - Verify: `xurl whoami`
 - `dayjs` - date handling

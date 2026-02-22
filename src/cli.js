@@ -45,77 +45,49 @@ async function setup() {
 This will set up Smaug to automatically archive your Twitter bookmarks.
 `);
 
-  // Step 1: Check for bird CLI with bookmarks support (v0.5.0+)
-  console.log('Step 1: Checking for bird CLI...');
+  // Step 1: Check for xurl CLI
+  console.log('Step 1: Checking for xurl CLI...');
   try {
-    const versionOutput = execSync('bird --version', { stdio: 'pipe', encoding: 'utf8' });
-    const versionMatch = versionOutput.match(/(\d+)\.(\d+)\.(\d+)/);
-
-    if (versionMatch) {
-      const [, major, minor] = versionMatch.map(Number);
-      if (major === 0 && minor < 5) {
-        console.log(`  ✗ bird CLI v${versionMatch[0]} found, but v0.5.0+ required for bookmarks support
-
-  Update it:
-    npm install -g @steipete/bird@latest
-
-  Or with Homebrew:
-    brew upgrade steipete/tap/bird
-
-  Then run this setup again.
-`);
-        process.exit(1);
-      }
-      console.log(`  ✓ bird CLI v${versionMatch[0]} found (bookmarks supported)\n`);
-    } else {
-      console.log('  ✓ bird CLI found\n');
-    }
+    const versionOutput = execSync('xurl version', { stdio: 'pipe', encoding: 'utf8' }).trim();
+    console.log(`  ✓ xurl CLI ${versionOutput} found\n`);
   } catch {
-    console.log(`  ✗ bird CLI not found
+    console.log(`  ✗ xurl CLI not found
 
   Install it:
-    npm install -g @steipete/bird@latest
-
-  Or with Homebrew:
-    brew install steipete/tap/bird
+    npm install -g @xdevplatform/xurl
 
   Then run this setup again.
 `);
     process.exit(1);
   }
 
-  // Step 2: Get Twitter credentials
-  console.log(`Step 2: Twitter Authentication
+  // Step 2: Verify authentication
+  console.log(`Step 2: Verifying X API authentication...
 
-  You need your Twitter cookies to fetch bookmarks.
-
-  To get them:
-  1. Open Twitter/X in your browser
-  2. Press F12 to open Developer Tools
-  3. Go to Application → Cookies → twitter.com
-  4. Find 'auth_token' and 'ct0'
+  xurl uses OAuth 2.0 (no cookies needed).
+  If not yet authenticated, run: xurl auth default
 `);
 
-  const authToken = await prompt('  Paste your auth_token: ');
-  if (!authToken) {
-    console.log('  ✗ auth_token is required');
-    process.exit(1);
-  }
-
-  const ct0 = await prompt('  Paste your ct0: ');
-  if (!ct0) {
-    console.log('  ✗ ct0 is required');
-    process.exit(1);
-  }
-
-  // Step 3: Test credentials
-  console.log('\nStep 3: Testing credentials...');
   try {
-    const env = { ...process.env, AUTH_TOKEN: authToken, CT0: ct0 };
-    execSync('bird bookmarks -n 1 --json', { env, stdio: 'pipe', timeout: 30000 });
-    console.log('  ✓ Credentials work!\n');
+    const whoami = execSync('xurl whoami', { stdio: 'pipe', encoding: 'utf8' });
+    const whoamiData = JSON.parse(whoami);
+    const username = whoamiData.data?.username;
+    console.log(`  ✓ Authenticated as @${username}\n`);
   } catch (error) {
-    console.log(`  ✗ Could not fetch bookmarks. Check your credentials and try again.
+    console.log(`  ✗ Not authenticated. Run 'xurl auth default' to set up OAuth 2.0.
+  Error: ${error.message}
+`);
+    process.exit(1);
+  }
+
+  // Step 3: Test fetching bookmarks
+  console.log('Step 3: Testing bookmark access...');
+  try {
+    const userId = JSON.parse(execSync('xurl whoami', { stdio: 'pipe', encoding: 'utf8' })).data.id;
+    execSync(`xurl "/2/users/${userId}/bookmarks?max_results=1"`, { stdio: 'pipe', timeout: 30000 });
+    console.log('  ✓ Bookmark access works!\n');
+  } catch (error) {
+    console.log(`  ✗ Could not fetch bookmarks. Check your xurl authentication.
   Error: ${error.message}
 `);
     process.exit(1);
@@ -128,10 +100,6 @@ This will set up Smaug to automatically archive your Twitter bookmarks.
     pendingFile: './.state/pending-bookmarks.json',
     stateFile: './.state/bookmarks-state.json',
     timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || 'America/New_York',
-    twitter: {
-      authToken,
-      ct0
-    },
     autoInvokeClaude: true,
     claudeModel: 'sonnet'
   };
@@ -312,7 +280,16 @@ async function main() {
       console.log(`Archive:     ${config.archiveFile}`);
       console.log(`Source:      ${config.source || 'bookmarks'}`);
       console.log(`Media:       ${config.includeMedia ? '✓ enabled (experimental)' : 'disabled (use --media to enable)'}`);
-      console.log(`Twitter:     ${config.twitter?.authToken ? '✓ configured' : '✗ not configured'}`);
+
+      // Check xurl auth
+      try {
+        const whoami = execSync('xurl whoami', { stdio: 'pipe', encoding: 'utf8' });
+        const whoamiData = JSON.parse(whoami);
+        console.log(`Auth:        ✓ @${whoamiData.data?.username} (xurl OAuth 2.0)`);
+      } catch {
+        console.log('Auth:        ✗ not authenticated (run "xurl auth default")');
+      }
+
       console.log(`Auto-Claude: ${config.autoInvokeClaude ? 'enabled' : 'disabled'}`);
 
       if (fs.existsSync(config.pendingFile)) {
@@ -372,7 +349,6 @@ Examples:
 Config (smaug.config.json):
   "source": "bookmarks"    Default source (bookmarks, likes, or both)
   "includeMedia": false    EXPERIMENTAL: Include media (default: off)
-  "folders": {}            Map folder IDs to tags (see README)
 
 More info: https://github.com/alexknowshtml/smaug
 `);

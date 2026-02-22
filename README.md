@@ -7,7 +7,6 @@ Archive your Twitter/X bookmarks (and/or optionally, likes) to markdown. Automat
 ## Contents
 
 - [Quick Start](#quick-start-5-minutes)
-- [Getting Twitter Credentials](#getting-twitter-credentials)
 - [What It Does](#what-it-does)
 - [Running](#running)
 - [Categories](#categories)
@@ -32,52 +31,33 @@ Archive your Twitter/X bookmarks (and/or optionally, likes) to markdown. Automat
 ## Quick Start (5 minutes)
 
 ```bash
-# 1. Install bird CLI (Twitter API wrapper)
-# See https://github.com/steipete/bird for installation
+# 1. Install xurl CLI (X API v2 tool)
+npm install -g @xdevplatform/xurl
 
-# 2. Clone and install Smaug
+# 2. Authenticate with X (OAuth 2.0 - no cookies needed)
+xurl auth default
+
+# 3. Clone and install Smaug
 git clone https://github.com/alexknowshtml/smaug
 cd smaug
 npm install
 
-# 3. Run the setup wizard
+# 4. Run the setup wizard
 npx smaug setup
 
-# 4. Run the full job (fetch + process with Claude)
+# 5. Run the full job (fetch + process with Claude)
 npx smaug run
 ```
 
 The setup wizard will:
-- Create required directories
-- Guide you through getting Twitter credentials
+- Verify xurl is installed and authenticated
+- Test bookmark access
 - Create your config file
-
-## Manually Getting Twitter Credentials
-
-Smaug uses the bird CLI which needs your Twitter session cookies. 
-
-If you don't want to use the wizard to make it easy, you can manually put your seession info into the config. 
-
-1. Open Twitter/X in your browser
-2. Open Developer Tools → Application → Cookies
-3. Find and copy these values:
-   - `auth_token`
-   - `ct0`
-4. Add them to `smaug.config.json`:
-
-```json
-{
-  "twitter": {
-    "authToken": "your_auth_token_here",
-    "ct0": "your_ct0_here"
-  }
-}
-```
 
 ## What Smaug Actually Does
 
-1. **Fetches bookmarks** from Twitter/X using the bird CLI (can also fetch likes, or both)
-2. **Expands t.co links** to reveal actual URLs
+1. **Fetches bookmarks** from Twitter/X using the xurl CLI (can also fetch likes, or both)
+2. **Expands t.co links** using pre-expanded URLs from the X API (with curl fallback)
 3. **Extracts content** from linked pages (GitHub repos, articles, quote tweets)
 4. **Invokes Claude Code** to analyze and categorize each tweet
 5. **Saves to markdown** organized by date with rich context
@@ -92,7 +72,7 @@ npx smaug run
 # Fetch from bookmarks (default)
 npx smaug fetch 20
 
-# Fetch ALL bookmarks (paginated - requires bird CLI from git)
+# Fetch ALL bookmarks (paginated)
 npx smaug fetch --all
 npx smaug fetch --all --max-pages 5  # Limit to 5 pages
 
@@ -114,14 +94,12 @@ cat .state/pending-bookmarks.json | jq '.count'
 
 ### Fetching All Bookmarks
 
-By default, Twitter's API returns ~50-70 bookmarks per request. To fetch more, use the `--all` flag which enables pagination:
+By default, the X API returns up to 100 bookmarks per request. To fetch more, use the `--all` flag which enables pagination:
 
 ```bash
 npx smaug fetch --all              # Fetch all (up to 10 pages)
 npx smaug fetch --all --max-pages 20  # Fetch up to 20 pages
 ```
-
-**Note:** This requires bird CLI built from git (not the npm release). See [Troubleshooting](#troubleshooting) for installation instructions.
 
 **Cost warning:** Processing large bookmark backlogs can consume significant Claude tokens. Each bookmark with content-heavy links (long articles, GitHub READMEs, etc.) adds to the context. Process in batches to control costs:
 
@@ -180,7 +158,9 @@ Your custom categories merge with the defaults. To override a default, use the s
 
 ## Bookmark Folders
 
-If you've organized your Twitter bookmarks into folders, Smaug can preserve that organization as tags. Configure folder IDs mapped to tag names:
+> **Note:** The X API v2 does not support bookmark folder-specific fetching. Folder configurations are retained in your config for reference, but Smaug will fetch all bookmarks together without folder-specific tagging.
+
+If you previously organized your Twitter bookmarks into folders, the `folders` config is preserved:
 
 ```json
 {
@@ -196,13 +176,6 @@ If you've organized your Twitter bookmarks into folders, Smaug can preserve that
 1. Open Twitter/X and go to your bookmarks
 2. Click on a folder
 3. The URL will be `https://x.com/i/bookmarks/1234567890` - the number is the folder ID
-
-When folders are configured:
-- Smaug fetches from each folder separately
-- Each bookmark gets tagged with its folder name
-- Tags appear in `bookmarks.md` entries and knowledge file frontmatter
-
-**Note:** Twitter's API doesn't return folder membership when fetching all bookmarks at once, so Smaug must fetch each folder individually.
 
 ## Automation
 
@@ -297,10 +270,6 @@ Create `smaug.config.json`:
   "pendingFile": "./.state/pending-bookmarks.json",
   "stateFile": "./.state/bookmarks-state.json",
   "timezone": "America/New_York",
-  "twitter": {
-    "authToken": "your_auth_token",
-    "ct0": "your_ct0"
-  },
   "autoInvokeClaude": true,
   "claudeModel": "sonnet",
   "claudeTimeout": 900000,
@@ -321,7 +290,7 @@ Create `smaug.config.json`:
 | `claudeTimeout` | `900000` | Max processing time (15 min) |
 | `webhookUrl` | `null` | Discord/Slack webhook for notifications |
 
-Environment variables also work: `AUTH_TOKEN`, `CT0`, `SOURCE`, `INCLUDE_MEDIA`, `ARCHIVE_FILE`, `TIMEZONE`, `CLAUDE_MODEL`, etc.
+Environment variables also work: `XURL_PATH`, `SOURCE`, `INCLUDE_MEDIA`, `ARCHIVE_FILE`, `TIMEZONE`, `CLAUDE_MODEL`, etc.
 
 ### Experimental: Media Attachments
 
@@ -343,10 +312,6 @@ When enabled, the `media[]` array is included in the pending JSON with:
 - `previewUrl`: Thumbnail (smaller, faster)
 - `width`, `height`: Dimensions
 - `videoUrl`, `durationMs`: For videos only
-
-⚠️ **Why experimental?**
-1. **Requires bird with media support** - PR [#14](https://github.com/steipete/bird/pull/14) adds media extraction. Until merged, you'll need a fork with this PR or wait for an upstream release. Without it, `--media` is a no-op (empty array).
-2. **Workflow still being refined** - Short screengrabs (< 30s) don't need transcripts, but longer videos might. We're still figuring out the best handling.
 
 ## Claude Code Integration
 
@@ -411,7 +376,7 @@ This is configured in `.claude/commands/process-bookmarks.md` with `model="haiku
 ### "No new bookmarks to process"
 
 This means either:
-1. No bookmarks were fetched (check bird CLI credentials)
+1. No bookmarks were fetched (check xurl authentication with `xurl whoami`)
 2. All fetched bookmarks already exist in `bookmarks.md`
 
 To start fresh:
@@ -421,40 +386,25 @@ mkdir -p .state knowledge/tools knowledge/articles
 npx smaug run
 ```
 
-### Bird CLI 403 errors
+### xurl authentication issues
 
-Your Twitter cookies may have expired. Get fresh ones from your browser.
+If xurl can't authenticate:
+```bash
+# Check current auth status
+xurl whoami
+
+# Re-authenticate with OAuth 2.0
+xurl auth default
+```
 
 ### Processing is slow
 
 - Try `haiku` model instead of `sonnet` in config for faster (but less thorough) processing
 - Make sure you're not re-processing with `--force` (causes edits instead of appends)
 
-### Only ~50-70 bookmarks fetched
-
-The npm release of bird CLI (v0.5.1) doesn't support pagination. To fetch all bookmarks, install bird from git:
-
-```bash
-# Clone and build bird from source
-cd /tmp
-git clone https://github.com/steipete/bird.git
-cd bird
-pnpm install    # or: npm install -g pnpm && pnpm install
-pnpm run build:dist
-
-# Link globally (may need sudo or --force)
-npm link --force
-
-# Verify
-bird --version  # Should show a newer commit hash
-bird bookmarks --help  # Should show --all flag
-```
-
-Then use `npx smaug fetch --all` to fetch all bookmarks with pagination.
-
 ## Credits
 
-- [bird CLI](https://github.com/steipete/bird) by Peter Steinberger
+- [xurl CLI](https://github.com/xdevplatform/xurl) by X Developer Platform
 - Built with Claude Code
 
 ## License

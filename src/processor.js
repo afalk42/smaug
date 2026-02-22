@@ -2,8 +2,8 @@
  * Bookmark Processor - Fetches and prepares Twitter bookmarks for analysis
  *
  * This handles the mechanical work:
- * - Fetching bookmarks via bird CLI
- * - Expanding t.co links
+ * - Fetching bookmarks via xurl CLI (X API v2)
+ * - Expanding t.co links (pre-expanded from API entities, with curl fallback)
  * - Extracting content from linked pages (articles, GitHub repos)
  * - Optional: Bypassing paywalls via archive.ph
  *
@@ -37,6 +37,150 @@ const PAYWALL_DOMAINS = [
   'wired.com'
 ];
 
+// Standard tweet fields and expansions for xurl API v2 requests
+const XURL_TWEET_FIELDS = 'created_at,entities,referenced_tweets,conversation_id,in_reply_to_user_id,attachments';
+const XURL_EXPANSIONS = 'author_id,referenced_tweets.id,referenced_tweets.id.author_id,attachments.media_keys';
+const XURL_USER_FIELDS = 'username,name';
+const XURL_MEDIA_FIELDS = 'url,preview_image_url,type,width,height,duration_ms,variants';
+
+function buildXurlQueryParams() {
+  return `tweet.fields=${XURL_TWEET_FIELDS}&expansions=${XURL_EXPANSIONS}&user.fields=${XURL_USER_FIELDS}&media.fields=${XURL_MEDIA_FIELDS}`;
+}
+
+// Cache authenticated user ID per session
+let _cachedUserId = null;
+
+export function getAuthenticatedUserId(config) {
+  if (_cachedUserId) return _cachedUserId;
+
+  const xurlCmd = config.xurlPath || 'xurl';
+  try {
+    const output = execSync(`${xurlCmd} whoami`, {
+      encoding: 'utf8',
+      timeout: 15000
+    });
+    const data = JSON.parse(output);
+    _cachedUserId = data.data?.id;
+    if (!_cachedUserId) {
+      throw new Error('Could not determine user ID from xurl whoami');
+    }
+    return _cachedUserId;
+  } catch (error) {
+    throw new Error(`Failed to get authenticated user ID: ${error.message}`);
+  }
+}
+
+/**
+ * Normalize X API v2 response format to flat tweet objects matching the
+ * shape expected by fetchAndPrepareBookmarks:
+ *   { id, text, createdAt, author: { username, name }, inReplyToStatusId, quotedTweet, media, _expandedUrls }
+ */
+export function normalizeXurlResponse(apiResponse) {
+  const data = apiResponse.data;
+  if (!data) return [];
+
+  const tweets = Array.isArray(data) ? data : [data];
+  const includes = apiResponse.includes || {};
+
+  // Build lookup maps
+  const usersById = {};
+  for (const user of (includes.users || [])) {
+    usersById[user.id] = user;
+  }
+
+  const tweetsById = {};
+  for (const tweet of (includes.tweets || [])) {
+    tweetsById[tweet.id] = tweet;
+  }
+
+  const mediaByKey = {};
+  for (const m of (includes.media || [])) {
+    mediaByKey[m.media_key] = m;
+  }
+
+  return tweets.map(tweet => {
+    const author = usersById[tweet.author_id] || { username: 'unknown', name: 'unknown' };
+
+    // Build expanded URLs map from entities
+    const expandedUrls = {};
+    if (tweet.entities?.urls) {
+      for (const urlEntity of tweet.entities.urls) {
+        // Prefer unwound_url (fully resolved), fall back to expanded_url
+        const resolved = urlEntity.unwound_url || urlEntity.expanded_url;
+        if (urlEntity.url && resolved) {
+          expandedUrls[urlEntity.url] = resolved;
+        }
+      }
+    }
+
+    // Detect reply
+    let inReplyToStatusId = null;
+    if (tweet.referenced_tweets) {
+      const repliedTo = tweet.referenced_tweets.find(r => r.type === 'replied_to');
+      if (repliedTo) {
+        inReplyToStatusId = repliedTo.id;
+      }
+    }
+
+    // Detect quote tweet
+    let quotedTweet = null;
+    if (tweet.referenced_tweets) {
+      const quoted = tweet.referenced_tweets.find(r => r.type === 'quoted');
+      if (quoted && tweetsById[quoted.id]) {
+        const qt = tweetsById[quoted.id];
+        const qtAuthor = usersById[qt.author_id] || { username: 'unknown', name: 'unknown' };
+        quotedTweet = {
+          id: qt.id,
+          text: qt.text,
+          createdAt: qt.created_at,
+          author: { username: qtAuthor.username, name: qtAuthor.name }
+        };
+      }
+    }
+
+    // Extract media from attachments
+    const media = [];
+    if (tweet.attachments?.media_keys) {
+      for (const key of tweet.attachments.media_keys) {
+        const m = mediaByKey[key];
+        if (m) {
+          const mediaItem = {
+            type: m.type, // photo, video, animated_gif
+            url: m.url || m.preview_image_url,
+            previewUrl: m.preview_image_url,
+            width: m.width,
+            height: m.height
+          };
+          if (m.type === 'video' || m.type === 'animated_gif') {
+            mediaItem.durationMs = m.duration_ms;
+            // Find best video variant
+            if (m.variants) {
+              const mp4Variants = m.variants
+                .filter(v => v.content_type === 'video/mp4')
+                .sort((a, b) => (b.bit_rate || 0) - (a.bit_rate || 0));
+              if (mp4Variants.length > 0) {
+                mediaItem.videoUrl = mp4Variants[0].url;
+              }
+            }
+          }
+          media.push(mediaItem);
+        }
+      }
+    }
+
+    return {
+      id: tweet.id,
+      text: tweet.text,
+      createdAt: tweet.created_at,
+      author: { username: author.username, name: author.name },
+      inReplyToStatusId,
+      quotedTweet,
+      media,
+      _expandedUrls: expandedUrls
+    };
+  });
+}
+
 export function loadState(config) {
   try {
     const content = fs.readFileSync(config.stateFile, 'utf8');
@@ -58,51 +202,75 @@ export function saveState(config, state) {
   fs.writeFileSync(config.stateFile, JSON.stringify(state, null, 2) + '\n');
 }
 
-function buildBirdEnv(config) {
-  const env = { ...process.env };
-  if (config.twitter?.authToken) {
-    env.AUTH_TOKEN = config.twitter.authToken;
+/**
+ * Fetch pages of results from an xurl endpoint, handling pagination via next_token
+ */
+function fetchAllPages(config, endpoint, maxPages = 10) {
+  const xurlCmd = config.xurlPath || 'xurl';
+  const allTweets = [];
+  let nextToken = null;
+  let page = 0;
+
+  while (page < maxPages) {
+    page++;
+    let url = endpoint;
+    if (nextToken) {
+      url += (url.includes('?') ? '&' : '?') + `pagination_token=${nextToken}`;
+    }
+
+    console.log(`  Page ${page}${nextToken ? ' (continuing)' : ''}...`);
+
+    try {
+      const output = execSync(`${xurlCmd} "${url}"`, {
+        encoding: 'utf8',
+        timeout: 60000
+      });
+      const response = JSON.parse(output);
+
+      if (!response.data || response.data.length === 0) {
+        break;
+      }
+
+      const normalized = normalizeXurlResponse(response);
+      allTweets.push(...normalized);
+
+      // Check for next page
+      nextToken = response.meta?.next_token;
+      if (!nextToken) {
+        break;
+      }
+    } catch (error) {
+      console.error(`  Error fetching page ${page}: ${error.message}`);
+      break;
+    }
   }
-  if (config.twitter?.ct0) {
-    env.CT0 = config.twitter.ct0;
-  }
-  return env;
+
+  return allTweets;
 }
 
 export function fetchBookmarks(config, count = 10, options = {}) {
   try {
-    const env = buildBirdEnv(config);
-    const birdCmd = config.birdPath || 'bird';
+    const xurlCmd = config.xurlPath || 'xurl';
+    const userId = getAuthenticatedUserId(config);
+    const fields = buildXurlQueryParams();
 
-    // Use --all for large fetches (> 50) or when explicitly requested
     const useAll = options.all || count > 50;
-    const folderId = options.folderId;
+    const maxResults = useAll ? 100 : Math.min(count, 100);
+    const endpoint = `/2/users/${userId}/bookmarks?max_results=${maxResults}&${fields}`;
 
-    let cmd;
     if (useAll) {
-      // Paginated fetch - use longer timeout
-      const maxPages = options.maxPages || 10; // Limit pages to prevent runaway
-      cmd = folderId
-        ? `${birdCmd} bookmarks --folder-id ${folderId} --all --max-pages ${maxPages} --json`
-        : `${birdCmd} bookmarks --all --max-pages ${maxPages} --json`;
-    } else {
-      cmd = folderId
-        ? `${birdCmd} bookmarks --folder-id ${folderId} -n ${count} --json`
-        : `${birdCmd} bookmarks -n ${count} --json`;
+      const maxPages = options.maxPages || 10;
+      console.log(`  Running: xurl bookmarks (paginated, max ${maxPages} pages)`);
+      return fetchAllPages(config, endpoint, maxPages);
     }
 
-    console.log(`  Running: ${cmd.replace(/--json/, '').trim()}`);
-
-    // Use temp file to work around bird CLI pipe buffering bug
-    const tmpFile = path.join(os.tmpdir(), `smaug-bookmarks-${Date.now()}.json`);
-    execSync(`${cmd} > "${tmpFile}"`, {
-      timeout: useAll ? 180000 : 60000, // 3 min for --all, 60s otherwise
-      env,
-      shell: true
+    console.log(`  Running: xurl bookmarks (${maxResults} results)`);
+    const output = execSync(`${xurlCmd} "${endpoint}"`, {
+      encoding: 'utf8',
+      timeout: 60000
     });
-    const output = fs.readFileSync(tmpFile, 'utf8');
-    fs.unlinkSync(tmpFile);
-    return JSON.parse(output);
+    const response = JSON.parse(output);
+    return normalizeXurlResponse(response);
   } catch (error) {
     throw new Error(`Failed to fetch bookmarks: ${error.message}`);
   }
@@ -110,18 +278,21 @@ export function fetchBookmarks(config, count = 10, options = {}) {
 
 export function fetchLikes(config, count = 10) {
   try {
-    const env = buildBirdEnv(config);
-    const birdCmd = config.birdPath || 'bird';
-    // Use temp file to work around bird CLI pipe buffering bug
-    const tmpFile = path.join(os.tmpdir(), `smaug-likes-${Date.now()}.json`);
-    execSync(`${birdCmd} likes -n ${count} --json > "${tmpFile}"`, {
-      timeout: 60000,
-      env,
-      shell: true
+    const xurlCmd = config.xurlPath || 'xurl';
+    const userId = getAuthenticatedUserId(config);
+    const fields = buildXurlQueryParams();
+
+    // X API v2 liked_tweets: min 5, max 100
+    const maxResults = Math.max(5, Math.min(count, 100));
+    const endpoint = `/2/users/${userId}/liked_tweets?max_results=${maxResults}&${fields}`;
+
+    console.log(`  Running: xurl liked_tweets (${maxResults} results)`);
+    const output = execSync(`${xurlCmd} "${endpoint}"`, {
+      encoding: 'utf8',
+      timeout: 60000
     });
-    const output = fs.readFileSync(tmpFile, 'utf8');
-    fs.unlinkSync(tmpFile);
-    return JSON.parse(output);
+    const response = JSON.parse(output);
+    return normalizeXurlResponse(response);
   } catch (error) {
     throw new Error(`Failed to fetch likes: ${error.message}`);
   }
@@ -153,7 +324,9 @@ export function fetchFromSource(config, count = 10, options = {}) {
 }
 
 /**
- * Fetch bookmarks from configured folders, tagging each with its folder name
+ * Fetch bookmarks from configured folders, tagging each with its folder name.
+ * NOTE: X API v2 does not expose bookmark folders. This falls back to fetching
+ * all bookmarks without folder-specific tagging.
  */
 export function fetchFromFolders(config, count = 10, options = {}) {
   const folders = config.folders || {};
@@ -163,49 +336,28 @@ export function fetchFromFolders(config, count = 10, options = {}) {
     return [];
   }
 
-  console.log(`Fetching from ${folderIds.length} configured folder(s)...`);
+  console.log(`\n  Warning: X API v2 does not support bookmark folders.`);
+  console.log(`  Fetching all bookmarks instead (${folderIds.length} folder config(s) retained for reference).`);
+  console.log(`  Folder-specific tags will not be applied.\n`);
 
-  const allBookmarks = [];
-  const seen = new Set();
-
-  for (const folderId of folderIds) {
-    const folderTag = folders[folderId];
-    console.log(`\n📁 Folder "${folderTag}" (${folderId}):`);
-
-    try {
-      const bookmarks = fetchBookmarks(config, count, { ...options, folderId });
-      let added = 0;
-
-      for (const bookmark of bookmarks) {
-        if (!seen.has(bookmark.id)) {
-          seen.add(bookmark.id);
-          // Add folder tag to the bookmark
-          bookmark._folderTag = folderTag;
-          bookmark._folderId = folderId;
-          allBookmarks.push(bookmark);
-          added++;
-        }
-      }
-
-      console.log(`  Found ${bookmarks.length} bookmarks, ${added} new`);
-    } catch (error) {
-      console.error(`  Error fetching folder ${folderId}: ${error.message}`);
-    }
-  }
-
-  return allBookmarks;
+  return fetchBookmarks(config, count, options);
 }
 
 export function fetchTweet(config, tweetId) {
   try {
-    const env = buildBirdEnv(config);
-    const birdCmd = config.birdPath || 'bird';
-    const output = execSync(`${birdCmd} read ${tweetId} --json`, {
+    const xurlCmd = config.xurlPath || 'xurl';
+    const fields = buildXurlQueryParams();
+    const endpoint = `/2/tweets/${tweetId}?${fields}`;
+
+    const output = execSync(`${xurlCmd} "${endpoint}"`, {
       encoding: 'utf8',
-      timeout: 15000,
-      env
+      timeout: 15000
     });
-    return JSON.parse(output);
+    const response = JSON.parse(output);
+
+    // Single tweet: data is an object, not array
+    const normalized = normalizeXurlResponse(response);
+    return normalized[0] || null;
   } catch (error) {
     console.log(`  Could not fetch parent tweet ${tweetId}: ${error.message}`);
     return null;
@@ -371,7 +523,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   const hasFolders = Object.keys(config.folders || {}).length > 0;
 
   if (hasFolders && source === 'bookmarks') {
-    // Fetch from each configured folder with tags
+    // X API v2 doesn't support folder-specific fetching; fetchFromFolders warns and falls back
     console.log(`Fetching from ${Object.keys(config.folders).length} folder(s)${includeMedia ? ' (with media)' : ''}`);
     tweets = fetchFromFolders(configWithOptions, count, fetchOptions);
   } else {
@@ -421,7 +573,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   for (const bookmark of toProcess) {
     try {
       console.log(`\nProcessing bookmark ${bookmark.id}...`);
-      const text = bookmark.text || bookmark.full_text || '';
+      const text = bookmark.text || '';
 
       // Format date from tweet's createdAt, falling back to current date
       let date;
@@ -431,15 +583,23 @@ export async function fetchAndPrepareBookmarks(options = {}) {
       } else {
         date = now.format('dddd, MMMM D, YYYY');
       }
-      const author = bookmark.author?.username || bookmark.user?.screen_name || 'unknown';
+      const author = bookmark.author?.username || 'unknown';
 
       // Find and expand t.co links
+      // Use pre-expanded URLs from API entities where available
       const tcoLinks = text.match(/https?:\/\/t\.co\/\w+/g) || [];
       const links = [];
 
       for (const link of tcoLinks) {
-        const expanded = expandTcoLink(link);
-        console.log(`  Expanded: ${link} -> ${expanded}`);
+        // Use pre-expanded URL from API entities, fall back to curl
+        let expanded;
+        if (bookmark._expandedUrls && bookmark._expandedUrls[link]) {
+          expanded = bookmark._expandedUrls[link];
+          console.log(`  Pre-expanded: ${link} -> ${expanded}`);
+        } else {
+          expanded = expandTcoLink(link);
+          console.log(`  Curl-expanded: ${link} -> ${expanded}`);
+        }
 
         // Categorize the link
         let type = 'unknown';
@@ -465,7 +625,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
                   id: quotedTweet.id,
                   author: quotedTweet.author?.username || 'unknown',
                   authorName: quotedTweet.author?.name || quotedTweet.author?.username || 'unknown',
-                  text: quotedTweet.text || quotedTweet.full_text || '',
+                  text: quotedTweet.text || '',
                   tweetUrl: `https://x.com/${quotedTweet.author?.username || 'unknown'}/status/${quotedTweet.id}`,
                   source: 'quote-tweet'
                 };
@@ -527,13 +687,13 @@ export async function fetchAndPrepareBookmarks(options = {}) {
             id: parentTweet.id,
             author: parentTweet.author?.username || 'unknown',
             authorName: parentTweet.author?.name || parentTweet.author?.username || 'unknown',
-            text: parentTweet.text || parentTweet.full_text || '',
+            text: parentTweet.text || '',
             tweetUrl: `https://x.com/${parentTweet.author?.username || 'unknown'}/status/${parentTweet.id}`
           };
         }
       }
 
-      // Check for native quote tweet
+      // Check for native quote tweet (from normalized xurl response)
       let quoteContext = null;
       if (bookmark.quotedTweet) {
         const qt = bookmark.quotedTweet;
@@ -560,7 +720,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
       prepared.push({
         id: bookmark.id,
         author,
-        authorName: bookmark.author?.name || bookmark.user?.name || author,
+        authorName: bookmark.author?.name || author,
         text,
         tweetUrl: `https://x.com/${author}/status/${bookmark.id}`,
         createdAt: bookmark.createdAt,

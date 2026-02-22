@@ -2,7 +2,7 @@
  * Configuration loader for bookmark archiver
  *
  * Supports:
- * - Config file (bookmarks-archiver.config.json)
+ * - Config file (smaug.config.json)
  * - Environment variables
  * - CLI arguments
  */
@@ -31,17 +31,13 @@ const DEFAULT_CONFIG = {
   // Timezone for date formatting
   timezone: 'America/New_York',
 
-  // Path to bird CLI (if not in PATH)
-  birdPath: null,
-
-  // Twitter credentials (can also use AUTH_TOKEN and CT0 env vars)
-  twitter: {
-    authToken: null,
-    ct0: null
-  },
+  // Path to xurl CLI (if not in PATH)
+  xurlPath: null,
 
   // ---- Bookmark Folders ----
   // Map folder IDs to tag names. Bookmarks from each folder will be tagged.
+  // Note: X API v2 does not support folder-specific fetching. These are retained
+  // for reference but folder-specific tags are no longer applied automatically.
   // Get folder IDs from URLs like: https://x.com/i/bookmarks/1234567890
   // Example:
   //   folders: {
@@ -169,14 +165,23 @@ export function loadConfig(configPath) {
     }
   }
 
+  // Backward compatibility warnings for old bird CLI config keys
+  if (fileConfig.birdPath) {
+    console.warn('Warning: "birdPath" config is deprecated. Use "xurlPath" instead. bird CLI has been replaced by xurl.');
+  }
+  if (fileConfig.twitter?.authToken || fileConfig.twitter?.ct0) {
+    console.warn('Warning: "twitter.authToken"/"twitter.ct0" config is deprecated. xurl uses OAuth 2.0 (run "xurl whoami" to verify auth).');
+  }
+
+  // Map old birdPath to xurlPath if xurlPath not set
+  if (fileConfig.birdPath && !fileConfig.xurlPath) {
+    // Don't map the value since the binary name changed
+  }
+
   // Merge with defaults
   const config = {
     ...DEFAULT_CONFIG,
     ...fileConfig,
-    twitter: {
-      ...DEFAULT_CONFIG.twitter,
-      ...fileConfig.twitter
-    },
     // Deep merge categories - user categories override defaults
     categories: {
       ...DEFAULT_CONFIG.categories,
@@ -188,6 +193,10 @@ export function loadConfig(configPath) {
       ...fileConfig.folders
     }
   };
+
+  // Remove legacy twitter config from merged result
+  delete config.twitter;
+  delete config.birdPath;
 
   // Override with environment variables
   if (process.env.ARCHIVE_FILE) {
@@ -202,20 +211,14 @@ export function loadConfig(configPath) {
   if (process.env.TIMEZONE) {
     config.timezone = process.env.TIMEZONE;
   }
-  if (process.env.BIRD_PATH) {
-    config.birdPath = process.env.BIRD_PATH;
+  if (process.env.XURL_PATH) {
+    config.xurlPath = process.env.XURL_PATH;
   }
   if (process.env.SOURCE) {
     config.source = process.env.SOURCE;
   }
   if (process.env.INCLUDE_MEDIA !== undefined) {
     config.includeMedia = process.env.INCLUDE_MEDIA === 'true';
-  }
-  if (process.env.AUTH_TOKEN) {
-    config.twitter.authToken = process.env.AUTH_TOKEN;
-  }
-  if (process.env.CT0) {
-    config.twitter.ct0 = process.env.CT0;
   }
 
   // Automation env vars
@@ -242,7 +245,7 @@ export function loadConfig(configPath) {
   config.archiveFile = expandTilde(config.archiveFile);
   config.pendingFile = expandTilde(config.pendingFile);
   config.stateFile = expandTilde(config.stateFile);
-  config.birdPath = expandTilde(config.birdPath);
+  config.xurlPath = expandTilde(config.xurlPath);
   config.projectRoot = expandTilde(config.projectRoot);
 
   // Expand ~ in category folders
@@ -270,15 +273,11 @@ export function initConfig(targetPath = './smaug.config.json') {
     pendingFile: './.state/pending-bookmarks.json',
     stateFile: './.state/bookmarks-state.json',
     timezone: 'America/New_York',
-    birdPath: null,
-    twitter: {
-      authToken: 'YOUR_AUTH_TOKEN_HERE',
-      ct0: 'YOUR_CT0_TOKEN_HERE'
-    },
 
     // Bookmark folders - map folder IDs to tag names
+    // Note: X API v2 does not support folder-specific fetching.
+    // These are retained for reference only.
     // Get folder IDs from URLs like: https://x.com/i/bookmarks/1234567890
-    // When configured, Smaug fetches from each folder and tags bookmarks accordingly
     folders: {
       // Example:
       // "1234567890": "ai-tools",
@@ -311,6 +310,6 @@ export function initConfig(targetPath = './smaug.config.json') {
 
   fs.writeFileSync(targetPath, JSON.stringify(exampleConfig, null, 2) + '\n');
   console.log(`Created config file at ${targetPath}`);
-  console.log('Edit this file to add your Twitter credentials.');
+  console.log('Run "xurl whoami" to verify your X API authentication.');
   return targetPath;
 }
