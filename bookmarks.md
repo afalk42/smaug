@@ -1,3 +1,223 @@
+# Friday, February 20, 2026
+
+## @karpathy - Karpathy's Security Skepticism About OpenClaw
+> Bought a new Mac mini to properly tinker with claws over the weekend. The apple store person told me they are selling like hotcakes and everyone is confused :)
+>
+> I'm definitely a bit sus'd to run OpenClaw specifically - giving my private data/keys to 400K lines of vibe coded
+
+- **Tweet:** https://x.com/karpathy/status/2024987174077432126
+- **What:** Andrej Karpathy expresses security concerns about running OpenClaw, particularly regarding private data and keys being exposed to 400K lines of vibe-coded software.
+
+---
+
+# Wednesday, February 18, 2026
+
+## @KSimback - Shared X Article
+> https://t.co/UM88SWZydB
+
+- **Tweet:** https://x.com/KSimback/status/2024180197910864182
+- **What:** Kevin Simback shared an X article.
+
+## @tolibear_ - Shared X Article
+> https://t.co/gprOAK0k9n
+
+- **Tweet:** https://x.com/tolibear_/status/2024155081281560700
+- **What:** Toli shared an X article.
+
+---
+
+# Tuesday, February 17, 2026
+
+## @MatthewBerman - 21 OpenClaw Use Cases After 2.54 Billion Tokens
+> I've spent 2.54 BILLION tokens perfecting OpenClaw.
+>
+> The use cases I discovered have changed the way I live and work.
+>
+> ...and now I'm sharing them with the world.
+>
+> Here are 21 use cases I use daily:
+>
+> 0:00 Intro
+> 0:50 What is OpenClaw?
+> 1:35 MD Files
+> 2:14 Memory System
+> 3:55 CRM https://t.co/S5nDWEHUuk
+
+- **Tweet:** https://x.com/MatthewBerman/status/2023843493765157235
+- **What:** Matthew Berman shares 21 daily use cases for OpenClaw after spending 2.54 billion tokens perfecting it, covering memory systems, CRM, MD files, and more.
+
+---
+
+# Monday, February 16, 2026
+
+## @ryancarson - Shared X Article
+> https://t.co/c0jGiIrUke
+
+- **Tweet:** https://x.com/ryancarson/status/2023452909883609111
+- **What:** Ryan Carson shared an X article.
+
+---
+
+# Sunday, February 15, 2026
+
+## @openclaw - OpenClaw 2026.2.15 - Personal AI Assistant Release
+> 🦞 OpenClaw 2026.2.15 is here!
+>
+> ✨ Telegram message streaming — replies flow live
+> 💬 Discord Components v2 — buttons, selects, modals
+> 🔧 Nested sub-agents
+> 🔒 Major security hardening pass
+> 🐛 40+ bug fixes
+>
+> Big day. Huge day. Maybe the biggest day.🏛️
+
+- **Tweet:** https://x.com/openclaw/status/2023257934017294806
+- **Link:** https://github.com/openclaw/openclaw/releases
+- **Filed:** [openclaw](./knowledge/tools/openclaw.md)
+- **What:** OpenClaw releases version 2026.2.15 with major new features including Telegram message streaming, Discord Components v2, nested sub-agents, and extensive security hardening.
+
+## @steipete - OpenClaw Beta: Telegram Message Streaming
+> New @openclaw beta is up! This one again focusses on security and bug fixes, but we added a gem:
+>
+> TELEGRAM MESSAGE STREAMING 🚀
+>
+> to update, ask your agent or run:
+> openclaw update --channel beta
+
+- **Tweet:** https://x.com/steipete/status/2023247982427070784
+- **What:** OpenClaw releases a beta version featuring Telegram message streaming with live reply updates, along with security improvements and bug fixes.
+
+## @steipete - Peter Steinberger Joins OpenAI, OpenClaw Becomes Foundation
+> I'm joining @OpenAI to bring agents to everyone. @OpenClaw is becoming a foundation: open, independent, and just getting started.🦞
+
+- **Tweet:** https://x.com/steipete/status/2023154018714100102
+- **Link:** https://steipete.me/posts/2026/openclaw
+- **Filed:** [steipete-openclaw-openai](./knowledge/articles/steipete-openclaw-openai.md)
+- **What:** Peter Steinberger announces he is joining OpenAI to work on personal agents, and OpenClaw is transitioning to become an open, independent foundation.
+
+## @dani_avila7 - Shared X Article
+> https://t.co/hk8ThhSDTo
+
+- **Tweet:** https://x.com/dani_avila7/status/2023151176758268349
+- **What:** Shared article link via X platform.
+
+## @sama - Peter Steinberger Joins OpenAI for Personal Agents
+> Peter Steinberger is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas about the future of very smart agents interacting with each other to do very useful things for people. We expect this will quickly become core to our
+
+- **Tweet:** https://x.com/sama/status/2023150230905159801
+- **What:** Sam Altman announces that Peter Steinberger, creator of OpenClaw, is joining OpenAI to work on the next generation of personal agents.
+
+## @steipete - EnterpriseClaw: The Anti-Pattern Joke
+> We should make EnterpriseClaw just for the lolz.
+>
+> Java 21, Spring Boot, 14 abstract factory beans, 2GB Docker image, takes 45 seconds to start, AbstractSingletonProxyFactoryAgentClawResponseHandlerBeanDefinitionRegistryPostProcessorImpl .java
+
+- **Tweet:** https://x.com/steipete/status/2023056565968749040
+- **What:** Humorous take on over-engineered enterprise software, satirizing complex Java patterns and unnecessarily bloated microservice frameworks.
+
+## @jamesjyu - Shared X Article
+> https://t.co/F8YjxrLdyS
+
+- **Tweet:** https://x.com/jamesjyu/status/2022926490619248883
+- **What:** Shared article via X's article feature.
+
+## @cstanley - Grok Integration for OpenClaw via ClawHub
+> Just built a Grok integration for OpenClaw.
+>
+> Let your agents search X + use grok-search to pull real-time info. Powered by xAI. All you need is an xAI API key.
+>
+> To install:
+> clawhub install grok
+
+- **Tweet:** https://x.com/cstanley/status/2022900344003661988
+- **Link:** https://clawhub.ai/castanley/grok
+- **What:** Grok integration for OpenClaw agents that enables real-time X search and grok-search capabilities using xAI API, installable via ClawHub package manager.
+
+---
+
+# Saturday, February 14, 2026
+
+## @ryancarson - Using Codex for 100% AI-Written Code at Harness Engineering
+> I've been grinding with Codex (on Extra High) through setting up our repo for Harness Engineering.
+>
+> The goal is to have Codex right and review 100% of the code.
+>
+> Getting much closer.
+
+- **Tweet:** https://x.com/ryancarson/status/2022716244361683236
+- **Link:** https://openai.com/index/harness-engineering/
+- **What:** Using OpenAI's Codex to generate and review 100% of code for a repository at Harness Engineering, working toward a fully AI-written and reviewed codebase.
+
+---
+
+# Friday, February 13, 2026
+
+## @steipete - Summarize v0.11 - CLI & Chrome Extension for Fast Summaries
+> New version of https://t.co/QJwbQjqtID is out! 0.11 can now even use cursor for free tokens + uses Groq for way faster TTS inference + lots lots of other improvements.
+> https://t.co/oSebDYTR4J
+>
+> summarize https://t.co/qu1sjfeQY1 --slides
+>
+> my favorite way to consume https://t.co/IsjETkNsVv
+
+- **Tweet:** https://x.com/steipete/status/2022513027870810384
+- **Link:** https://summarize.sh
+- **Filed:** [summarize](./knowledge/tools/summarize.md)
+- **What:** CLI tool and Chrome extension for fast summaries of URLs, files, YouTube videos, and podcasts. v0.11 adds Groq TTS, Cursor free token support, and YouTube slide extraction.
+
+## @nikunj - Shared X Article
+> https://t.co/3mnuYn7jfP
+
+- **Tweet:** https://x.com/nikunj/status/2022438070092759281
+- **What:** Shared X article link.
+
+---
+
+# Thursday, February 12, 2026
+
+## @Teslaconomics - SpaceX IPO Contrarian Take
+> People keep telling me the same thing about SpaceX IPO: "Don't buy at the IPO. Wait 6–12 months, it'll be cheaper."
+>
+> And honestly, that advice exists for a reason bc most IPOs come out hot, the hype fades, insiders sell, competition shows up, and the stock drifts lower.
+>
+> But I...
+
+- **Tweet:** https://x.com/Teslaconomics/status/2022092388161007640
+- **What:** Analysis of SpaceX IPO timing strategy and contrarian investment perspective on whether to buy at IPO or wait.
+
+## @brave - Brave Search Skills - Official API Skills for AI Agents
+> *Replying to @brave:* Ask Brave, powered by Brave's LLM Context API and open-weights Qwen3, outperforms ChatGPT, Perplexity, and Google AI mode in our testing.
+>
+> New developer tools are also launching today to make the Brave Search API easier to use.
+>
+> First, we've added Skills support to Brave Search API so you can quickly enhance your AI with new capabilities.
+
+- **Tweet:** https://x.com/brave/status/2021996742456246630
+- **Parent:** https://x.com/brave/status/2021996739772002353
+- **Link:** https://github.com/brave/brave-search-skills
+- **Filed:** [brave-search-skills](./knowledge/tools/brave-search-skills.md)
+- **What:** Brave launches open-source Skills for the Search API, enabling AI agents to integrate web search, news, images, and AI-grounded answers via the Agent Skills standard.
+
+## @brave - Brave Search API Revamp for AI Applications
+> Today we're launching a revamped Brave Search API, designed to make web search dramatically more useful for AI applications.
+>
+> Our testing shows that it's the most powerful search API to date and beats ChatGPT, Google AI Mode, and Perplexity in testing...
+
+- **Tweet:** https://x.com/brave/status/2021996734902362521
+- **What:** Brave announces a revamped Search API optimized for AI applications, claiming superior performance over ChatGPT, Google AI Mode, and Perplexity.
+
+---
+
+# Wednesday, February 11, 2026
+
+## @WillManidis - Shared X Article
+> https://t.co/bDCdltFo0A
+
+- **Tweet:** https://x.com/WillManidis/status/2021655191901155534
+- **What:** Shared X article link.
+
+---
+
 # Sunday, January 4, 2026
 
 DATE: Sunday, January 4, 2026
