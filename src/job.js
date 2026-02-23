@@ -333,10 +333,13 @@ async function invokeClaudeCode(config, bookmarkCount, options = {}) {
                   const fileName = input.file_path.split('/').pop();
                   const dir = input.file_path.includes('/knowledge/tools/') ? 'tools' :
                              input.file_path.includes('/knowledge/articles/') ? 'articles' : '';
+                  const isBookmarkFile = fileName === 'bookmarks.md' ||
+                    fileName.endsWith('_bm.md') ||
+                    input.file_path.includes('/bookmarks/');
                   filesWritten.push(fileName);
                   if (dir) {
                     printStatus(`    💎 Hoarded → ${dir}/${fileName}\n`);
-                  } else if (fileName === 'bookmarks.md') {
+                  } else if (isBookmarkFile) {
                     bookmarksProcessed++;
                     const fireIntensity = '🔥'.repeat(Math.min(Math.ceil(bookmarksProcessed / 2), 5));
                     printStatus(`  ${fireIntensity} ${progressBar(bookmarksProcessed, totalBookmarks)} [${elapsed()}]`);
@@ -345,7 +348,10 @@ async function invokeClaudeCode(config, bookmarkCount, options = {}) {
                   }
                 } else if (toolName === 'Edit' && input.file_path) {
                   const fileName = input.file_path.split('/').pop();
-                  if (fileName === 'bookmarks.md') {
+                  const isBookmarkFile = fileName === 'bookmarks.md' ||
+                    fileName.endsWith('_bm.md') ||
+                    input.file_path.includes('/bookmarks/');
+                  if (isBookmarkFile) {
                     bookmarksProcessed++;
                     const fireIntensity = '🔥'.repeat(Math.min(Math.ceil(bookmarksProcessed / 2), 5));
                     printStatus(`  ${fireIntensity} ${progressBar(bookmarksProcessed, totalBookmarks)} [${elapsed()}]`);

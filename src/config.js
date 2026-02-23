@@ -19,7 +19,10 @@ const DEFAULT_CONFIG = {
   // Off by default - enable with --media flag or config
   includeMedia: false,
 
-  // Where to store the markdown archive
+  // Where to store the markdown archive (directory of per-day files)
+  archiveDir: './bookmarks',
+
+  // Legacy single-file archive (used for migration detection)
   archiveFile: './bookmarks.md',
 
   // Where to store pending bookmarks (JSON) before processing
@@ -199,6 +202,9 @@ export function loadConfig(configPath) {
   delete config.birdPath;
 
   // Override with environment variables
+  if (process.env.ARCHIVE_DIR) {
+    config.archiveDir = process.env.ARCHIVE_DIR;
+  }
   if (process.env.ARCHIVE_FILE) {
     config.archiveFile = process.env.ARCHIVE_FILE;
   }
@@ -242,6 +248,7 @@ export function loadConfig(configPath) {
   }
 
   // Expand ~ in all path-related config values
+  config.archiveDir = expandTilde(config.archiveDir);
   config.archiveFile = expandTilde(config.archiveFile);
   config.pendingFile = expandTilde(config.pendingFile);
   config.stateFile = expandTilde(config.stateFile);
@@ -269,7 +276,7 @@ export function initConfig(targetPath = './smaug.config.json') {
     source: 'bookmarks',
     // EXPERIMENTAL: Include media attachments (photos, videos, GIFs)
     // includeMedia: false,
-    archiveFile: './bookmarks.md',
+    archiveDir: './bookmarks',
     pendingFile: './.state/pending-bookmarks.json',
     stateFile: './.state/bookmarks-state.json',
     timezone: 'America/New_York',

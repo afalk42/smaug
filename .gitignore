@@ -9,7 +9,9 @@ bookmarks-archiver.config.json
 smaug.config.json
 
 # Output (optional - you may want to track this)
+bookmarks/
 bookmarks.md
+bookmarks.bak
 knowledge/
 
 # OS files

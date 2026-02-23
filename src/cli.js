@@ -14,6 +14,8 @@
 
 import { fetchAndPrepareBookmarks } from './processor.js';
 import { initConfig, loadConfig } from './config.js';
+import { countArchivedBookmarks } from './archive.js';
+import { migrate as runMigration } from './migrate.js';
 import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
@@ -96,7 +98,7 @@ This will set up Smaug to automatically archive your Twitter bookmarks.
   // Step 4: Create config
   console.log('Step 4: Creating configuration...');
   const config = {
-    archiveFile: './bookmarks.md',
+    archiveDir: './bookmarks',
     pendingFile: './.state/pending-bookmarks.json',
     stateFile: './.state/bookmarks-state.json',
     timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || 'America/New_York',
@@ -151,7 +153,7 @@ This will set up Smaug to automatically archive your Twitter bookmarks.
 🐉 Setup Complete!
 ━━━━━━━━━━━━━━━━━━━━━
 
-Your bookmarks will be saved to: ./bookmarks.md
+Your bookmarks will be saved to: ./bookmarks/
 
 Commands:
   npx smaug run    Run full job (fetch + process with Claude)
@@ -273,15 +275,31 @@ async function main() {
       break;
     }
 
+    case 'migrate': {
+      const result = runMigration();
+      process.exit(result.success ? 0 : 1);
+      break;
+    }
+
     case 'status': {
       const config = loadConfig();
 
       console.log('Smaug Status\n');
-      console.log(`Archive:     ${config.archiveFile}`);
+
+      // Show archive location
+      if (config.archiveDir && fs.existsSync(config.archiveDir)) {
+        console.log(`Archive:     ${config.archiveDir}/ (per-day files)`);
+      } else if (fs.existsSync(config.archiveFile)) {
+        console.log(`Archive:     ${config.archiveFile} (legacy single file)`);
+        console.log(`             Run 'npx smaug migrate' to switch to per-day files`);
+      } else {
+        console.log(`Archive:     ${config.archiveDir || config.archiveFile} (not yet created)`);
+      }
+
       console.log(`Source:      ${config.source || 'bookmarks'}`);
       console.log(`Media:       ${config.includeMedia ? '✓ enabled (experimental)' : 'disabled (use --media to enable)'}`);
 
-      // Check xurl auth
+      // Check xurl auth (hardcoded binary name, no user input)
       try {
         const whoami = execSync('xurl whoami', { stdio: 'pipe', encoding: 'utf8' });
         const whoamiData = JSON.parse(whoami);
@@ -304,7 +322,11 @@ async function main() {
         console.log(`Last fetch:  ${state.last_check || 'never'}`);
       }
 
-      if (fs.existsSync(config.archiveFile)) {
+      // Count archived bookmarks from directory or legacy file
+      if (config.archiveDir && fs.existsSync(config.archiveDir)) {
+        const entryCount = countArchivedBookmarks(config.archiveDir);
+        console.log(`Archived:    ${entryCount} bookmarks`);
+      } else if (fs.existsSync(config.archiveFile)) {
         const content = fs.readFileSync(config.archiveFile, 'utf8');
         const entryCount = (content.match(/^## @/gm) || []).length;
         console.log(`Archived:    ${entryCount} bookmarks`);
@@ -330,6 +352,7 @@ Commands:
   fetch --force  Re-fetch even if already archived
   fetch --source <source>  Fetch from: bookmarks, likes, or both
   fetch --media  EXPERIMENTAL: Include media attachments
+  migrate        Migrate bookmarks.md to per-day directory structure
   process        Show pending tweets
   status         Show current status
 

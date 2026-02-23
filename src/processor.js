@@ -18,6 +18,7 @@ import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
 import timezone from 'dayjs/plugin/timezone.js';
 import { loadConfig } from './config.js';
+import { getExistingBookmarkIds as getExistingBookmarkIdsFromDir } from './archive.js';
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -493,6 +494,12 @@ export async function fetchContent(url, type, config) {
 }
 
 export function getExistingBookmarkIds(config) {
+  // Use directory-based archive if archiveDir exists
+  if (config.archiveDir && fs.existsSync(config.archiveDir)) {
+    return getExistingBookmarkIdsFromDir(config.archiveDir);
+  }
+
+  // Legacy single-file fallback
   try {
     const content = fs.readFileSync(config.archiveFile, 'utf8');
     const matches = content.matchAll(/x\.com\/\w+\/status\/(\d+)/g);

@@ -24,6 +24,9 @@ npx smaug fetch --source both         # Fetch from both
 npx smaug fetch --media               # Include media attachments (experimental)
 npx smaug fetch --force               # Re-fetch already archived
 
+# Migration (one-time: bookmarks.md -> per-day files)
+npx smaug migrate                     # Split bookmarks.md into bookmarks/{YYYY}/{MM}/ day files
+
 # Status/info
 npx smaug status
 npx smaug process                     # Show pending bookmarks
@@ -46,6 +49,8 @@ npx smaug setup                       # Interactive wizard
 - `src/job.js` - Job runner with lock management, Claude Code invocation, webhook notifications
 - `src/processor.js` - Bookmark fetching, link expansion, content extraction
 - `src/config.js` - Configuration loading from file/env
+- `src/archive.js` - Archive directory utilities (per-day file path computation, ID scanning)
+- `src/migrate.js` - One-time migration from bookmarks.md to per-day directory structure
 - `.claude/commands/process-bookmarks.md` - Claude Code processing instructions
 
 ### Data Flow
@@ -57,7 +62,7 @@ X API v2 (via xurl CLI)
     ↓
 Claude Code processes per .claude/commands/process-bookmarks.md
     ↓
-bookmarks.md (archive entries)
+bookmarks/{YYYY}/{MM}/{YYYY-MM-DD}_bm.md (per-day archive entries)
 knowledge/tools/*.md (GitHub repos)
 knowledge/articles/*.md (articles)
 ```
@@ -75,7 +80,8 @@ Categories in `smaug.config.json` or defaults in `config.js` define how bookmark
 When processing 3+ bookmarks, the `/process-bookmarks` skill spawns parallel Haiku subagents for cost efficiency (~50% savings). Each subagent handles a batch of ~5 bookmarks independently.
 
 Key processing rules from `.claude/commands/process-bookmarks.md`:
-- Bookmarks are added to date sections in `bookmarks.md` (newest first)
+- Bookmarks are written to per-day files in `bookmarks/{YYYY}/{MM}/{YYYY-MM-DD}_bm.md`
+- Each day file has a date header + entries (no `---` separators)
 - GitHub repos get filed to `knowledge/tools/` with frontmatter
 - Articles get filed to `knowledge/articles/` with frontmatter
 - Quote tweets include quoted content in the entry
@@ -86,13 +92,14 @@ Key processing rules from `.claude/commands/process-bookmarks.md`:
 Primary config: `smaug.config.json`
 
 Key options:
+- `archiveDir`: directory for per-day bookmark files (default: `./bookmarks`)
 - `source`: "bookmarks", "likes", or "both"
 - `claudeModel`: "sonnet", "haiku", or "opus"
 - `autoInvokeClaude`: whether to run Claude after fetch
 - `categories`: custom category definitions
 - `folders`: map folder IDs to tag names (retained for reference; X API v2 does not support folder-specific fetching)
 
-Environment variables override config (e.g., `XURL_PATH`, `CLAUDE_MODEL`).
+Environment variables override config (e.g., `ARCHIVE_DIR`, `XURL_PATH`, `CLAUDE_MODEL`).
 
 ## External Dependencies
 

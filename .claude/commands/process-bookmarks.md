@@ -1,6 +1,6 @@
 # /process-bookmarks
 
-Process prepared Twitter bookmarks into a markdown archive with rich analysis and optional filing to a knowledge library.
+Process prepared Twitter bookmarks into per-day markdown files with rich analysis and optional filing to a knowledge library.
 
 ## Before You Start
 
@@ -26,7 +26,7 @@ TodoWrite({ todos: [
   {content: "Read pending bookmarks", status: "pending", activeForm: "Reading pending bookmarks"},
   {content: "Spawn subagents to write batch files", status: "pending", activeForm: "Spawning subagents"},
   {content: "Wait for all subagents to complete", status: "pending", activeForm: "Waiting for subagents"},
-  {content: "Merge batch files into bookmarks.md", status: "pending", activeForm: "Merging batch files"},
+  {content: "Dispatch batch entries to day files", status: "pending", activeForm: "Writing day files"},
   {content: "Clean up batch and pending files", status: "pending", activeForm: "Cleaning up files"},
   {content: "Commit and push changes", status: "pending", activeForm: "Committing changes"},
   {content: "Return summary", status: "pending", activeForm: "Returning summary"}
@@ -43,20 +43,20 @@ TodoWrite({ todos: [
 ```javascript
 // Send ONE message with multiple Task calls - they run in parallel
 // Use model="haiku" for cost-efficient parallel processing (~50% cost savings)
-// Each subagent writes to .state/batch-N.md, NOT to bookmarks.md!
+// Each subagent writes to .state/batch-N.md, NOT to day files!
 Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 0: write to .state/batch-0.md: {json for bookmarks 0-4}")
 Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 1: write to .state/batch-1.md: {json for bookmarks 5-9}")
 Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 2: write to .state/batch-2.md: {json for bookmarks 10-14}")
 // ... all batches in the SAME message
 ```
 
-After ALL subagents complete, merge batch files into bookmarks.md in chronological order.
+After ALL subagents complete, dispatch batch entries to per-day files.
 
 **DO NOT:**
-- Have subagents write directly to bookmarks.md (race conditions!)
+- Have subagents write directly to day files (race conditions!)
 - Process 3+ bookmarks sequentially (too slow)
 - Send Task calls in separate messages (defeats parallelism)
-- Skip the merge step
+- Skip the dispatch step
 
 ### Setup
 
@@ -69,17 +69,50 @@ Use this format for date section headers (e.g., "Thursday, January 2, 2026").
 
 **Load paths and categories from config:**
 ```bash
-cat ./smaug.config.json | jq '{archiveFile, pendingFile, stateFile, categories}'
+cat ./smaug.config.json | jq '{archiveDir, pendingFile, stateFile, categories}'
 ```
 
 This gives you:
-- `archiveFile`: Where to write the bookmark archive (e.g., `~/Obsidian_Vaults/.../bookmarks.md`)
+- `archiveDir`: Directory for per-day bookmark files (e.g., `./bookmarks`)
 - `pendingFile`: Where pending bookmarks are stored
 - `stateFile`: Where processing state is tracked
 - `categories`: Custom category definitions
 
 **IMPORTANT:** Use these paths throughout. The `~` will be the user's home directory.
 If no custom categories, use the defaults from `src/config.js`.
+
+## Archive Directory Structure
+
+Bookmarks are stored as per-day files:
+```
+bookmarks/
+  2025/
+    02/
+      2025-02-15_bm.md
+  2026/
+    02/
+      2026-02-20_bm.md
+      2026-02-22_bm.md
+```
+
+**Path formula:** `{archiveDir}/{YYYY}/{MM}/{YYYY-MM-DD}_bm.md`
+
+Each day file has a date header followed by entries (no `---` separators between entries):
+```markdown
+# Friday, February 20, 2026
+
+## @author - Title
+> tweet text
+
+- **Tweet:** url
+- **What:** description
+
+## @author2 - Title
+> tweet text
+
+- **Tweet:** url
+- **What:** description
+```
 
 ## Input
 
@@ -100,8 +133,8 @@ Categories define how different bookmark types are handled. Each category has:
 - `match`: URL patterns or keywords to identify this type
 - `action`: What to do with matching bookmarks
   - `file`: Create a separate markdown file in the folder
-  - `capture`: Just add to bookmarks.md
-  - `transcribe`: Flag for future transcription, add to bookmarks.md with transcript note
+  - `capture`: Just add to day file (no separate file)
+  - `transcribe`: Flag for future transcription, add to day file with transcript note
 - `folder`: Where to save files (for `file` action)
 - `template`: Which template to use (`tool`, `article`, `podcast`, `video`)
 
@@ -156,37 +189,39 @@ Match each bookmark's links against category patterns (check `match` arrays). Us
 
 **For each action type:**
 - `file`: Create a separate file in the category's folder using its template
-- `capture`: Just add to bookmarks.md (no separate file)
-- `transcribe`: Add to bookmarks.md with a "Needs transcript" flag, optionally create placeholder in folder
+- `capture`: Just add to day file (no separate file)
+- `transcribe`: Add to day file with a "Needs transcript" flag, optionally create placeholder in folder
 
 **Special handling:**
 - Quote tweets: Include quoted tweet context in entry
 - Reply threads: Include parent context in entry
 
-#### c. Write bookmark entry
+#### c. Write bookmark entry to per-day file
 
-Add to the `archiveFile` path from config (expand `~` to home directory):
+**Compute the target day file path from the bookmark's `date` field:**
 
-**CRITICAL ordering rules for bookmarks.md:**
+Given `date: "Friday, February 20, 2026"`:
+1. Parse to get `YYYY=2026`, `MM=02`, `DD=20`
+2. Target file: `{archiveDir}/2026/02/2026-02-20_bm.md`
+3. Create the directory with `mkdir -p` if needed
 
-The file must be in **descending chronological order** (newest dates at TOP, oldest at BOTTOM).
+**If the day file does NOT exist:** Create it with the date header:
+```markdown
+# Friday, February 20, 2026
 
-1. **Read the existing file structure first** - note all existing date sections and their positions
-2. Use each bookmark's `date` field (already formatted as "Weekday, Month Day, Year")
-3. **For each bookmark's date:**
-   - If that date section already exists: insert the entry immediately AFTER the `# Date` header (above other entries in that section)
-   - If no section exists for that date: create a new `# Weekday, Month Day, Year` section at the **correct chronological position** (NOT always at top!)
-4. **Chronological positioning for new date sections:**
-   - Find where the date belongs chronologically among existing sections
-   - Insert BEFORE any older dates, AFTER any newer dates
-   - Example: If file has "Jan 3" then "Jan 1", and you need "Jan 2", insert between them
-5. Do NOT create duplicate date sections - always search the entire file first
-6. Separate date sections with `---`
+## @author - Title
+> tweet text
 
-**Processing order:** Bookmarks in pending-bookmarks.json are sorted oldest-first. Process them in order so that when each is inserted at the top of its date section, the final result has correct ordering within each day.
+- **Tweet:** url
+- **What:** description
+```
+
+**If the day file ALREADY exists:** Insert the new entry after the `# Date` header line (above existing entries). New entries go at the top of the file, right after the date header.
+
+**Processing order:** Bookmarks in pending-bookmarks.json are sorted oldest-first. Process them in order so that when each is inserted after the date header, the final result has correct ordering within each day (newest at top of each day file).
 
 **Header hierarchy:**
-- `# Thursday, January 2, 2026` - Date headers (h1)
+- `# Thursday, January 2, 2026` - Date header (h1) - one per file
 - `## @author - title` - Individual bookmark entries (h2)
 
 **Standard entry format:**
@@ -229,7 +264,7 @@ The file must be in **descending chronological order** (newest dates at TOP, old
 - **What:** {description}
 ```
 
-Separate entries with `---` only between different dates, not between entries on the same day.
+No `---` separators between entries within the same day file.
 
 ### 3. Clean Up Pending File
 
@@ -253,8 +288,11 @@ After all bookmarks are processed and filed, commit the changes:
 # Get today's date for commit message
 DATE=$(date +"%b %-d")
 
-# Stage all bookmark-related changes (use archiveFile path from config)
-git add "$ARCHIVE_FILE"  # The archiveFile path from config
+# Get archiveDir from config
+ARCHIVE_DIR=$(cat ./smaug.config.json | jq -r '.archiveDir // "./bookmarks"')
+
+# Stage all bookmark-related changes
+git add "$ARCHIVE_DIR"
 git add knowledge/
 
 # Commit with descriptive message
@@ -400,7 +438,7 @@ status: needs_transcript
 
 ## Parallel Processing (REQUIRED for 3+ bookmarks)
 
-**CRITICAL: Subagents must NOT write directly to bookmarks.md** - this causes race conditions and scrambled ordering.
+**CRITICAL: Subagents must NOT write directly to day files** - this causes race conditions.
 
 ### Two-Phase Approach:
 
@@ -433,28 +471,29 @@ DATE: {bookmark.date}
 - **What:** {description}
 
 Also create knowledge files (./knowledge/tools/*.md, ./knowledge/articles/*.md) as needed.
-DO NOT touch bookmarks.md - only write to .state/batch-{N}.md
+DO NOT touch any files in the bookmarks/ directory - only write to .state/batch-{N}.md
 ```
 
-**Phase 2: Sequential merge (main agent combines batches)**
+**Phase 2: Sequential dispatch to day files (main agent writes)**
 
 After ALL subagents complete:
 1. Read all .state/batch-*.md files in order (batch-0, batch-1, batch-2...)
 2. Parse each entry (separated by `---`) and extract the DATE line
-3. Insert each entry into bookmarks.md at the correct chronological position
-4. Delete the temp batch files
+3. For each entry, compute the target day file path: `{archiveDir}/{YYYY}/{MM}/{YYYY-MM-DD}_bm.md`
+4. Create the day file with date header if it doesn't exist, or insert after header if it does
+5. Delete the temp batch files
 
-**Merge logic for bookmarks.md:**
-- File is descending order (newest dates at top)
+**Dispatch logic for day files:**
 - For each entry from batch files (processed in order):
-  - Find or create the date section at correct position
-  - Insert entry at TOP of that date section
-- Since batches are oldest-first, entries end up in correct order
+  - Parse `DATE:` line → compute day file path
+  - If file doesn't exist: create with `# {DATE}` header + entry
+  - If file exists: insert entry after the `# {DATE}` header line
+- Since batches are oldest-first, entries end up in correct order within each day file
 
 **DO NOT:**
-- Have subagents write directly to bookmarks.md (causes race conditions)
+- Have subagents write directly to day files (causes race conditions)
 - Process all bookmarks sequentially (too slow)
-- Skip the merge step
+- Skip the dispatch step
 
 ## Example Output
 
